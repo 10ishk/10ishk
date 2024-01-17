@@ -10,7 +10,7 @@
   <img align="start" src="https://github-readme-stats.vercel.app/api?username=10ishk&show_icons=true&count_private=true&theme=gotham&line_height=24&&hide_border=false" />  
 </a>
 <a href="https://github.com/10ishk">
-  <img align="end" src="https://github-readme-stats.vercel.app/api/top-langs/?username=10ishk&size_weight=0.5&count_weight=0.5&layout=compact&theme=gotham&hide_border=false" />
+  <img align="end" src="https://github-readme-stats.vercel.app/api/top-langs/?username=10ishk&size_weight=0.5&count_weight=0.5&count_private=true&layout=compact&theme=gotham&hide_border=false" />
 </a>
 <a href="https://github.com/10ishk">
   <img align="end" src="https://github-readme-streak-stats.herokuapp.com/?user=10ishk&theme=dark&hide_border=false" />
