@@ -1,20 +1,48 @@
-<h2 align="left">Hi 👋! My name is Tanishk and I'm passionate about programming and 3d modeling + graphic designing</h2>
+<p align="center"><img src="header.png"></p>
+
+<div style="width: 100%;">
+  <a href="welcome.svg">
+    <img src="welcome.svg" style="width: 100%;" alt="Get to know me more">
+  </a>
+</div>
 
 ###
-- 👨‍💻 All of my projects are available on [My Portfolio Website](https://tanishkbhardwaj.netlify.app/ )
+
+- Something that might be fun [DONT CLICK](https://tanishkbhardwaj.netlify.app/) O.O
+
+###
+
+- Wanna know what am watching [<strike> ANIME </strike>](https://anilist.co/user/Millionaire10ishk/)
+
+<br>
+<a href="https://next.ossinsight.io/widgets/official/compose-activity-trends?repo_id=403634272" target="_blank" style="display: block" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=403634272&image_size=auto&color_scheme=dark" width="815" height="auto">
+    <img alt="Activity Trends of 10ishk/10ishk - Last 28 days" src="https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=403634272&image_size=auto&color_scheme=light" width="815" height="auto">
+  </picture>
+</a>
 
 <br>
 
-<div align="center">
+<a href="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats?user_id=76703619" target="_blank" style="display: block" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=76703619&image_size=auto&color_scheme=dark" width="771" height="auto">
+    <img alt="Dashboard stats of @10ishk" src="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=76703619&image_size=auto&color_scheme=light" width="771" height="auto">
+  </picture>
+</a>
+
+<br>
+<div align ='center'style="display: flex; flex-direction: row;">
 <a href="https://github.com/10ishk">
-  <img align="start" src="https://github-readme-stats.vercel.app/api?username=10ishk&show_icons=true&count_private=true&theme=gotham&line_height=24&&hide_border=false" />  
+  <img align="start" src="https://github-readme-stats.vercel.app/api?username=10ishk&show_icons=true&count_private=true&theme=gotham&line_height=24&&hide_border=false" height="125" width="375"/>  
+</a>
+    <a href="https://github.com/10ishk">
+  <img align="end" src="https://github-readme-stats.vercel.app/api/top-langs/?username=10ishk&size_weight=0.5&count_weight=0.5&count_private=true&layout=compact&theme=gotham&hide_border=false" height="125" width="375"/>
 </a>
 <a href="https://github.com/10ishk">
-  <img align="end" src="https://github-readme-stats.vercel.app/api/top-langs/?username=10ishk&size_weight=0.5&count_weight=0.5&count_private=true&layout=compact&theme=gotham&hide_border=false" />
+  <img align="end" src="https://github-readme-streak-stats.herokuapp.com/?user=10ishk&theme=dark&hide_border=false" height="125" width="375"/>
 </a>
-<a href="https://github.com/10ishk">
-  <img align="end" src="https://github-readme-streak-stats.herokuapp.com/?user=10ishk&theme=dark&hide_border=false" />
-</a>
+
 </div>
 
 <br>
@@ -22,9 +50,9 @@
 <p align="center"> <a href="https://github.com/10ishk"><img src="https://github-profile-trophy.vercel.app/?username=10ishk&theme=dark_lover&rank=-?&column=5&margin-w=4&" alt="10ishk" /></a> </p>
 <p align="center"> <a href="https://github.com/10ishk"><img src="https://github-trophies.vercel.app/?username=10ishk&theme=dark_lover&no-frame=false&no-bg=false&margin-w=4&column=3&row=1" alt="10ishk" /></a> </p>
 
-<h3 align="left">Languages and Tools:</h3>
+<h2 align="center">𝗠𝗔𝗦𝗧𝗘𝗥𝗬</h2>
 
-<div align="left">
+<div align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo" />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
@@ -47,7 +75,7 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30" alt="mysql logo"  />
   <img width="12" />
- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg" height="30" alt="photoshop logo"  />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg" height="30" alt="photoshop logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" alt="vscode logo"  />
   <img width="12" />
@@ -76,9 +104,10 @@
 </div>
 
 ###
-<h3 align="left">Connect with me:</h3>
 
-<div align="left">
+<h2 align="center">𝗦𝗢𝗖𝗜𝗔𝗟𝗦</h2>
+
+<div align="center">
     <a href="https://www.linkedin.com/in/tanishk004" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
