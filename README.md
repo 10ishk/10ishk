@@ -1,3 +1,4 @@
+<a href="https://u8views.com/github/10ishk"><img src="https://u8views.com/api/v1/github/profiles/76703619/views/day-week-month-total-count.svg"></a>
 <p align="center"><img src="header.png"></p>
 <div style="width: 100%;">
   <a href="welcome.svg">
