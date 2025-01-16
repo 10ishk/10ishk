@@ -1,10 +1,15 @@
 <a href="https://u8views.com/github/10ishk"><img src="https://u8views.com/api/v1/github/profiles/76703619/views/day-week-month-total-count.svg"></a>
-<p align="center"><img src="header.png"></p>
-<div style="width: 100%;">
-  <a href="welcome.svg">
-    <img src="welcome.svg" style="width: 100%;" alt="Get to know me more">
-  </a>
-</div>
+
+<table>
+  <tr>
+    <td><img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=10ishk&amp;theme=graywhite" alt=""></td>
+    <td><img src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=10ishk&amp;theme=graywhite" alt=""></td>
+  </tr>
+  <tr>
+    <td><p><img src="https://stats.hyo.dev/api/github-stats?login=10ishk" alt="github-stats"></p></td>
+    <td><img src="http://github-profile-summary-cards.vercel.app/api/cards/some-other-card?username=10ishk&amp;theme=graywhite" alt=""></td>
+  </tr>
+</table>
 
 ###
 
