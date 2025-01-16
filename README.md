@@ -21,7 +21,7 @@
     <img alt="Activity Trends of 10ishk/10ishk - Last 28 days" src="https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=403634272&image_size=auto&color_scheme=light" width="815" height="auto">
   </picture>
 </a>
-
+[![Tanishk Bhardwaj profile views](https://u8views.com/api/v1/github/profiles/76703619/views/day-week-month-total-count.svg)](https://u8views.com/github/10ishk)
 <br>
 <br>
 
