@@ -7,7 +7,7 @@
   </tr>
   <tr>
     <td><p><img src="https://stats.hyo.dev/api/github-stats?login=10ishk" alt="github-stats"></p></td>
-    <td><img src="http://github-profile-summary-cards.vercel.app/api/cards/some-other-card?username=10ishk&amp;theme=graywhite" alt=""></td>
+    <td><p><a href=""><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=10ishk&amp;theme=react&amp;bg_color=1F222E&amp;title_color=F85D7F&amp;hide_border=true&amp;icon_color=F8D866" alt="My GitHub Language Stats"></a></p></td>
   </tr>
 </table>
 
@@ -19,41 +19,8 @@
 
 - Wanna know what am watching [<strike> ANIME </strike>](https://anilist.co/user/Millionaire10ishk/)
 
-<br>
-<a href="https://next.ossinsight.io/widgets/official/compose-activity-trends?repo_id=403634272" target="_blank" style="display: block" align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=403634272&image_size=auto&color_scheme=dark" width="815" height="auto">
-    <img alt="Activity Trends of 10ishk/10ishk - Last 28 days" src="https://next.ossinsight.io/widgets/official/compose-activity-trends/thumbnail.png?repo_id=403634272&image_size=auto&color_scheme=light" width="815" height="auto">
-  </picture>
-</a>
-<br>
-<br>
+<p><img src="https://stats.hyo.dev/api/github-trophies?login=%2710ishk%27" alt="github-trophies"></p>
 
-<a href="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats?user_id=76703619" target="_blank" style="display: block" align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=76703619&image_size=auto&color_scheme=dark" width="771" height="auto">
-    <img alt="Dashboard stats of @10ishk" src="https://next.ossinsight.io/widgets/official/compose-user-dashboard-stats/thumbnail.png?user_id=76703619&image_size=auto&color_scheme=light" width="771" height="auto">
-  </picture>
-</a>
-<br>
-<br>
-<div align ='center'style="display: flex; flex-direction: row;">
-<a href="https://github.com/10ishk">
-  <img align="start" src="https://github-readme-stats.vercel.app/api?username=10ishk&show_icons=true&count_private=true&theme=gotham&line_height=24&&hide_border=false" height="125" width="375"/>  
-</a>
-    <a href="https://github.com/10ishk">
-  <img align="end" src="https://github-readme-stats.vercel.app/api/top-langs/?username=10ishk&size_weight=0.5&count_weight=0.5&count_private=true&layout=compact&theme=gotham&hide_border=false" height="125" width="375"/>
-</a>
-<a href="https://github.com/10ishk">
-  <img align="end" src="https://github-readme-streak-stats.herokuapp.com/?user=10ishk&theme=dark&hide_border=false" height="125" width="375"/>
-</a>
-
-</div>
-
-<br>
-
-<p align="center"> <a href="https://github.com/10ishk"><img src="https://github-profile-trophy.vercel.app/?username=10ishk&theme=dark_lover&rank=-?&column=5&margin-w=4&" alt="10ishk" /></a> </p>
-<p align="center"> <a href="https://github.com/10ishk"><img src="https://github-trophies.vercel.app/?username=10ishk&theme=dark_lover&no-frame=false&no-bg=false&margin-w=4&column=3&row=1" alt="10ishk" /></a> </p>
 
 <h2 align="center">𝗠𝗔𝗦𝗧𝗘𝗥𝗬</h2>
 
