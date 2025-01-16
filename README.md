@@ -1,5 +1,4 @@
 <p align="center"><img src="header.png"></p>
-<a href="https://u8views.com/github/10ishk"><img src="https://u8views.com/api/v1/github/profiles/76703619/views/day-week-month-total-count.svg"></a>
 <div style="width: 100%;">
   <a href="welcome.svg">
     <img src="welcome.svg" style="width: 100%;" alt="Get to know me more">
