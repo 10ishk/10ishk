@@ -1,69 +1,53 @@
-<a href="https://u8views.com/github/10ishk"><img src="https://u8views.com/api/v1/github/profiles/76703619/views/day-week-month-total-count.svg"></a>
+# 👨‍💻 Tanishk Bhardwaj | Tech Trailblazer
 
-<center>
- <center>
-  <table>
-    <tr>
-      <td align="center">
-        <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=10ishk&theme=graywhite&count_private=true" alt="Profile Details">
-      </td>
-      <td align="center">
-        <img src="https://github-readme-stats-fawn-kappa-29.vercel.app/api?username=10ishk&show_icons=true&theme=react&bg_color=1F222E&title_color=F85D7F&hide_border=true&icon_color=F8D866&count_private=true" alt="GitHub Stats">
-      </td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=10ishk&theme=tokyonight&count_private=true" alt="GitHub Streak Stats">
-      </td>
-      <td align="center">
-        <img src="https://github-readme-stats-fawn-kappa-29.vercel.app/api/top-langs/?username=10ishk&theme=react&bg_color=1F222E&title_color=F85D7F&hide_border=true&icon_color=F8D866&count_private=true" alt="Top Languages">
-      </td>
-    </tr>
-  </table>
-</center>
-
-</center>
-
-<p align="center">
-  <a href="https://tanishkbhardwaj.netlify.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Website-Visit%20Now-ff69b4?style=for-the-badge&logo=google-chrome" alt="Website" />
-  </a>
-  <a href="https://anilist.co/user/Millionaire10ishk/" target="_blank">
-    <img src="https://img.shields.io/badge/AniList-Profile-blue?style=for-the-badge&logo=anilist&logoColor=white" alt="AniList Profile" />
-  </a>
-</p>
+> *“Code is like poetry; it’s about expressing complex ideas simply.”*  
+> Let’s build something extraordinary together! 🚀
 
 
+```
+> whoami ?!
+Tanishk Bhardwaj - B.Tech Computer Science & Engineering @ IIIT Sonipat
+Passionate about AI, cloud tech, and building solutions that make an impact.
+Currently exploring the intersection of ML, NLP, and real-world innovation.
+```
 
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=10ishk&theme=onedark&no-frame=true&no-bg=true&column=5" alt="GitHub Trophies" />
-  </a>
-</p>
+## 🛠️ Tech Stack
+
+```bash
+$ skills --list
+- Languages: Python 🐍, Java ☕, C++, JavaScript ⚡
+- Frameworks & Tools: TensorFlow, PyTorch, Flask, React, Docker 🐳, Kubernetes, Git
+- Cloud: AWS ☁️, Google Cloud Platform, Azure
+- Databases: MySQL, MongoDB, SQLite
+- Concepts: Machine Learning 🤖, NLP, OOP, Data Structures, Algorithms
+- Visualization: Power BI 📊, Tableau
+```
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://git.io/streak-stats">
+        <img src="https://github-readme-streak-stats.herokuapp.com?user=10ishk&theme=meta-light&card_width=275&hide_current_streak=true&hide_longest_streak=true&count_private=true" alt="GitHub Streak" />
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/10ishk">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=10ishk&layout=compact&count_private=true&theme=meta-light&width=275" alt="Top Languages" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 
-<h2 align="center">🚀 Tech Stack</h2>
+## 🚀 Key Projects
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,java,javascript,html,css,react,nodejs,nextjs,express,django,flask" alt="Tech Stack Icons" />
-  </a>
-</p>
+- **🤖 AI-Powered Mental Health Assistant**  
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,mongodb,firebase,aws,gcp,azure,docker,kubernetes,git" alt="Tech Stack Icons" />
-  </a>
-</p>
+- **🚗 AI Object Detection for Autonomous Vehicles**  
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,scikitlearn,opencv,linux,vscode,github" alt="Tech Stack Icons" />
-  </a>
-</p>
+- **📞 CallSense-App**  
 
-
+- **🏫 Smart Classroom Management System**  
 ###
 
 <h2 align="center">𝗦𝗢𝗖𝗜𝗔𝗟𝗦</h2>
@@ -90,3 +74,13 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://tanishkbhardwaj.netlify.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Website-Visit%20Now-ff69b4?style=for-the-badge&logo=google-chrome" alt="Website" />
+  </a>
+  <a href="https://anilist.co/user/Millionaire10ishk/" target="_blank">
+    <img src="https://img.shields.io/badge/AniList-Profile-blue?style=for-the-badge&logo=anilist&logoColor=white" alt="AniList Profile" />
+  </a>
+</p>
+
+---
