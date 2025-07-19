@@ -5,7 +5,7 @@
   <table>
     <tr>
       <td align="center">
-        <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=10ishk&theme=graywhite" alt="Profile Details">
+        <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=10ishk&theme=graywhite&count_private=true" alt="Profile Details">
       </td>
       <td align="center">
         <img src="https://github-readme-stats-fawn-kappa-29.vercel.app/api?username=10ishk&show_icons=true&theme=react&bg_color=1F222E&title_color=F85D7F&hide_border=true&icon_color=F8D866&count_private=true" alt="GitHub Stats">
