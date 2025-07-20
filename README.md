@@ -6,7 +6,7 @@
 
 ```
 > whoami ?!
-Tanishk Bhardwaj - B.Tech Computer Science & Engineering @ IIIT Sonipat
+Tanishk Bhardwaj - B.Tech Computer Science & Engineering @ IIITS
 Passionate about AI, cloud tech, and building solutions that make an impact.
 Currently exploring the intersection of ML, NLP, and real-world innovation.
 ```
