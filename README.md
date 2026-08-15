@@ -8,24 +8,26 @@
 </p>
 
 <p align="center">
-  I build systems that watch a feed, turn conversations into structured signals, or sit on a desktop and work directly with hardware.
+  I build applied systems across video, voice, operations software, and desktop hardware.
 </p>
 
 <p align="center"><code>Python</code> <code>TypeScript</code> <code>React</code> <code>Rust</code> <code>FastAPI</code> <code>OpenCV</code> <code>PyTorch</code> <code>Tauri</code></p>
 
+<p align="center"><img src="https://github-readme-stats.vercel.app/api?username=10ishk&amp;show_icons=true&amp;hide_title=true&amp;hide_border=true&amp;count_private=true&amp;theme=default" alt="GitHub activity summary" height="150"></p>
+
 <br>
 
-## Featured
+## Selected work
 
 <table>
 <tr>
 <td width="100%">
 
-### [Movi](https://github.com/10ishk/movi-agent)
+<h3><a href="https://github.com/10ishk/movi-agent">Movi</a></h3>
 
 AI-assisted transport operations: natural-language workflows for trips and routes, with entity matching and confirmation before consequential actions.
 
-`React` `TypeScript` `FastAPI` `Express` `SQLite`
+<code>React</code> <code>TypeScript</code> <code>FastAPI</code> <code>Express</code> <code>SQLite</code>
 
 </td>
 </tr>
@@ -35,20 +37,20 @@ AI-assisted transport operations: natural-language workflows for trips and route
 <tr>
 <td width="50%" valign="top">
 
-### [YardVision](https://github.com/10ishk/yardvision-sop-monitoring)
+<h3><a href="https://github.com/10ishk/yardvision-sop-monitoring">YardVision</a></h3>
 
 Logistics camera feeds turned into object-level SOP events, evidence snapshots, ROI zones, and safety alerts.
 
-`Python` `OpenCV` `YOLOv8` `Streamlit`
+<code>Python</code> <code>OpenCV</code> <code>YOLOv8</code> <code>Streamlit</code>
 
 </td>
 <td width="50%" valign="top">
 
-### [VoiceLead](https://github.com/10ishk/voice-lead-agent)
+<h3><a href="https://github.com/10ishk/voice-lead-agent">VoiceLead</a></h3>
 
-A configurable voice qualification system with state-aware conversations, grounded project facts, English, Hindi, Hinglish, and typed outcomes.
+State-aware voice qualification grounded in project facts, with English, Hindi, Hinglish, and typed post-call outcomes.
 
-`Python` `YAML` `Pydantic` `Vapi` `Deepgram`
+<code>Python</code> <code>YAML</code> <code>Pydantic</code> <code>Vapi</code> <code>Deepgram</code>
 
 </td>
 </tr>
@@ -58,11 +60,11 @@ A configurable voice qualification system with state-aware conversations, ground
 <tr>
 <td width="100%">
 
-### [AK680 Studio](https://github.com/10ishk/ak680-studio)
+<h3><a href="https://github.com/10ishk/ak680-studio">AK680 Studio</a></h3>
 
-Native desktop software for the AJAZZ AK680 V2: profiles, device detection, lighting, and Rapid Trigger controls over the keyboard’s hardware interfaces.
+Native desktop software for the AJAZZ AK680 V2, covering profiles, device detection, lighting, and Rapid Trigger controls over its hardware interfaces.
 
-`Tauri` `React` `TypeScript` `Rust` `HID`
+<code>Tauri</code> <code>React</code> <code>TypeScript</code> <code>Rust</code> <code>HID</code>
 
 </td>
 </tr>
@@ -73,8 +75,8 @@ Native desktop software for the AJAZZ AK680 V2: profiles, device detection, ligh
 | Project | What it does | Stack |
 | --- | --- | --- |
 | [Port Yard Dispatch Optimizer](https://github.com/10ishk/port-yard-dispatch-optimizer) | Vehicle routing under capacity, time-window, and SLA constraints | Python |
-| [Adverse Weather Detection](https://github.com/10ishk/AdverseWeatherAVDetection) | Vehicle perception through rain, fog, and snow | Python · CV |
-| [CallSense](https://github.com/10ishk/CallSense-App) | Transcription, emotion, urgency, and action extraction from calls | Python |
+| [Adverse Weather Detection](https://github.com/10ishk/AdverseWeatherAVDetection) | Vehicle perception through rain, fog, and snow | Python · OpenCV |
+| [CallSense](https://github.com/10ishk/CallSense-App) | Transcription, emotion, urgency, and action extraction from calls | Python · PyTorch |
 
 <br>
 
