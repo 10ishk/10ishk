@@ -14,9 +14,13 @@
   I build applied systems across video, voice, operations software, and desktop hardware.
 </p>
 
-<img src="assets/divider.svg" width="100%" height="2" alt="">
+<img src="assets/wave.svg" width="100%" height="40" alt="">
 
 <br>
+
+<p align="center">
+  <img src="assets/terminal.svg" width="460" alt="terminal: whoami and status">
+</p>
 
 **Currently:**
 - Building workflow systems that require confirmation before consequential actions
@@ -25,13 +29,7 @@
 
 <br>
 
-| Area | Stack |
-| --- | --- |
-| Languages | `Python` `TypeScript` `Rust` |
-| Frontend | `React` |
-| Backend | `FastAPI` `Express` `SQLite` |
-| ML / CV | `PyTorch` `OpenCV` `YOLOv8` |
-| Desktop | `Tauri` |
+<img src="assets/skills.svg" width="620" alt="Languages, frontend, backend, ML and computer vision, desktop">
 
 <img src="assets/divider.svg" width="100%" height="2" alt="">
 
@@ -39,19 +37,19 @@
 
 ## Featured
 
-<h3><a href="https://github.com/10ishk/movi-agent">Movi</a></h3>
+<h3><img src="assets/icon-movi.svg" width="22" height="22" align="absmiddle"> <a href="https://github.com/10ishk/movi-agent">Movi</a></h3>
 AI-assisted transport operations: natural-language workflows for trips and routes, with entity matching and confirmation before consequential actions.
 <br><code>React</code> <code>TypeScript</code> <code>FastAPI</code> <code>Express</code> <code>SQLite</code>
 
-<h3><a href="https://github.com/10ishk/yardvision-sop-monitoring">YardVision</a></h3>
+<h3><img src="assets/icon-yardvision.svg" width="22" height="22" align="absmiddle"> <a href="https://github.com/10ishk/yardvision-sop-monitoring">YardVision</a></h3>
 Logistics camera feeds turned into object-level SOP events, evidence snapshots, ROI zones, and safety alerts.
 <br><code>Python</code> <code>OpenCV</code> <code>YOLOv8</code> <code>Streamlit</code>
 
-<h3><a href="https://github.com/10ishk/voice-lead-agent">VoiceLead</a></h3>
+<h3><img src="assets/icon-voicelead.svg" width="22" height="22" align="absmiddle"> <a href="https://github.com/10ishk/voice-lead-agent">VoiceLead</a></h3>
 State-aware voice qualification grounded in project facts, with English, Hindi, Hinglish, and typed post-call outcomes.
 <br><code>Python</code> <code>YAML</code> <code>Pydantic</code> <code>Vapi</code> <code>Deepgram</code>
 
-<h3><a href="https://github.com/10ishk/ak680-studio">AK680 Studio</a></h3>
+<h3><img src="assets/icon-ak680.svg" width="22" height="22" align="absmiddle"> <a href="https://github.com/10ishk/ak680-studio">AK680 Studio</a></h3>
 Native desktop software for the AJAZZ AK680 V2, covering profiles, device detection, lighting, and Rapid Trigger controls over its hardware interfaces.
 <br><code>Tauri</code> <code>React</code> <code>TypeScript</code> <code>Rust</code> <code>HID</code>
 
