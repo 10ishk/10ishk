@@ -1,86 +1,56 @@
-# 👨‍💻 Tanishk Bhardwaj | Tech Trailblazer
+<p align="center"><img src="assets/hero.svg" alt="Signals moving through a technical processing system" width="100%"></p>
 
-> *“Code is like poetry; it’s about expressing complex ideas simply.”*  
-> Let’s build something extraordinary together! 🚀
+<h1 align="center">Tanishk Bhardwaj</h1>
+<p align="center"><sub>computer vision · applied AI · software</sub></p>
+<p align="center"><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></p>
 
+## Selected work
 
-```
-> whoami ?!
-Tanishk Bhardwaj - B.Tech Computer Science & Engineering @ IIITS
-Passionate about AI, cloud tech, and building solutions that make an impact.
-Currently exploring the intersection of ML, NLP, and real-world innovation.
-```
-
-## 🛠️ Tech Stack
-
-```bash
-$ skills --list
-- Languages: Python 🐍, Java ☕, C++, JavaScript ⚡
-- Frameworks & Tools: TensorFlow, PyTorch, Flask, React, Docker 🐳, Kubernetes, Git
-- Cloud: AWS ☁️, Google Cloud Platform, Azure
-- Databases: MySQL, MongoDB, SQLite
-- Concepts: Machine Learning 🤖, NLP, OOP, Data Structures, Algorithms
-- Visualization: Power BI 📊, Tableau
-```
 <table>
-  <tr>
-    <td align="center">
-      <a href="https://git.io/streak-stats">
-        <img src="https://github-readme-streak-stats.herokuapp.com?user=10ishk&theme=meta-light&card_width=275&hide_current_streak=true&hide_longest_streak=true&count_private=true" alt="GitHub Streak" />
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/10ishk">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=10ishk&layout=compact&count_private=true&theme=meta-light&width=275" alt="Top Languages" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/10ishk/movi-agent"><img src="assets/projects/movi.svg" alt="Route topology and operational nodes" width="100%"></a>
+<h3><a href="https://github.com/10ishk/movi-agent">Movi</a></h3>
+<p>Transport operations through a conversational workflow. An admin interface connects to data, routing, entity resolution, and confirmation-aware actions.</p>
+<sub>React · TypeScript · FastAPI · Express · SQLite</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/10ishk/yardvision-sop-monitoring"><img src="assets/projects/yardvision.svg" alt="Camera frame with ROI and event geometry" width="100%"></a>
+<h3><a href="https://github.com/10ishk/yardvision-sop-monitoring">YardVision</a></h3>
+<p>Video interpreted as logistics events. ROI zones, object detections, evidence snapshots, and SOP rules meet in a reviewable dashboard.</p>
+<sub>Python · OpenCV · YOLOv8 · Streamlit · SQLite</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/10ishk/CallSense-App"><img src="assets/projects/callsense.svg" alt="Audio waveform becoming structured signal" width="100%"></a>
+<h3><a href="https://github.com/10ishk/CallSense-App">CallSense</a></h3>
+<p>Conversation turned into a compact report: transcription, summary, emotion, urgency, and follow-up actions for support review.</p>
+<sub>Python · PyTorch · Transformers · Whisper · Streamlit</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/10ishk/AdverseWeatherAVDetection"><img src="assets/projects/adverse-weather.svg" alt="Vehicle detections through rain and fog texture" width="100%"></a>
+<h3><a href="https://github.com/10ishk/AdverseWeatherAVDetection">Adverse Weather Detection</a></h3>
+<p>A detection pipeline for degraded road scenes, with weather filtering, YOLO training, evaluation, and inference around vehicle perception.</p>
+<sub>Python · PyTorch · YOLOv5 · OpenCV · Jupyter</sub>
+</td>
+</tr>
 </table>
 
+## Currently
 
+- Building computer vision systems that turn imperfect inputs into events people can act on.
+- Exploring operational software where model output is part of a larger workflow.
+- Keeping a human decision point in the loop when an action has consequences.
 
-## 🚀 Key Projects
+## Notes
 
-- **🤖 AI-Powered Mental Health Assistant**  
+I’m interested in the boundary between perception and application logic: when video should become structured data, when a system should ask before acting, and how to make applied models easier to inspect when the input is noisy.
 
-- **🚗 AI Object Detection for Autonomous Vehicles**  
+## Tools
 
-- **📞 CallSense-App**  
+`Python` · `TypeScript` · `PyTorch` · `OpenCV` · `FastAPI` · `SQL` · `React` · `Docker`
 
-- **🏫 Smart Classroom Management System**  
-###
+## Elsewhere
 
-<h2 align="center">𝗦𝗢𝗖𝗜𝗔𝗟𝗦</h2>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/tanishk004" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" height="50" alt="LinkedIn" />
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://www.instagram.com/10_ishk_verified/" target="_blank">
-    <img src="https://cdn.simpleicons.org/instagram/E4405F" height="50" alt="Instagram" />
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://stackoverflow.com/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=stackoverflow" height="50" alt="StackOverflow" />
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://twitter.com/10ishk" target="_blank">
-    <img src="https://skillicons.dev/icons?i=twitter" height="50" alt="Twitter" />
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://codepen.io/" target="_blank">
-    <img src="https://cdn.simpleicons.org/codepen/000000" height="50" alt="Codepen" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://tanishkbhardwaj.netlify.app/" target="_blank">
-    <img src="https://img.shields.io/badge/Website-Visit%20Now-ff69b4?style=for-the-badge&logo=google-chrome" alt="Website" />
-  </a>
-  <a href="https://anilist.co/user/Millionaire10ishk/" target="_blank">
-    <img src="https://img.shields.io/badge/AniList-Profile-blue?style=for-the-badge&logo=anilist&logoColor=white" alt="AniList Profile" />
-  </a>
-</p>
-
----
+[tanishk.net](https://tanishk.net) · [LinkedIn](https://www.linkedin.com/in/tanishk004) · [GitHub](https://github.com/10ishk)
