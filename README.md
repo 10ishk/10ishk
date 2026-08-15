@@ -12,15 +12,7 @@
 
 ## stack.json
 
-```json
-{
-  "languages": ["Python", "TypeScript", "Rust"],
-  "frontend": ["React"],
-  "backend": ["FastAPI", "Express", "SQLite"],
-  "ml_cv": ["PyTorch", "OpenCV", "YOLOv8"],
-  "desktop": ["Tauri"]
-}
-```
+<img src="assets/stack-graph.svg" width="100%" alt="Stack overview: Python, TypeScript, Rust, React, FastAPI, Express, SQLite, PyTorch, OpenCV, YOLOv8, and Tauri grouped in an IDE-style panel">
 
 <br>
 
