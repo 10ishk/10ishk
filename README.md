@@ -1,48 +1,81 @@
-<p align="center"><img src="assets/hero.svg" alt="Tanishk Bhardwaj, computer vision, applied AI and software" width="100%"></p>
+<h1 align="center">Tanishk Bhardwaj</h1>
+<p align="center">computer vision · applied AI · full-stack systems</p>
 
-## Selected work
+<p align="center">
+  <a href="https://tanishk.net">tanishk.net</a> ·
+  <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> ·
+  <a href="https://github.com/10ishk">GitHub</a>
+</p>
 
-<p align="center"><a href="https://github.com/10ishk/movi-agent"><img src="assets/projects/movi.svg" alt="Movi route topology, workflow state and transport interface geometry" width="100%"></a></p>
+<p align="center">
+  I build systems that watch a feed, turn conversations into structured signals, or sit on a desktop and work directly with hardware.
+</p>
 
-<h2><a href="https://github.com/10ishk/movi-agent">Movi</a></h2>
-<p>AI-assisted transport operations with routes, trips, natural-language workflows and confirmation-aware actions.</p>
-<sub>React · TypeScript · FastAPI · Express · SQLite</sub>
+<p align="center"><code>Python</code> <code>TypeScript</code> <code>React</code> <code>Rust</code> <code>FastAPI</code> <code>OpenCV</code> <code>PyTorch</code> <code>Tauri</code></p>
 
 <br>
 
+## Featured
+
 <table>
 <tr>
-<td width="50%" valign="top">
-<a href="https://github.com/10ishk/yardvision-sop-monitoring"><img src="assets/projects/yardvision.svg" alt="YardVision logistics camera frame with ROI zones and event markers" width="100%"></a>
-<h2><a href="https://github.com/10ishk/yardvision-sop-monitoring">YardVision</a></h2>
-<p>Logistics video translated into object-level SOP events, evidence snapshots and safety alerts.</p>
-<sub>Python · OpenCV · YOLOv8 · Streamlit</sub>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/10ishk/voice-lead-agent"><img src="assets/projects/voicelead.svg" alt="VoiceLead waveform, state transitions and structured qualification output" width="100%"></a>
-<h2><a href="https://github.com/10ishk/voice-lead-agent">VoiceLead</a></h2>
-<p>State-aware voice qualification with grounded project facts, English, Hindi and Hinglish behaviour, and typed post-call outcomes.</p>
-<sub>Python · YAML · Pydantic · Vapi · Deepgram</sub>
+<td width="100%">
+
+### [Movi](https://github.com/10ishk/movi-agent)
+
+AI-assisted transport operations: natural-language workflows for trips and routes, with entity matching and confirmation before consequential actions.
+
+`React` `TypeScript` `FastAPI` `Express` `SQLite`
+
 </td>
 </tr>
 </table>
 
-<p align="center"><a href="https://github.com/10ishk/ak680-studio"><img src="assets/projects/ak680-studio.svg" alt="AK680 Studio keyboard geometry, lighting and actuation traces" width="100%"></a></p>
+<table>
+<tr>
+<td width="50%" valign="top">
 
-<h2><a href="https://github.com/10ishk/ak680-studio">AK680 Studio</a></h2>
-<p>A native desktop configurator for the AJAZZ AK680 V2, spanning profiles, device detection, lighting and Rapid Trigger controls.</p>
-<sub>Tauri · React · TypeScript · Rust · HID</sub>
+### [YardVision](https://github.com/10ishk/yardvision-sop-monitoring)
+
+Logistics camera feeds turned into object-level SOP events, evidence snapshots, ROI zones, and safety alerts.
+
+`Python` `OpenCV` `YOLOv8` `Streamlit`
+
+</td>
+<td width="50%" valign="top">
+
+### [VoiceLead](https://github.com/10ishk/voice-lead-agent)
+
+A configurable voice qualification system with state-aware conversations, grounded project facts, English, Hindi, Hinglish, and typed outcomes.
+
+`Python` `YAML` `Pydantic` `Vapi` `Deepgram`
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="100%">
+
+### [AK680 Studio](https://github.com/10ishk/ak680-studio)
+
+Native desktop software for the AJAZZ AK680 V2: profiles, device detection, lighting, and Rapid Trigger controls over the keyboard’s hardware interfaces.
+
+`Tauri` `React` `TypeScript` `Rust` `HID`
+
+</td>
+</tr>
+</table>
 
 ## More work
 
-<table>
-<tr>
-<td width="33%" valign="top"><a href="https://github.com/10ishk/port-yard-dispatch-optimizer"><img src="assets/projects/port-yard.svg" alt="Port yard routes, vehicles and capacity constraints" width="100%"></a><br><strong><a href="https://github.com/10ishk/port-yard-dispatch-optimizer">Port Yard Dispatch Optimizer</a></strong><br><sub>Vehicle routing, capacity, time windows and SLA risk.</sub></td>
-<td width="33%" valign="top"><a href="https://github.com/10ishk/AdverseWeatherAVDetection"><img src="assets/projects/adverse-weather.svg" alt="Vehicle detection geometry through degraded weather" width="100%"></a><br><strong><a href="https://github.com/10ishk/AdverseWeatherAVDetection">Adverse Weather Detection</a></strong><br><sub>Vehicle perception under rain, fog and snow.</sub></td>
-<td width="33%" valign="top"><a href="https://github.com/10ishk/CallSense-App"><img src="assets/projects/callsense.svg" alt="CallSense waveform, transcript and extracted signals" width="100%"></a><br><strong><a href="https://github.com/10ishk/CallSense-App">CallSense</a></strong><br><sub>Transcription, emotion, urgency and action extraction.</sub></td>
-</tr>
-</table>
+| Project | What it does | Stack |
+| --- | --- | --- |
+| [Port Yard Dispatch Optimizer](https://github.com/10ishk/port-yard-dispatch-optimizer) | Vehicle routing under capacity, time-window, and SLA constraints | Python |
+| [Adverse Weather Detection](https://github.com/10ishk/AdverseWeatherAVDetection) | Vehicle perception through rain, fog, and snow | Python · CV |
+| [CallSense](https://github.com/10ishk/CallSense-App) | Transcription, emotion, urgency, and action extraction from calls | Python |
 
 <br>
 
-<p align="center"><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></p>
+<p align="center"><sub><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></sub></p>
