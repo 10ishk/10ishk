@@ -1,42 +1,77 @@
-<p align="center"><img src="assets/typewriter-intro.svg" alt="Tanishk Bhardwaj terminal profile" width="100%"></p>
-
-<p align="center"><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></p>
+<p align="center">
+  <img src="assets/hero-terminal.svg" alt="Tanishk Bhardwaj — terminal session" width="100%">
+</p>
 
 <img src="assets/wave.svg" width="100%" height="40" alt="">
 
-<img src="assets/skills.svg" width="620" alt="Languages, frontend, backend, ML and computer vision, desktop">
+<br>
+
+## stack.json
+
+```json
+{
+  "languages": ["Python", "TypeScript", "Rust"],
+  "frontend": ["React"],
+  "backend": ["FastAPI", "Express", "SQLite"],
+  "ml_cv": ["PyTorch", "OpenCV", "YOLOv8"],
+  "desktop": ["Tauri"]
+}
+```
 
 <img src="assets/divider.svg" width="100%" height="2" alt="">
 
 <br>
 
-## Featured
+## projects/
 
-<h3><img src="assets/icon-movi.svg" width="22" height="22" align="absmiddle"> <a href="https://github.com/10ishk/movi-agent">Movi</a></h3>
+<details open>
+<summary><img src="assets/icon-movi.svg" width="16" height="16" align="absmiddle"> <strong>movi-agent</strong> · <code>react</code> <code>typescript</code> <code>fastapi</code></summary>
+
 AI-assisted transport operations: natural-language workflows for trips and routes, with entity matching and confirmation before consequential actions.
-<br><code>React</code> <code>TypeScript</code> <code>FastAPI</code> <code>Express</code> <code>SQLite</code>
 
-<h3><img src="assets/icon-yardvision.svg" width="22" height="22" align="absmiddle"> <a href="https://github.com/10ishk/yardvision-sop-monitoring">YardVision</a></h3>
+**Stack:** React, TypeScript, FastAPI, Express, SQLite<br>
+**Repo:** [10ishk/movi-agent](https://github.com/10ishk/movi-agent)
+
+</details>
+
+<details>
+<summary><img src="assets/icon-yardvision.svg" width="16" height="16" align="absmiddle"> <strong>yardvision-sop-monitoring</strong> · <code>python</code> <code>opencv</code> <code>yolov8</code></summary>
+
 Logistics camera feeds turned into object-level SOP events, evidence snapshots, ROI zones, and safety alerts.
-<br><code>Python</code> <code>OpenCV</code> <code>YOLOv8</code> <code>Streamlit</code>
 
-<h3><img src="assets/icon-voicelead.svg" width="22" height="22" align="absmiddle"> <a href="https://github.com/10ishk/voice-lead-agent">VoiceLead</a></h3>
+**Stack:** Python, OpenCV, YOLOv8, Streamlit<br>
+**Repo:** [10ishk/yardvision-sop-monitoring](https://github.com/10ishk/yardvision-sop-monitoring)
+
+</details>
+
+<details>
+<summary><img src="assets/icon-voicelead.svg" width="16" height="16" align="absmiddle"> <strong>voice-lead-agent</strong> · <code>python</code> <code>vapi</code> <code>deepgram</code></summary>
+
 State-aware voice qualification grounded in project facts, with English, Hindi, Hinglish, and typed post-call outcomes.
-<br><code>Python</code> <code>YAML</code> <code>Pydantic</code> <code>Vapi</code> <code>Deepgram</code>
 
-<h3><img src="assets/icon-ak680.svg" width="22" height="22" align="absmiddle"> <a href="https://github.com/10ishk/ak680-studio">AK680 Studio</a></h3>
+**Stack:** Python, YAML, Pydantic, Vapi, Deepgram<br>
+**Repo:** [10ishk/voice-lead-agent](https://github.com/10ishk/voice-lead-agent)
+
+</details>
+
+<details>
+<summary><img src="assets/icon-ak680.svg" width="16" height="16" align="absmiddle"> <strong>ak680-studio</strong> · <code>tauri</code> <code>rust</code> <code>hid</code></summary>
+
 Native desktop software for the AJAZZ AK680 V2, covering profiles, device detection, lighting, and Rapid Trigger controls over its hardware interfaces.
-<br><code>Tauri</code> <code>React</code> <code>TypeScript</code> <code>Rust</code> <code>HID</code>
 
-<br>
+**Stack:** Tauri, React, TypeScript, Rust, HID<br>
+**Repo:** [10ishk/ak680-studio](https://github.com/10ishk/ak680-studio)
 
-## More work
+</details>
 
-| Project | What it does | Stack |
-| --- | --- | --- |
-| [Port Yard Dispatch Optimizer](https://github.com/10ishk/port-yard-dispatch-optimizer) | Vehicle routing under capacity, time-window, and SLA constraints | `Python` |
-| [Adverse Weather Detection](https://github.com/10ishk/AdverseWeatherAVDetection) | Vehicle perception through rain, fog, and snow | `Python` `OpenCV` |
-| [CallSense](https://github.com/10ishk/CallSense-App) | Transcription, emotion, urgency, and action extraction from calls | `Python` `PyTorch` |
+<details>
+<summary><strong>archive</strong> · <em>more work</em></summary>
+
+- [Port Yard Dispatch Optimizer](https://github.com/10ishk/port-yard-dispatch-optimizer) — vehicle routing under capacity, time-window, and SLA constraints
+- [Adverse Weather Detection](https://github.com/10ishk/AdverseWeatherAVDetection) — vehicle perception through rain, fog, and snow
+- [CallSense](https://github.com/10ishk/CallSense-App) — transcription, emotion, urgency, and action extraction from calls
+
+</details>
 
 <img src="assets/divider.svg" width="100%" height="2" alt="">
 
