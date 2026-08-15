@@ -19,7 +19,8 @@
 <br>
 
 <p align="center">
-  <img src="assets/terminal.svg" width="460" alt="terminal: whoami and status">
+  <img src="assets/terminal.svg" width="48%" alt="terminal: whoami and status">
+  <img src="assets/code-editor.svg" width="48%" alt="code editor: guarded workflow">
 </p>
 
 **Currently:**
