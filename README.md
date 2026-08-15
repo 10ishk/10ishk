@@ -1,34 +1,8 @@
-<h1 align="center">Tanishk Bhardwaj</h1>
+<p align="center"><img src="assets/typewriter-intro.svg" alt="Tanishk Bhardwaj terminal profile" width="100%"></p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&pause=1200&color=8B8B8B&center=true&vCenter=true&width=460&lines=computer+vision;applied+AI;full-stack+systems" alt="computer vision · applied AI · full-stack systems">
-</p>
-
-<p align="center">
-  <a href="https://tanishk.net">tanishk.net</a> ·
-  <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> ·
-  <a href="https://github.com/10ishk">GitHub</a>
-</p>
-
-<p align="center">
-  I build applied systems across video, voice, operations software, and desktop hardware.
-</p>
+<p align="center"><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></p>
 
 <img src="assets/wave.svg" width="100%" height="40" alt="">
-
-<br>
-
-<p align="center">
-  <img src="assets/terminal.svg" width="48%" alt="terminal: whoami and status">
-  <img src="assets/code-editor.svg" width="48%" alt="code editor: guarded workflow">
-</p>
-
-**Currently:**
-- Building workflow systems that require confirmation before consequential actions
-- Working on computer-vision pipelines for degraded visibility and operational camera feeds
-- Open to applied AI / full-stack roles and collaborations
-
-<br>
 
 <img src="assets/skills.svg" width="620" alt="Languages, frontend, backend, ML and computer vision, desktop">
 
