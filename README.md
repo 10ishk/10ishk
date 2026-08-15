@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/hero-terminal.svg" alt="Tanishk Bhardwaj — terminal session" width="100%">
+  <img src="assets/ide-workspace.svg" alt="Tanishk Bhardwaj IDE workspace" width="100%">
 </p>
 
-<img src="assets/wave.svg" width="100%" height="40" alt="">
+<p align="center"><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></p>
 
 <br>
 
@@ -18,14 +18,14 @@
 }
 ```
 
-<img src="assets/divider.svg" width="100%" height="2" alt="">
-
 <br>
+
+<img src="assets/ide-signal.svg" width="100%" alt="IDE-style map of project signals">
 
 ## projects/
 
 <details open>
-<summary><img src="assets/icon-movi.svg" width="16" height="16" align="absmiddle"> <strong>movi-agent</strong> · <code>react</code> <code>typescript</code> <code>fastapi</code></summary>
+<summary><strong>movi-agent</strong> · <code>react</code> <code>typescript</code> <code>fastapi</code></summary>
 
 AI-assisted transport operations: natural-language workflows for trips and routes, with entity matching and confirmation before consequential actions.
 
@@ -35,7 +35,7 @@ AI-assisted transport operations: natural-language workflows for trips and route
 </details>
 
 <details>
-<summary><img src="assets/icon-yardvision.svg" width="16" height="16" align="absmiddle"> <strong>yardvision-sop-monitoring</strong> · <code>python</code> <code>opencv</code> <code>yolov8</code></summary>
+<summary><strong>yardvision-sop-monitoring</strong> · <code>python</code> <code>opencv</code> <code>yolov8</code></summary>
 
 Logistics camera feeds turned into object-level SOP events, evidence snapshots, ROI zones, and safety alerts.
 
@@ -45,7 +45,7 @@ Logistics camera feeds turned into object-level SOP events, evidence snapshots, 
 </details>
 
 <details>
-<summary><img src="assets/icon-voicelead.svg" width="16" height="16" align="absmiddle"> <strong>voice-lead-agent</strong> · <code>python</code> <code>vapi</code> <code>deepgram</code></summary>
+<summary><strong>voice-lead-agent</strong> · <code>python</code> <code>vapi</code> <code>deepgram</code></summary>
 
 State-aware voice qualification grounded in project facts, with English, Hindi, Hinglish, and typed post-call outcomes.
 
@@ -55,7 +55,7 @@ State-aware voice qualification grounded in project facts, with English, Hindi, 
 </details>
 
 <details>
-<summary><img src="assets/icon-ak680.svg" width="16" height="16" align="absmiddle"> <strong>ak680-studio</strong> · <code>tauri</code> <code>rust</code> <code>hid</code></summary>
+<summary><strong>ak680-studio</strong> · <code>tauri</code> <code>rust</code> <code>hid</code></summary>
 
 Native desktop software for the AJAZZ AK680 V2, covering profiles, device detection, lighting, and Rapid Trigger controls over its hardware interfaces.
 
@@ -72,8 +72,6 @@ Native desktop software for the AJAZZ AK680 V2, covering profiles, device detect
 - [CallSense](https://github.com/10ishk/CallSense-App) — transcription, emotion, urgency, and action extraction from calls
 
 </details>
-
-<img src="assets/divider.svg" width="100%" height="2" alt="">
 
 <br>
 
