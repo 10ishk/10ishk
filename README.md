@@ -13,8 +13,6 @@
 
 <p align="center"><code>Python</code> <code>TypeScript</code> <code>React</code> <code>Rust</code> <code>FastAPI</code> <code>OpenCV</code> <code>PyTorch</code> <code>Tauri</code></p>
 
-<p align="center"><img src="https://github-readme-stats.vercel.app/api?username=10ishk&amp;show_icons=true&amp;hide_title=true&amp;hide_border=true&amp;count_private=true&amp;theme=default" alt="GitHub activity summary" height="150"></p>
-
 <br>
 
 ## Selected work
