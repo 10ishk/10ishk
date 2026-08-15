@@ -2,6 +2,10 @@
   <img src="assets/hero-ide.svg" alt="Tanishk Bhardwaj IDE view" width="100%">
 </p>
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;size=18&amp;pause=1300&amp;color=69B8FF&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=computer+vision+%C2%B7+applied+AI+%C2%B7+software;video+%C2%B7+voice+%C2%B7+operations+%C2%B7+hardware;systems+that+ask+before+acting" alt="computer vision, applied AI, software, video, voice, operations, and hardware">
+</p>
+
 <p align="center"><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></p>
 
 <br>
