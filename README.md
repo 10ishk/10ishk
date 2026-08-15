@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/ide-workspace.svg" alt="Tanishk Bhardwaj IDE workspace" width="100%">
+  <img src="assets/hero-ide.svg" alt="Tanishk Bhardwaj IDE view" width="100%">
 </p>
 
 <p align="center"><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></p>
