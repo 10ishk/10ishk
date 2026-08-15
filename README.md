@@ -1,11 +1,20 @@
 <h1 align="center">Tanishk Bhardwaj</h1>
-<p align="center">I build applied systems across video, voice, operations software, and desktop hardware.</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&pause=1200&color=8B8B8B&center=true&vCenter=true&width=460&lines=computer+vision;applied+AI;full-stack+systems" alt="computer vision · applied AI · full-stack systems">
+</p>
 
 <p align="center">
   <a href="https://tanishk.net">tanishk.net</a> ·
   <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> ·
   <a href="https://github.com/10ishk">GitHub</a>
 </p>
+
+<p align="center">
+  I build applied systems across video, voice, operations software, and desktop hardware.
+</p>
+
+<img src="assets/divider.svg" width="100%" height="2" alt="">
 
 <br>
 
@@ -23,6 +32,8 @@
 | Backend | `FastAPI` `Express` `SQLite` |
 | ML / CV | `PyTorch` `OpenCV` `YOLOv8` |
 | Desktop | `Tauri` |
+
+<img src="assets/divider.svg" width="100%" height="2" alt="">
 
 <br>
 
@@ -53,6 +64,18 @@ Native desktop software for the AJAZZ AK680 V2, covering profiles, device detect
 | [Port Yard Dispatch Optimizer](https://github.com/10ishk/port-yard-dispatch-optimizer) | Vehicle routing under capacity, time-window, and SLA constraints | `Python` |
 | [Adverse Weather Detection](https://github.com/10ishk/AdverseWeatherAVDetection) | Vehicle perception through rain, fog, and snow | `Python` `OpenCV` |
 | [CallSense](https://github.com/10ishk/CallSense-App) | Transcription, emotion, urgency, and action extraction from calls | `Python` `PyTorch` |
+
+<img src="assets/divider.svg" width="100%" height="2" alt="">
+
+<br>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output/dist/snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output/dist/snake.svg">
+    <img alt="contribution snake animation" src="https://raw.githubusercontent.com/10ishk/10ishk/output/dist/snake.svg">
+  </picture>
+</p>
 
 <br>
 
