@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" width="1200" height="540" role="img" aria-label="Skills orbit — stack overview">
+  <defs>
+    <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="orbitShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dy="2"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.35"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="600" cy="270" r="210" fill="none" stroke="#262b42" stroke-width="1" stroke-dasharray="2,6"/>
+  <circle cx="600" cy="270" r="120" fill="none" stroke="#262b42" stroke-width="1" stroke-dasharray="2,6"/>
+
+  <circle cx="600" cy="270" r="70" fill="url(#hubGlow)">
+    <animate attributeName="r" values="65;75;65" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <g fill="none" stroke="#333a56" stroke-width="1">
+    <path d="M600 270L600 60"/>
+    <path d="M600 270L781.9 165"/>
+    <path d="M600 270L781.9 375"/>
+    <path d="M600 270L600 480"/>
+    <path d="M600 270L418.1 375"/>
+    <path d="M600 270L418.1 165"/>
+    <path d="M600 270L670.5 172.9"/>
+    <path d="M600 270L714.1 307.1"/>
+    <path d="M600 270L600 390"/>
+    <path d="M600 270L485.9 307.1"/>
+    <path d="M600 270L529.5 172.9"/>
+  </g>
+
+  <g fill="none" stroke-width="1.5">
+    <circle r="3" fill="#3572A5"><animateMotion dur="2.6s" repeatCount="indefinite" path="M 600 270 L 600 60"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle r="3" fill="#3178C6"><animateMotion dur="2.6s" begin="0.35s" repeatCount="indefinite" path="M 600 270 L 781.9 165"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="0.35s" repeatCount="indefinite"/></circle>
+    <circle r="3" fill="#DE7B41"><animateMotion dur="2.6s" begin="0.7s" repeatCount="indefinite" path="M 600 270 L 781.9 375"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="0.7s" repeatCount="indefinite"/></circle>
+    <circle r="3" fill="#EE4C2C"><animateMotion dur="2.6s" begin="1.05s" repeatCount="indefinite" path="M 600 270 L 600 480"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="1.05s" repeatCount="indefinite"/></circle>
+    <circle r="3" fill="#5C3EE8"><animateMotion dur="2.6s" begin="1.4s" repeatCount="indefinite" path="M 600 270 L 418.1 375"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="1.4s" repeatCount="indefinite"/></circle>
+    <circle r="3" fill="#4c9a3f"><animateMotion dur="2.6s" begin="1.75s" repeatCount="indefinite" path="M 600 270 L 418.1 165"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="1.75s" repeatCount="indefinite"/></circle>
+    <circle r="3" fill="#61DAFB"><animateMotion dur="2.6s" begin="0.15s" repeatCount="indefinite" path="M 600 270 L 670.5 172.9"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="0.15s" repeatCount="indefinite"/></circle>
+    <circle r="3" fill="#009688"><animateMotion dur="2.6s" begin="0.45s" repeatCount="indefinite" path="M 600 270 L 714.1 307.1"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="0.45s" repeatCount="indefinite"/></circle>
+    <circle r="3" fill="#7d8296"><animateMotion dur="2.6s" begin="0.75s" repeatCount="indefinite" path="M 600 270 L 600 390"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="0.75s" repeatCount="indefinite"/></circle>
+    <circle r="3" fill="#3fa7d6"><animateMotion dur="2.6s" begin="1.05s" repeatCount="indefinite" path="M 600 270 L 485.9 307.1"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="1.05s" repeatCount="indefinite"/></circle>
+    <circle r="3" fill="#FFC131"><animateMotion dur="2.6s" begin="1.35s" repeatCount="indefinite" path="M 600 270 L 529.5 172.9"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.8;1" dur="2.6s" begin="1.35s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <circle cx="600" cy="270" r="30" fill="#161822" stroke="#a78bfa" stroke-width="1.5" filter="url(#orbitShadow)"/>
+  <text x="600" y="270" text-anchor="middle" dy="5" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#e8e8e8">TB</text>
+
+  <g font-family="'JetBrains Mono', monospace" text-anchor="middle">
+    <g filter="url(#orbitShadow)"><circle cx="600" cy="60" r="19" fill="#3572A5"/></g><text x="600" y="60" dy="4" font-size="11" font-weight="700" fill="#fff">Py</text><text x="600" y="94" font-size="10.5" fill="#9aa0b8">Python</text>
+    <g filter="url(#orbitShadow)"><circle cx="781.9" cy="165" r="19" fill="#3178C6"/></g><text x="781.9" y="165" dy="4" font-size="11" font-weight="700" fill="#fff">Ts</text><text x="781.9" y="199" font-size="10.5" fill="#9aa0b8">TypeScript</text>
+    <g filter="url(#orbitShadow)"><circle cx="781.9" cy="375" r="19" fill="#DE7B41"/></g><text x="781.9" y="375" dy="4" font-size="11" font-weight="700" fill="#fff">Rs</text><text x="781.9" y="349" font-size="10.5" fill="#9aa0b8">Rust</text>
+    <g filter="url(#orbitShadow)"><circle cx="600" cy="480" r="19" fill="#EE4C2C"/></g><text x="600" y="480" dy="4" font-size="11" font-weight="700" fill="#fff">Pt</text><text x="600" y="454" font-size="10.5" fill="#9aa0b8">PyTorch</text>
+    <g filter="url(#orbitShadow)"><circle cx="418.1" cy="375" r="19" fill="#5C3EE8"/></g><text x="418.1" y="375" dy="4" font-size="11" font-weight="700" fill="#fff">Cv</text><text x="418.1" y="349" font-size="10.5" fill="#9aa0b8">OpenCV</text>
+    <g filter="url(#orbitShadow)"><circle cx="418.1" cy="165" r="19" fill="#4c9a3f"/></g><text x="418.1" y="165" dy="4" font-size="11" font-weight="700" fill="#fff">Yo</text><text x="418.1" y="199" font-size="10.5" fill="#9aa0b8">YOLOv8</text>
+    <g filter="url(#orbitShadow)"><circle cx="670.5" cy="172.9" r="16" fill="#61DAFB"/></g><text x="670.5" y="172.9" dy="4" font-size="10" font-weight="700" fill="#0d0e14">Rx</text><text x="670.5" y="202.9" font-size="10.5" fill="#9aa0b8">React</text>
+    <g filter="url(#orbitShadow)"><circle cx="714.1" cy="307.1" r="16" fill="#009688"/></g><text x="714.1" y="307.1" dy="4" font-size="10" font-weight="700" fill="#fff">Fa</text><text x="714.1" y="285.1" font-size="10.5" fill="#9aa0b8">FastAPI</text>
+    <g filter="url(#orbitShadow)"><circle cx="600" cy="390" r="16" fill="#7d8296"/></g><text x="600" y="390" dy="4" font-size="10" font-weight="700" fill="#fff">Ex</text><text x="600" y="368" font-size="10.5" fill="#9aa0b8">Express</text>
+    <g filter="url(#orbitShadow)"><circle cx="485.9" cy="307.1" r="16" fill="#3fa7d6"/></g><text x="485.9" y="307.1" dy="4" font-size="10" font-weight="700" fill="#fff">Sq</text><text x="485.9" y="285.1" font-size="10.5" fill="#9aa0b8">SQLite</text>
+    <g filter="url(#orbitShadow)"><circle cx="529.5" cy="172.9" r="16" fill="#FFC131"/></g><text x="529.5" y="172.9" dy="4" font-size="10" font-weight="700" fill="#0d0e14">Ta</text><text x="529.5" y="202.9" font-size="10.5" fill="#9aa0b8">Tauri</text>
+  </g>
+</svg>

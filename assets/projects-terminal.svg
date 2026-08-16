@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Integrated terminal — project listing">
+  <defs>
+    <filter id="term-shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="18"/>
+      <feOffset dy="10"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.45"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#term-shadow)">
+    <rect x="40" y="20" width="1120" height="360" rx="14" fill="#0d0e14"/>
+    <rect x="40" y="20" width="1120" height="34" rx="14" fill="#1c1f2e"/>
+    <rect x="40" y="38" width="1120" height="16" fill="#1c1f2e"/>
+    <line x1="40" y1="54" x2="1160" y2="54" stroke="#05060a" stroke-width="0.6"/>
+  </g>
+
+  <circle cx="64" cy="37" r="5.5" fill="#ff5f56"/>
+  <circle cx="84" cy="37" r="5.5" fill="#ffbd2e"/>
+  <circle cx="104" cy="37" r="5.5" fill="#27c93f"/>
+  <text x="600" y="41" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" fill="#7a7f99" letter-spacing="2">TERMINAL — zsh</text>
+
+  <g font-family="'JetBrains Mono', monospace" font-size="13">
+    <text x="60" y="82" fill="#a78bfa">tanishk@studio</text><text x="182" y="82" fill="#7a7f99">:</text><text x="188" y="82" fill="#71d69c">~/projects</text><text x="270" y="82" fill="#7a7f99">$</text><text x="282" y="82" fill="#d7e0ec">ls -la --sort=active</text>
+
+    <g opacity="0"><circle cx="66" cy="106" r="3" fill="#69b8ff"/><text x="78" y="110" fill="#e8e8e8">movi-agent/</text><text x="230" y="110" fill="#6a7485">AI-assisted transport operations</text><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.06;0.1;1" dur="14s" repeatCount="indefinite"/></g>
+    <g opacity="0"><circle cx="66" cy="130" r="3" fill="#71d69c"/><text x="78" y="134" fill="#e8e8e8">yardvision-sop-monitoring/</text><text x="360" y="134" fill="#6a7485">logistics CV → SOP events</text><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.15;0.19;1" dur="14s" repeatCount="indefinite"/></g>
+    <g opacity="0"><circle cx="66" cy="154" r="3" fill="#c77dff"/><text x="78" y="158" fill="#e8e8e8">voice-lead-agent/</text><text x="270" y="158" fill="#6a7485">voice qualification agent</text><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.24;0.28;1" dur="14s" repeatCount="indefinite"/></g>
+    <g opacity="0"><circle cx="66" cy="178" r="3" fill="#ff8a5b"/><text x="78" y="182" fill="#e8e8e8">ak680-studio/</text><text x="240" y="182" fill="#6a7485">native AK680 configurator</text><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.33;0.37;1" dur="14s" repeatCount="indefinite"/></g>
+    <g opacity="0"><circle cx="66" cy="202" r="3" fill="#5a5f7a"/><text x="78" y="206" fill="#9aa0b8">port-yard-dispatch-optimizer/</text><text x="380" y="206" fill="#565b73">vehicle routing under SLA constraints</text><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.42;0.46;1" dur="14s" repeatCount="indefinite"/></g>
+    <g opacity="0"><circle cx="66" cy="226" r="3" fill="#5a5f7a"/><text x="78" y="230" fill="#9aa0b8">AdverseWeatherAVDetection/</text><text x="370" y="230" fill="#565b73">perception in rain, fog, snow</text><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.51;0.55;1" dur="14s" repeatCount="indefinite"/></g>
+    <g opacity="0"><circle cx="66" cy="250" r="3" fill="#5a5f7a"/><text x="78" y="254" fill="#9aa0b8">CallSense-App/</text><text x="250" y="254" fill="#565b73">transcription + signal extraction</text><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.6;0.64;1" dur="14s" repeatCount="indefinite"/></g>
+
+    <g opacity="0"><text x="60" y="290" fill="#a78bfa">tanishk@studio</text><text x="182" y="290" fill="#7a7f99">:</text><text x="188" y="290" fill="#71d69c">~/projects</text><text x="270" y="290" fill="#7a7f99">$</text><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.72;0.76;0.94;1" dur="14s" repeatCount="indefinite"/></g>
+    <rect x="282" y="278" width="8" height="14" fill="#d7e0ec"><animate attributeName="opacity" values="0;0;1;1;0;0;1;1;0;0" keyTimes="0;0.76;0.77;0.82;0.83;0.88;0.89;0.94;0.95;1" dur="14s" repeatCount="indefinite"/></rect>
+  </g>
+</svg>

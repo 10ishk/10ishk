@@ -1,31 +1,39 @@
 <p align="center">
-  <img src="assets/hero-ide.svg" alt="Tanishk Bhardwaj IDE view" width="100%">
+  <img src="assets/hero-ide.svg" alt="Tanishk Bhardwaj — IDE view" width="100%">
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;size=18&amp;pause=1300&amp;color=69B8FF&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=computer+vision+%C2%B7+applied+AI+%C2%B7+software;video+%C2%B7+voice+%C2%B7+operations+%C2%B7+hardware;systems+that+ask+before+acting" alt="computer vision, applied AI, software, video, voice, operations, and hardware">
+  <a href="https://tanishk.net">tanishk.net</a> ·
+  <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> ·
+  <a href="https://github.com/10ishk">GitHub</a>
 </p>
 
-<p align="center"><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></p>
+<img src="assets/wave.svg" width="100%" height="40" alt="">
 
 <br>
 
-## stack.json
+## stack.orbit
 
-<img src="assets/stack-graph.svg" width="100%" alt="Stack overview: Python, TypeScript, Rust, React, FastAPI, Express, SQLite, PyTorch, OpenCV, YOLOv8, and Tauri grouped in an IDE-style panel">
+<p align="center">
+  <img src="assets/orbit-skills.svg" width="100%" alt="Stack orbit: Python, TypeScript, Rust, React, FastAPI, Express, SQLite, PyTorch, OpenCV, YOLOv8, and Tauri">
+</p>
+
+<img src="assets/divider.svg" width="100%" height="2" alt="">
 
 <br>
-
-<img src="assets/ide-signal.svg" width="100%" alt="IDE-style map of project signals">
 
 ## projects/
+
+<p align="center">
+  <img src="assets/projects-terminal.svg" width="100%" alt="Terminal listing all projects">
+</p>
 
 <details open>
 <summary><strong>movi-agent</strong> · <code>react</code> <code>typescript</code> <code>fastapi</code></summary>
 
 AI-assisted transport operations: natural-language workflows for trips and routes, with entity matching and confirmation before consequential actions.
 
-**Stack:** React, TypeScript, FastAPI, Express, SQLite<br>
+**Stack:** React, TypeScript, FastAPI, Express, SQLite
 **Repo:** [10ishk/movi-agent](https://github.com/10ishk/movi-agent)
 
 </details>
@@ -35,7 +43,7 @@ AI-assisted transport operations: natural-language workflows for trips and route
 
 Logistics camera feeds turned into object-level SOP events, evidence snapshots, ROI zones, and safety alerts.
 
-**Stack:** Python, OpenCV, YOLOv8, Streamlit<br>
+**Stack:** Python, OpenCV, YOLOv8, Streamlit
 **Repo:** [10ishk/yardvision-sop-monitoring](https://github.com/10ishk/yardvision-sop-monitoring)
 
 </details>
@@ -45,7 +53,7 @@ Logistics camera feeds turned into object-level SOP events, evidence snapshots, 
 
 State-aware voice qualification grounded in project facts, with English, Hindi, Hinglish, and typed post-call outcomes.
 
-**Stack:** Python, YAML, Pydantic, Vapi, Deepgram<br>
+**Stack:** Python, YAML, Pydantic, Vapi, Deepgram
 **Repo:** [10ishk/voice-lead-agent](https://github.com/10ishk/voice-lead-agent)
 
 </details>
@@ -55,7 +63,7 @@ State-aware voice qualification grounded in project facts, with English, Hindi, 
 
 Native desktop software for the AJAZZ AK680 V2, covering profiles, device detection, lighting, and Rapid Trigger controls over its hardware interfaces.
 
-**Stack:** Tauri, React, TypeScript, Rust, HID<br>
+**Stack:** Tauri, React, TypeScript, Rust, HID
 **Repo:** [10ishk/ak680-studio](https://github.com/10ishk/ak680-studio)
 
 </details>
@@ -68,6 +76,8 @@ Native desktop software for the AJAZZ AK680 V2, covering profiles, device detect
 - [CallSense](https://github.com/10ishk/CallSense-App) — transcription, emotion, urgency, and action extraction from calls
 
 </details>
+
+<img src="assets/divider.svg" width="100%" height="2" alt="">
 
 <br>
 
