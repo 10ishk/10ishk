@@ -153,9 +153,9 @@ Vehicle detection under rain, fog, and snow using an adverse-weather BDD100K sub
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output/dist/snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output/dist/snake.svg">
-    <img alt="contribution snake animation" src="https://raw.githubusercontent.com/10ishk/10ishk/output/dist/snake.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output/snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output/snake.svg">
+    <img alt="contribution snake animation" src="https://raw.githubusercontent.com/10ishk/10ishk/output/snake.svg">
   </picture>
 </p>
 
