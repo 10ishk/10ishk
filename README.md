@@ -1,6 +1,6 @@
 <picture>
   <source media="(max-width: 600px)" srcset="assets/boarding/hero-mobile.svg">
-  <img src="assets/boarding/hero.svg" width="100%" alt="Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Boarding pass from idea to shipped. Builder 10ishk.">
+  <img src="assets/boarding/hero.svg" width="100%" alt="Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Home base: DXB — Dubai, UAE. Boarding pass from idea to shipped. Builder 10ishk.">
 </picture>
 
 <p align="center">

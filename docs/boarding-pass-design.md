@@ -14,7 +14,9 @@ leads with movi-agent, two-stage-ppe and FlickVox, followed by voice and hardwar
 work before operations tools. Business workbook descriptions identify synthetic data.
 
 The ticket positions Tanishk as an Applied AI Engineer / Intelligent Systems
-Builder. A themed Mission Brief replaces the plain-text introduction and spans
+Builder. The ticket's home-base field uses DXB in airline red and spells out Dubai, UAE,
+with a dedicated location strip beneath the tear-off section on mobile.
+A themed Mission Brief replaces the plain-text introduction and spans
 voice, vision, desktop apps and decision workflows. Carry-on groups are AI &
 Models, Applications & APIs, Data & Decisions, and Systems & Hardware. Contact
 links appear once near the top; the page ends with the flight-log animation.

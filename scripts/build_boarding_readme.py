@@ -107,13 +107,16 @@ body += label(56, 264, 'APPLIED AI ENGINEER', 30, INK, 'display')
 body += label(56, 291, 'INTELLIGENT SYSTEMS BUILDER', 18, '#5f5a52', 'display', spacing=1)
 body += label(691, 73, 'BUILDER ID', 11, '#5f5a52', 'bold', spacing=1)
 body += label(689, 124, '10ISHK', 52, INK, 'display')
-body += barcode(691,153,64,130)
-body += label(691, 250, f'{len(PROJECTS):02} PROJECTS', 12, INK, 'bold')
-body += label(691, 274, 'ABOARD', 11, '#5f5a52', 'bold', spacing=2)
-save('hero.svg',880,340,'Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Idea to shipped. 16 projects aboard.',body)
+body += barcode(691,148,42,130)
+body += label(691, 212, f'{len(PROJECTS):02} PROJECTS ABOARD', 9, INK, 'bold')
+body += '<path d="M691 227H824" stroke="#bdb7a9"/>'
+body += label(691, 246, 'HOME BASE', 10, '#5f5a52', 'bold', spacing=1)
+body += label(690, 282, 'DXB', 38, RED, 'display')
+body += label(691, 302, 'DUBAI, UAE', 11, INK, 'bold')
+save('hero.svg',880,340,'Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Home base DXB — Dubai, UAE. Idea to shipped. 16 projects aboard.',body)
 
-body = box(12,16,376,438,CREAM,16)
-body += '<defs><clipPath id="ticket"><rect x="12" y="16" width="376" height="438" rx="16"/></clipPath></defs>'
+body = box(12,16,376,494,CREAM,16)
+body += '<defs><clipPath id="ticket"><rect x="12" y="16" width="376" height="494" rx="16"/></clipPath></defs>'
 body += '<g clip-path="url(#ticket)">' + box(12,16,376,10,RED) + '</g>'
 body += label(32,60,'BOARDING PASS / PROFILE',11,'#5f5a52','bold',spacing=1)
 body += label(29,126,'TANISHK',68,INK,'display')
@@ -131,7 +134,11 @@ body += label(32,365,'BUILDER ID',10,'#5f5a52','bold',spacing=1)
 body += label(32,409,'10ISHK',42,INK,'display')
 body += barcode(206,355,49,145)
 body += label(206,430,'16 PROJECTS ABOARD',10,INK,'bold')
-save('hero-mobile.svg',400,470,'Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Idea to shipped. Builder 10ishk.',body)
+body += '<path d="M32 443H368" stroke="#bdb7a9"/>'
+body += label(32,463,'HOME BASE',10,'#5f5a52','bold',spacing=1)
+body += label(31,495,'DXB',34,RED,'display')
+body += label(113,490,'DUBAI, UAE',15,INK,'bold')
+save('hero-mobile.svg',400,526,'Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Home base DXB — Dubai, UAE. Idea to shipped. Builder 10ishk.',body)
 
 for name,title in [('website','tanishk.net'),('linkedin','LinkedIn'),('github','GitHub')]:
     body=box(3,3,274,48,INK,7,GOLD)
@@ -252,7 +259,7 @@ def picture(stem,alt):
             f'  <img src="assets/boarding/{stem}.svg" width="100%" alt="{escape(alt,quote=True)}">\n</picture>')
 
 
-readme=picture('hero','Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Boarding pass from idea to shipped. Builder 10ishk.')+'\n\n'
+readme=picture('hero','Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Home base: DXB — Dubai, UAE. Boarding pass from idea to shipped. Builder 10ishk.')+'\n\n'
 readme+='<p align="center">\n'
 for slug,url,title in [('website','https://tanishk.net','Visit tanishk.net'),('linkedin','https://www.linkedin.com/in/tanishk004','Connect on LinkedIn'),('github','https://github.com/10ishk','Explore my GitHub')]:
     readme+=(f'  <a href="{url}"><picture>'
