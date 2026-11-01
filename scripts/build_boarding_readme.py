@@ -31,9 +31,9 @@ MOTION_CSS = '''<style>
 @keyframes signal{0%,100%{transform:scale(1);opacity:.2}60%{transform:scale(2.1);opacity:0}85%{opacity:0}}
 .board-letter{transform-box:fill-box;transform-origin:center;animation:boardFlip 14s ease-in-out infinite}
 @keyframes boardFlip{0%{transform:scaleY(.18);opacity:.65}2.5%{transform:scaleY(1);opacity:1}4%{transform:scaleY(.9)}6%,100%{transform:scaleY(1);opacity:1}}
-.project-reveal{animation:reveal .85s ease-out both}
-@keyframes reveal{from{transform:translateY(4px);opacity:.72}to{transform:translateY(0);opacity:1}}
-@media(prefers-reduced-motion:reduce){.plane,.status-ring,.board-letter,.project-reveal,.contrail,.radar-sweep,.radar-ping{animation:none!important;transform:none!important;opacity:1!important}.plane{transform:translateX(13px)!important}.status-ring,.radar-ping{opacity:.2!important}.contrail{opacity:0!important}}
+.project-tile{transform-box:fill-box;transform-origin:center;animation:tileReflip var(--period) ease-in-out infinite}
+@keyframes tileReflip{0%{transform:scaleY(1);opacity:1}.65%{transform:scaleY(.08);opacity:.65}1.3%{transform:scaleY(1);opacity:1}1.7%{transform:scaleY(.96)}2.2%,100%{transform:scaleY(1);opacity:1}}
+@media(prefers-reduced-motion:reduce){.plane,.status-ring,.board-letter,.project-tile,.contrail,.radar-sweep,.radar-ping{animation:none!important;transform:none!important;opacity:1!important}.plane{transform:translateX(13px)!important}.status-ring,.radar-ping{opacity:.2!important}.contrail{opacity:0!important}}
 </style>'''
 
 
@@ -243,12 +243,18 @@ for mobile in [False,True]:
     save('stack-mobile.svg' if mobile else 'stack.svg',w,h,'Carry-on stack: Python, TypeScript, Rust, C#, PowerShell, React, FastAPI, Tauri, WPF, PyTorch, OpenCV, YOLO, speech, SQL, Excel, Power Query and OR-Tools.',body)
 
 
-def flap(x,y,value,size=16,cell=16,height=26,color=GOLD):
+def flap(x,y,value,size=16,cell=16,height=26,color=GOLD,period=None,delay=0,char_offset=0):
     body=''
-    for character in value:
+    for index,character in enumerate(value):
+        if period:
+            body+=box(x,y,cell-2,height,'#14120f',2)
+            body+=(f'<g class="project-tile" style="--period:{period}s;'
+                   f'animation-delay:{delay+(char_offset+index)*.05:.3f}s">')
         body+=box(x,y,cell-2,height,'#24211d',2)
         body+=box(x,y+height/2,cell-2,height/2,'#1b1916')
         body+=label(x+2,y+height-6,character,size,color,'bold')
+        if period:
+            body+='</g>'
         body+=f'<path d="M{x} {y+height/2}H{x+cell-2}" stroke="#0f0e0d" stroke-width=".7"/>'
         x+=cell
     return body
@@ -262,28 +268,30 @@ for mobile in [False,True]:
     save('departures-mobile.svg' if mobile else 'departures.svg',w,106 if mobile else 82,'Departures — 16 projects, selected work first.',body)
 
 for i,(name,description,stack,category) in enumerate(PROJECTS,1):
+    period = 20+(i*7)%16
+    delay = 2.5+(i*4.3)%17
     body=flap(28,19,f'{i:02}',16)
-    body+=flap(88,19,name.upper(),16,cell=17)
+    body+='<circle cx="75" cy="32" r="2.5" fill="#f6d77a"/>'
+    body+=flap(88,19,name.upper(),16,cell=17,period=period,delay=delay)
     body+=label(88,76,description,14,CREAM,max_width=712)
     body+=label(88,103,stack,11,MUTED,'bold')
     body+=label(807,42,'↗',22,GOLD,'bold')
     body+='<path d="M28 124H852" stroke="#39342c"/>'
-    if i <= 3:
-        body=f'<g class="project-reveal" style="animation-delay:{(i-1)*.18:.2f}s">{body}</g>'
     save(f'{name}.svg',880,132,f'{i:02}. {name}: {description} Stack: {stack}.',body)
     lines=textwrap.wrap(name.upper(),width=23,break_long_words=False,break_on_hyphens=True)
     descriptions=textwrap.wrap(description,width=39)
     start=26+len(lines)*27
     h=start+len(descriptions)*20+52
     body=label(16,20,f'{i:02} / {category}',10,MUTED,'bold')
+    body+='<circle cx="376" cy="16" r="2.5" fill="#f6d77a"/>'
+    letter_offset = 0
     for j,line in enumerate(lines):
-        body+=flap(16,33+j*27,line,14,cell=15,height=24)
+        body+=flap(16,33+j*27,line,14,cell=15,height=24,period=period,delay=delay,char_offset=letter_offset)
+        letter_offset += len(line)
     for j,line in enumerate(descriptions):
         body+=label(16,start+29+j*20,line,14,CREAM,max_width=366)
     body+=label(16,h-15,stack,10,GOLD,'bold',max_width=366)
     body+=f'<path d="M16 {h-2}H384" stroke="#39342c"/>'
-    if i <= 3:
-        body=f'<g class="project-reveal" style="animation-delay:{(i-1)*.18:.2f}s">{body}</g>'
     save(f'{name}-mobile.svg',400,h+5,f'{i:02}. {name}: {description} Stack: {stack}.',body)
 
 for name,title,subtitle in [
@@ -319,7 +327,10 @@ for name,description in EARLIER:
 
 def picture(stem,alt):
     # A new image URL avoids GitHub serving a cached static version of an animated asset.
-    version = '?v=flight2' if stem == 'hero' else ('?v=motion1' if stem in {'mission','departures',*[name for name,*_ in PROJECTS[:3]]} else '')
+    if stem in {name for name,*_ in PROJECTS}:
+        version = '?v=reflip1'
+    else:
+        version = '?v=flight2' if stem == 'hero' else ('?v=motion1' if stem in {'mission','departures'} else '')
     return (f'<picture>\n  <source media="(max-width: 600px)" srcset="assets/boarding/{stem}-mobile.svg{version}">\n'
             f'  <img src="assets/boarding/{stem}.svg{version}" width="100%" alt="{escape(alt,quote=True)}">\n</picture>')
 

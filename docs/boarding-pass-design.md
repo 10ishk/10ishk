@@ -28,14 +28,18 @@ a pause between trips. Its swept-wing silhouette has a fading three-line contrai
 during travel. A small radar beside DXB makes a slow ten-second sweep with an
 occasional outward ping. Both additions stop for reduced-motion viewers.
 The DEPARTURES lettering briefly flips into place every
-fourteen seconds; the project names do not continuously flip. The first three
-project rows have a single subtle staggered reveal. A decorative SYSTEMS ONLINE
+fourteen seconds. Each project name has its own split-flap refresh: letters
+start 50 ms apart, settle on the same characters, then pause for the rest of a
+20–35 second cycle. All sixteen rows have distinct periods and initial offsets.
+Wrapped mobile names preserve the ripple across line breaks. Small gold row
+indicators, descriptions and stacks remain static; whole-row reveals are removed.
+A decorative SYSTEMS ONLINE
 light pulses slowly in the Mission Brief; it is a design detail, not a live
 uptime monitor.
 
 Animations use CSS inside self-contained SVG images. All text is visible without
 animation support. `prefers-reduced-motion: reduce` disables the plane, heading,
-reveals and pulse. Reduced-motion viewers receive a static flight calendar with
+project-name re-flips and pulse. Reduced-motion viewers receive a static flight calendar with
 the plane parked at its destination.
 
 All graphics have outlined lettering using the bundled Barlow Condensed and
