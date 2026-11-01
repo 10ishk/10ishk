@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Generate Midnight Terminal flight log
 
 on:
   schedule:
@@ -7,6 +7,10 @@ on:
   push:
     branches:
       - main
+      - design/boarding-pass-midnight-terminal
+    paths:
+      - .github/workflows/snake.yml
+      - scripts/build_flight_log.py
 
 jobs:
   generate:
@@ -14,18 +18,18 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - name: Generate snake SVGs
-        uses: Platane/snk@v3
-        with:
-          github_user_name: 10ishk
-          outputs: |
-            dist/snake.svg
-            dist/snake-dark.svg?palette=github-dark
+      - uses: actions/checkout@v4
+
+      - name: Generate flight log from GitHub contributions
+        run: python scripts/build_flight_log.py --user 10ishk --output dist
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push output to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          target_branch: output
+          target_branch: output-midnight-terminal
           build_dir: dist
+          keep_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
