@@ -74,7 +74,7 @@ def system_status(x, y, size=10):
             + label(x+12,y,'SYSTEMS ONLINE',size,GOLD,'bold'))
 
 
-def label(x, y, value, size=16, color=CREAM, font="mono", max_width=None, spacing=0):
+def label(x, y, value, size=16, color=CREAM, font="mono", max_width=None, spacing=0, anchor="start"):
     face = FONTS[font]
     glyphs, cmap = face.getGlyphSet(), face.getBestCmap()
     scale = size / face['head'].unitsPerEm
@@ -89,9 +89,15 @@ def label(x, y, value, size=16, color=CREAM, font="mono", max_width=None, spacin
         glyph.draw(TransformPen(pen, transform))
         glyph.draw(TransformPen(bounds, transform))
         cursor += glyph.width * sx + spacing
+    path = f'<path fill="{color}" d="{pen.getCommands()}"/>'
     if bounds.bounds:
+        left,top,right,bottom = bounds.bounds
+        if anchor == "end":
+            offset = x-right
+            BOUNDS.append((value,(left+offset,top,right+offset,bottom)))
+            return f'<g transform="translate({offset} 0)">{path}</g>'
         BOUNDS.append((value, bounds.bounds))
-    return f'<path fill="{color}" d="{pen.getCommands()}"/>'
+    return path
 
 
 def box(x, y, w, h, fill=INK, radius=0, stroke=None, dash=None):
@@ -263,7 +269,7 @@ def flap(x,y,value,size=16,cell=16,height=26,color=GOLD,period=None,delay=0,char
 for mobile in [False,True]:
     w=400 if mobile else 880
     body=animated_heading(16 if mobile else 28,52,'DEPARTURES',44)
-    body+=label(16 if mobile else 520,77 if mobile else 46,'16 PROJECTS / SELECTED FIRST',10,MUTED,'bold',spacing=.5)
+    body+=label(16 if mobile else 852,77 if mobile else 52,'16 PROJECTS / SELECTED FIRST',10,MUTED,'bold',spacing=.5,anchor='start' if mobile else 'end')
     body+=f'<path d="M{16 if mobile else 28} {92 if mobile else 69}H{w-(16 if mobile else 28)}" stroke="#d98a5b" stroke-width="2"/>'
     save('departures-mobile.svg' if mobile else 'departures.svg',w,106 if mobile else 82,'Departures — 16 projects, selected work first.',body)
 
@@ -298,11 +304,11 @@ for name,title,subtitle in [
     ('earlier','ARRIVED EARLIER','EARLY EXPERIMENTS / SAME CURIOSITY'),
     ('log','FLIGHT LOG','A YEAR OF BUILDING / CONTRIBUTION AIRSPACE'),
 ]:
-    body=label(28,52,title,44,GOLD,'display')
+    body=animated_heading(28,52,title,44)
     body+=label(28,81,subtitle,11,MUTED,'bold',spacing=.5)
     body+='<path d="M28 99H852" stroke="#3f605b" stroke-dasharray="6 5"/>'
     save(f'{name}.svg',880,112,title+' — '+subtitle,body)
-    body=label(16,48,title,38,GOLD,'display')
+    body=animated_heading(16,48,title,38)
     body+=label(16,75,subtitle,9,MUTED,'bold',max_width=368)
     body+='<path d="M16 91H384" stroke="#3f605b" stroke-dasharray="6 5"/>'
     save(f'{name}-mobile.svg',400,104,title+' — '+subtitle,body)
@@ -332,7 +338,7 @@ for name,description in EARLIER:
 
 def picture(stem,alt):
     # A new image URL avoids GitHub serving a cached static version of an animated asset.
-    version = '?v=petrol-final1'
+    version = '?v=petrol-headings2' if stem in {'departures','earlier','log'} else '?v=petrol-final1'
     return (f'<picture>\n  <source media="(max-width: 600px)" srcset="assets/boarding/{stem}-mobile.svg{version}">\n'
             f'  <img src="assets/boarding/{stem}.svg{version}" width="100%" alt="{escape(alt,quote=True)}">\n</picture>')
 

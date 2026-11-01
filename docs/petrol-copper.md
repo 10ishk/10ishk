@@ -20,6 +20,11 @@ The larger burnt-copper DXB label has approximately 3.7:1 contrast on parchment.
 Desktop and mobile layouts, all 32 project-name animation variants, static
 reduced-motion states and the Flight Log's completion/pause behaviour are verified.
 
+Departures, Arrived Earlier and Flight Log share the same brief staggered heading
+flip and fourteen-second cycle, with static reduced-motion states. The project
+count is anchored to the divider's right edge on desktop, on the heading baseline;
+on mobile it stays left-aligned beneath the heading.
+
 Palette:
 
 - Deep petrol background and ticket ink: `#102A2B`

@@ -20,8 +20,8 @@
 </picture>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/departures-mobile.svg?v=petrol-final1">
-  <img src="assets/boarding/departures.svg?v=petrol-final1" width="100%" alt="Departures — 16 projects, selected work first.">
+  <source media="(max-width: 600px)" srcset="assets/boarding/departures-mobile.svg?v=petrol-headings2">
+  <img src="assets/boarding/departures.svg?v=petrol-headings2" width="100%" alt="Departures — 16 projects, selected work first.">
 </picture>
 
 <a href="https://github.com/10ishk/movi-agent">
@@ -122,8 +122,8 @@
 </a>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/earlier-mobile.svg?v=petrol-final1">
-  <img src="assets/boarding/earlier.svg?v=petrol-final1" width="100%" alt="Arrived earlier — early experiments, same curiosity.">
+  <source media="(max-width: 600px)" srcset="assets/boarding/earlier-mobile.svg?v=petrol-headings2">
+  <img src="assets/boarding/earlier.svg?v=petrol-headings2" width="100%" alt="Arrived earlier — early experiments, same curiosity.">
 </picture>
 
 <a href="https://github.com/10ishk/ai_models">
@@ -142,8 +142,8 @@
 </picture>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/log-mobile.svg?v=petrol-final1">
-  <img src="assets/boarding/log.svg?v=petrol-final1" width="100%" alt="Flight log — a year of building, flown across the contribution calendar.">
+  <source media="(max-width: 600px)" srcset="assets/boarding/log-mobile.svg?v=petrol-headings2">
+  <img src="assets/boarding/log.svg?v=petrol-headings2" width="100%" alt="Flight log — a year of building, flown across the contribution calendar.">
 </picture>
 
 <picture>
