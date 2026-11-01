@@ -147,12 +147,12 @@
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/boarding/log-mobile.svg">
-  <img src="assets/boarding/log.svg" width="100%" alt="Flight log — a year of building, shown as a contribution snake.">
+  <img src="assets/boarding/log.svg" width="100%" alt="Flight log — a year of building, flown across the contribution calendar.">
 </picture>
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/boarding/snake-still.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/snake-dark.svg?v=motion1">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/snake.svg?v=motion1">
-  <img width="100%" alt="GitHub contribution snake animation — warm terminal tiles with a red snake in light mode and gold in dark mode" src="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/snake.svg?v=motion1">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-light-still.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-dark.svg">
+  <img width="100%" alt="GitHub contribution flight log — a plane flies over real activity tiles with a fading trail; contributions stay visible" src="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-light.svg">
 </picture>

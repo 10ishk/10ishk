@@ -288,7 +288,7 @@ for i,(name,description,stack,category) in enumerate(PROJECTS,1):
 
 for name,title,subtitle in [
     ('earlier','ARRIVED EARLIER','EARLY EXPERIMENTS / SAME CURIOSITY'),
-    ('log','FLIGHT LOG','A YEAR OF BUILDING / CONTRIBUTION SNAKE'),
+    ('log','FLIGHT LOG','A YEAR OF BUILDING / CONTRIBUTION AIRSPACE'),
 ]:
     body=label(28,52,title,44,GOLD,'display')
     body+=label(28,81,subtitle,11,MUTED,'bold',spacing=.5)
@@ -340,12 +340,12 @@ readme+='\n'+picture('earlier','Arrived earlier — early experiments, same curi
 for name,description in EARLIER:
     readme+=f'<a href="https://github.com/10ishk/{name}">\n'+picture(name,f'Earlier work: {name} — {description}')+'\n</a>\n'
 readme+='\n'
-readme+=picture('log','Flight log — a year of building, shown as a contribution snake.')+'\n\n'
+readme+=picture('log','Flight log — a year of building, flown across the contribution calendar.')+'\n\n'
 readme+='''<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/boarding/snake-still.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/snake-dark.svg?v=motion1">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/snake.svg?v=motion1">
-  <img width="100%" alt="GitHub contribution snake animation — warm terminal tiles with a red snake in light mode and gold in dark mode" src="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/snake.svg?v=motion1">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-light-still.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-dark.svg">
+  <img width="100%" alt="GitHub contribution flight log — a plane flies over real activity tiles with a fading trail; contributions stay visible" src="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-light.svg">
 </picture>
 
 '''

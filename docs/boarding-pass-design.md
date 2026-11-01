@@ -35,9 +35,8 @@ uptime monitor.
 
 Animations use CSS inside self-contained SVG images. All text is visible without
 animation support. `prefers-reduced-motion: reduce` disables the plane, heading,
-reveals and pulse, and the generated contribution snake also stops animating.
-The README also selects a bundled static contribution snapshot for reduced-motion
-viewers, so this fallback works even while a remote animation is cached.
+reveals and pulse. Reduced-motion viewers receive a static flight calendar with
+the plane parked at its destination.
 
 All graphics have outlined lettering using the bundled Barlow Condensed and
 Space Mono OFL fonts. They need no external fonts, JavaScript, or remote image
@@ -60,11 +59,23 @@ the README with that earlier design if run; use the boarding generator here.
 
 ## Flight log
 
-The snake workflow publishes to `output-boarding`, separate from both the original
-`output` and the neo-brutalist `output-loud` branches. Warm contribution tiles,
-explicit panel backgrounds and a red light-mode / gold dark-mode snake match
-the ticket palette. Relevant branch pushes generate the preview. Daily updates
-run from the default branch after merging.
+`scripts/build_flight_log.py` fetches the real annual calendar through GitHub's
+GraphQL API using the workflow token. It requires only Python's standard library.
+It can also consume a saved calendar with `--calendar JSON --output DIR` offline.
+The displayed total is the sum of the displayed daily counts, which can differ
+from GitHub's collection-wide summary. No contribution values are invented.
+
+One plane flies seven horizontal legs with rounded turns, leaving a short fading
+trail. Activity tiles gently light up as it passes and never disappear. The
+32-second cycle includes a ROUTE COMPLETE pause. The flight path is decorative;
+the tile colours represent actual activity levels. Four outputs cover light,
+dark and static reduced-motion variants.
+
+The workflow publishes to `output-boarding`, separate from both the original
+`output` and the neo-brutalist `output-loud` branches, and preserves older outputs
+for earlier boarding-pass revisions. Relevant branch pushes generate the preview.
+Daily updates run from the default branch after merging. Light mode uses a red
+plane on cream; dark mode uses a gold plane on charcoal.
 
 ## Restore either earlier design
 
