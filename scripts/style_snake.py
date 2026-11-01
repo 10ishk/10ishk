@@ -19,10 +19,12 @@ def style(source, background, border, title):
 
 if __name__ == "__main__":
     folder = Path(sys.argv[1])
+    output = Path(sys.argv[2]) if len(sys.argv) > 2 else folder
+    output.mkdir(parents=True, exist_ok=True)
     for filename, background, border, title in [
         ("snake.svg", "#f6f8fc", "#a9b7cd", "Contribution snake — ink snake and blue tiles"),
         ("snake-dark.svg", "#111827", "#61718e", "Contribution snake — yellow snake and blue tiles"),
     ]:
         file = folder / filename
-        file.write_text(style(file.read_text(encoding="utf-8"), background, border, title), encoding="utf-8")
+        (output / filename).write_text(style(file.read_text(encoding="utf-8"), background, border, title), encoding="utf-8")
         print(f"Styled {filename}")

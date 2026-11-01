@@ -29,12 +29,12 @@ jobs:
             dist/snake-dark.svg?color_snake=%23ffd23f&color_dots=%23303b52,%23445e96,%235e83cc,%238db1f5,%23c1d6ff
 
       - name: Add themed panels and visible cell outlines
-        run: python scripts/style_snake.py dist
+        run: python scripts/style_snake.py dist styled
 
       - name: Push output to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output-loud
-          build_dir: dist
+          build_dir: styled
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
