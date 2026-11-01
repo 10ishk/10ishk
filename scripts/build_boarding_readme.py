@@ -20,6 +20,12 @@ FONTS = {name: TTFont(FONT_DIR / file) for name, file in {
 BOUNDS = []
 MOTION_CSS = '''<style>
 .plane{transform:translateX(13px);animation:flight 8s ease-in-out infinite}
+.contrail{animation:trail 8s ease-in-out infinite;opacity:0}
+@keyframes trail{0%,8%{opacity:0}18%,43%{opacity:.65}56%,100%{opacity:0}}
+.radar-sweep{animation:radar 10s linear infinite}
+@keyframes radar{to{transform:rotate(360deg)}}
+.radar-ping{transform-box:fill-box;transform-origin:center;animation:ping 5.2s ease-out infinite;opacity:.35}
+@keyframes ping{0%{transform:scale(1);opacity:.45}75%,100%{transform:scale(3.5);opacity:0}}
 @keyframes flight{0%{transform:translateX(0);opacity:0}8%{opacity:1}48%,80%{transform:translateX(26px);opacity:1}94%{transform:translateX(26px);opacity:0}100%{transform:translateX(0);opacity:0}}
 .status-ring{transform-box:fill-box;transform-origin:center;animation:signal 3.6s ease-out infinite}
 @keyframes signal{0%,100%{transform:scale(1);opacity:.2}60%{transform:scale(2.1);opacity:0}85%{opacity:0}}
@@ -27,15 +33,29 @@ MOTION_CSS = '''<style>
 @keyframes boardFlip{0%{transform:scaleY(.18);opacity:.65}2.5%{transform:scaleY(1);opacity:1}4%{transform:scaleY(.9)}6%,100%{transform:scaleY(1);opacity:1}}
 .project-reveal{animation:reveal .85s ease-out both}
 @keyframes reveal{from{transform:translateY(4px);opacity:.72}to{transform:translateY(0);opacity:1}}
-@media(prefers-reduced-motion:reduce){.plane,.status-ring,.board-letter,.project-reveal{animation:none!important;transform:none!important;opacity:1!important}.plane{transform:translateX(13px)!important}.status-ring{opacity:.2!important}}
+@media(prefers-reduced-motion:reduce){.plane,.status-ring,.board-letter,.project-reveal,.contrail,.radar-sweep,.radar-ping{animation:none!important;transform:none!important;opacity:1!important}.plane{transform:translateX(13px)!important}.status-ring,.radar-ping{opacity:.2!important}.contrail{opacity:0!important}}
 </style>'''
 
 
 def plane_route(x, y):
     return (f'<path d="M{x-7} {y}H{x+36}" stroke="#bdb7a9" stroke-width="1.5"/>'
             f'<g transform="translate({x} {y})"><g class="plane">'
-            '<path d="M-8-3L-2-2L1-9H4L3-1L10 1V3H3L4 10H1L-2 4L-8 3L-6 0Z" fill="#e5372b"/>'
+            '<g class="contrail" stroke="#e5372b" stroke-width="1.2" stroke-linecap="round">'
+            '<path d="M-25-3H-16M-29 0H-17M-25 3H-16"/></g>'
+            '<g transform="rotate(90)"><path transform="translate(-12 -12)" '
+            'd="M21 16V14L13 9V3.5A1.5 1.5 0 0 0 10 3.5V9L2 14V16L10 13.5V19L8 20.5V22L11.5 21L15 22V20.5L13 19V13.5Z" '
+            'fill="#e5372b" stroke="#e5372b" stroke-width=".5" stroke-linejoin="round"/></g>'
             '</g></g>')
+
+
+def home_radar(x, y):
+    return (f'<g transform="translate({x} {y})" aria-hidden="true">'
+            '<circle r="14" fill="none" stroke="#bdb7a9" stroke-width=".8"/>'
+            '<circle r="7" fill="none" stroke="#bdb7a9" stroke-width=".6"/>'
+            '<g class="radar-sweep"><path d="M0 0V-13" stroke="#e5372b" stroke-width="1.2"/>'
+            '<path d="M0 0L-5-12A13 13 0 0 1 0-13Z" fill="#e5372b" opacity=".13"/></g>'
+            '<circle class="radar-ping" r="3.5" fill="none" stroke="#e5372b" stroke-width=".65"/>'
+            '<circle r="2" fill="#e5372b"/></g>')
 
 
 def animated_heading(x, y, value, size):
@@ -147,6 +167,7 @@ body += label(691, 212, f'{len(PROJECTS):02} PROJECTS ABOARD', 9, INK, 'bold')
 body += '<path d="M691 227H824" stroke="#bdb7a9"/>'
 body += label(691, 246, 'HOME BASE', 10, '#5f5a52', 'bold', spacing=1)
 body += label(690, 282, 'DXB', 38, RED, 'display')
+body += home_radar(792,270)
 body += label(691, 302, 'DUBAI, UAE', 11, INK, 'bold')
 save('hero.svg',880,340,'Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Home base DXB — Dubai, UAE. Idea to shipped. 16 projects aboard.',body)
 
@@ -172,6 +193,7 @@ body += label(206,430,'16 PROJECTS ABOARD',10,INK,'bold')
 body += '<path d="M32 443H368" stroke="#bdb7a9"/>'
 body += label(32,463,'HOME BASE',10,'#5f5a52','bold',spacing=1)
 body += label(31,495,'DXB',34,RED,'display')
+body += home_radar(338,480)
 body += label(113,490,'DUBAI, UAE',15,INK,'bold')
 save('hero-mobile.svg',400,526,'Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Home base DXB — Dubai, UAE. Idea to shipped. Builder 10ishk.',body)
 
@@ -297,7 +319,7 @@ for name,description in EARLIER:
 
 def picture(stem,alt):
     # A new image URL avoids GitHub serving a cached static version of an animated asset.
-    version = '?v=motion1' if stem in {'hero','mission','departures',*[name for name,*_ in PROJECTS[:3]]} else ''
+    version = '?v=flight2' if stem == 'hero' else ('?v=motion1' if stem in {'mission','departures',*[name for name,*_ in PROJECTS[:3]]} else '')
     return (f'<picture>\n  <source media="(max-width: 600px)" srcset="assets/boarding/{stem}-mobile.svg{version}">\n'
             f'  <img src="assets/boarding/{stem}.svg{version}" width="100%" alt="{escape(alt,quote=True)}">\n</picture>')
 

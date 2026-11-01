@@ -24,7 +24,10 @@ links appear once near the top; the page ends with the flight-log animation.
 ## Motion
 
 A red plane makes a short trip along IDEA → SHIPPED every eight seconds, with
-a pause between trips. The DEPARTURES lettering briefly flips into place every
+a pause between trips. Its swept-wing silhouette has a fading three-line contrail
+during travel. A small radar beside DXB makes a slow ten-second sweep with an
+occasional outward ping. Both additions stop for reduced-motion viewers.
+The DEPARTURES lettering briefly flips into place every
 fourteen seconds; the project names do not continuously flip. The first three
 project rows have a single subtle staggered reveal. A decorative SYSTEMS ONLINE
 light pulses slowly in the Mission Brief; it is a design detail, not a live

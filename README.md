@@ -1,6 +1,6 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/hero-mobile.svg?v=motion1">
-  <img src="assets/boarding/hero.svg?v=motion1" width="100%" alt="Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Home base: DXB — Dubai, UAE. Boarding pass from idea to shipped. Builder 10ishk.">
+  <source media="(max-width: 600px)" srcset="assets/boarding/hero-mobile.svg?v=flight2">
+  <img src="assets/boarding/hero.svg?v=flight2" width="100%" alt="Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Home base: DXB — Dubai, UAE. Boarding pass from idea to shipped. Builder 10ishk.">
 </picture>
 
 <p align="center">
