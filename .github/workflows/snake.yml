@@ -7,6 +7,10 @@ on:
   push:
     branches:
       - main
+      - design/neo-brutalist-readme
+    paths:
+      - .github/workflows/snake.yml
+      - scripts/style_snake.py
 
 jobs:
   generate:
@@ -14,18 +18,23 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
       - name: Generate snake SVGs
         uses: Platane/snk@v3
         with:
           github_user_name: 10ishk
           outputs: |
-            dist/snake.svg
-            dist/snake-dark.svg?palette=github-dark
+            dist/snake.svg?color_snake=%23111111&color_dots=%23e2e8f0,%23bfd1ff,%2388aaff,%234d7cff,%232647bd
+            dist/snake-dark.svg?color_snake=%23ffd23f&color_dots=%23303b52,%23445e96,%235e83cc,%238db1f5,%23c1d6ff
+
+      - name: Add themed panels and visible cell outlines
+        run: python scripts/style_snake.py dist
 
       - name: Push output to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          target_branch: output
+          target_branch: output-loud
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

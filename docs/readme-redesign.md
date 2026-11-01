@@ -18,7 +18,17 @@ The SVGs use system font fallbacks and contain no external resources, scripts,
 or embedded HTML. Each featured card is a separate repository link. The stack
 and project cards have mobile variants selected through `<picture>` elements.
 Project descriptions and links are also available as native expandable text.
-The existing contribution-snake workflow and original graphic assets are kept.
+The original graphic assets are kept. The contribution-snake workflow publishes
+the redesign's animations to a separate `output-loud` branch. The existing
+`output` branch remains available to the original profile.
+
+The light animation uses blue contribution tiles and an ink-coloured snake on a
+pale panel. The dark animation uses brighter blue tiles and a yellow snake on a
+navy panel. Both have explicit backgrounds and visible cell outlines, so neither
+depends on GitHub's page background for contrast. `scripts/style_snake.py` adds
+these panels after Platane/snk generates the animation. Pushes affecting the
+workflow or its styling script on the design branch regenerate the preview;
+the daily schedule continues from the default branch after merging.
 
 ## Restore the original profile after merging
 
@@ -30,8 +40,8 @@ Run this only when you want the original profile published again:
 git fetch origin
 git switch main
 git pull --ff-only origin main
-git restore --source=origin/backup/readme-before-neo-brutalist-2026-11-01 -- README.md
-git add README.md
+git restore --source=origin/backup/readme-before-neo-brutalist-2026-11-01 -- README.md .github/workflows/snake.yml
+git add README.md .github/workflows/snake.yml
 git commit -m "Restore original profile README"
 git push origin main
 ```

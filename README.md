@@ -8,16 +8,34 @@
   <a href="https://github.com/10ishk"><img src="assets/loud/github.svg" width="22%" alt="Explore my GitHub"></a>
 </p>
 
-I build AI tools for logistics, computer vision and voice workflows — and desktop tools that connect software to hardware.
+I build AI and computer-vision tools, local desktop apps, and practical systems for logistics, operations and customer intelligence.
 
 ## What I build with
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/loud/stack-mobile.svg">
-  <img src="assets/loud/stack.svg" width="100%" alt="Python, TypeScript, Rust, React, FastAPI, Express, Tauri, PyTorch, OpenCV, YOLOv8, SQLite, OR-Tools and Streamlit">
+  <img src="assets/loud/stack.svg" width="100%" alt="Python, TypeScript, Rust, React, FastAPI, Express, Tauri, PyTorch, OpenCV, YOLOv8, SQLite, OR-Tools, Streamlit, C# / WPF, PowerShell, Excel and Power Query">
 </picture>
 
 ## Things I shipped
+
+<p>
+<a href="https://github.com/10ishk/two-stage-ppe">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/loud/two-stage-ppe-mobile.svg">
+  <img src="assets/loud/two-stage-ppe.svg" width="100%" alt="two-stage-ppe — Person-first PPE detection, video tracking and training tools. Built with PYTHON / ULTRALYTICS / OPENCV.">
+</picture>
+</a>
+</p>
+
+<p>
+<a href="https://github.com/10ishk/FlickVox">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/loud/FlickVox-mobile.svg">
+  <img src="assets/loud/FlickVox.svg" width="100%" alt="FlickVox — Hotkey speech, saved phrases and offline Piper playback. Built with C# / .NET / WPF / PIPER.">
+</picture>
+</a>
+</p>
 
 <p>
 <a href="https://github.com/10ishk/movi-agent">
@@ -29,10 +47,37 @@ I build AI tools for logistics, computer vision and voice workflows — and desk
 </p>
 
 <p>
+<a href="https://github.com/10ishk/quick-commerce-launch-control-tower">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/loud/quick-commerce-launch-control-tower-mobile.svg">
+  <img src="assets/loud/quick-commerce-launch-control-tower.svg" width="100%" alt="quick-commerce-launch-control-tower — Readiness gates, inventory and launch decisions. Synthetic data. Built with EXCEL / POWER QUERY / PYTHON.">
+</picture>
+</a>
+</p>
+
+<p>
+<a href="https://github.com/10ishk/b2b-customer-expansion-radar">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/loud/b2b-customer-expansion-radar-mobile.svg">
+  <img src="assets/loud/b2b-customer-expansion-radar.svg" width="100%" alt="b2b-customer-expansion-radar — Account signals, scoring and CRM handoffs. Synthetic data. Built with EXCEL / PYTHON / HUBSPOT HANDOFF.">
+</picture>
+</a>
+</p>
+
+<p>
 <a href="https://github.com/10ishk/yardvision-sop-monitoring">
 <picture>
   <source media="(max-width: 600px)" srcset="assets/loud/yardvision-sop-monitoring-mobile.svg">
   <img src="assets/loud/yardvision-sop-monitoring.svg" width="100%" alt="yardvision-sop-monitoring — Camera feeds into SOP events, alerts and evidence snapshots. Built with PYTHON / OPENCV / YOLOv8.">
+</picture>
+</a>
+</p>
+
+<p>
+<a href="https://github.com/10ishk/it-support-operations-lab">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/loud/it-support-operations-lab-mobile.svg">
+  <img src="assets/loud/it-support-operations-lab.svg" width="100%" alt="it-support-operations-lab — System health, network checks and verified backup restores. Built with POWERSHELL / WINDOWS / SHA-256.">
 </picture>
 </a>
 </p>
@@ -58,6 +103,56 @@ I build AI tools for logistics, computer vision and voice workflows — and desk
 ## All projects
 
 Open a project for its description, stack and repository link.
+
+<details>
+<summary><strong>two-stage-ppe</strong> · <code>python · ultralytics · opencv</code></summary>
+
+Two-stage person-to-PPE detection with crop batching, global coordinate remapping, video inference, optional ByteTrack tracking, and dataset preparation and training tools. Bring compatible model checkpoints; none are bundled.
+
+**Stack:** Python, Ultralytics YOLO, OpenCV, ByteTrack<br>
+**Repo:** [10ishk/two-stage-ppe](https://github.com/10ishk/two-stage-ppe)
+
+</details>
+
+<details>
+<summary><strong>FlickVox</strong> · <code>c# · wpf · piper</code></summary>
+
+Windows text-to-speech companion with a global quick-pill hotkey, saved phrases, playback controls and voice downloads. Speech runs locally after setup; a Windows x64 preview is available in GitHub Releases.
+
+**Stack:** C#, .NET 10, WPF, Piper, NAudio<br>
+**Repo:** [10ishk/FlickVox](https://github.com/10ishk/FlickVox)
+
+</details>
+
+<details>
+<summary><strong>quick-commerce-launch-control-tower</strong> · <code>excel · power-query · python</code></summary>
+
+Excel-first multi-site launch planning with readiness gates, inventory reconciliation, risk and issue tracking, and executive reporting. Uses synthetic UAE operations data. Includes Power BI model and report build specifications; no PBIX is included.
+
+**Stack:** Excel, Power Query / M, Python, Power BI build specifications<br>
+**Repo:** [10ishk/quick-commerce-launch-control-tower](https://github.com/10ishk/quick-commerce-launch-control-tower)
+
+</details>
+
+<details>
+<summary><strong>b2b-customer-expansion-radar</strong> · <code>excel · python · crm</code></summary>
+
+Customer intelligence workbook with documented business signals, transparent opportunity scoring, stakeholder gaps, account briefs and staged HubSpot handoffs. All account and business data is synthetic; the handoff package is prepared offline.
+
+**Stack:** Excel, Python, structured CSV / JSON, HubSpot handoff assets<br>
+**Repo:** [10ishk/b2b-customer-expansion-radar](https://github.com/10ishk/b2b-customer-expansion-radar)
+
+</details>
+
+<details>
+<summary><strong>it-support-operations-lab</strong> · <code>powershell · windows · diagnostics</code></summary>
+
+Windows support toolkit for system health, networking, event logs, service investigation and SHA-256 backup/restore verification. Includes controlled execution evidence, guided incidents and local HTML reports.
+
+**Stack:** PowerShell, Windows CIM / networking cmdlets, SHA-256, HTML / JSON / CSV<br>
+**Repo:** [10ishk/it-support-operations-lab](https://github.com/10ishk/it-support-operations-lab)
+
+</details>
 
 <details>
 <summary><strong>movi-agent</strong> · <code>react</code> <code>typescript</code> <code>fastapi</code></summary>
@@ -183,9 +278,9 @@ Vehicle detection under rain, fog, and snow using an adverse-weather BDD100K sub
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output/snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output/snake.svg">
-    <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/10ishk/10ishk/output/snake.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-loud/snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-loud/snake.svg">
+    <img width="100%" alt="GitHub contribution snake animation — blue contribution tiles, dark snake in light mode and yellow snake in dark mode" src="https://raw.githubusercontent.com/10ishk/10ishk/output-loud/snake.svg">
   </picture>
 </p>
 
