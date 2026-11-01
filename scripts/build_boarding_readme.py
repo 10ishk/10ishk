@@ -13,7 +13,7 @@ from fontTools.pens.boundsPen import BoundsPen
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "assets" / "boarding"
 FONT_DIR = OUT / "fonts"
-INK, CREAM, GOLD, RED, MUTED = "#0f0e0d", "#f7f4ec", "#f6d77a", "#e5372b", "#b6ad9e"
+INK, CREAM, GOLD, RED, MUTED = "#102a2b", "#f3ebdd", "#d98a5b", "#b85f3f", "#b5c4bc"
 FONTS = {name: TTFont(FONT_DIR / file) for name, file in {
     "display": "BarlowCondensed-Bold.ttf", "mono": "SpaceMono-Regular.ttf",
     "bold": "SpaceMono-Bold.ttf"}.items()}
@@ -38,24 +38,24 @@ MOTION_CSS = '''<style>
 
 
 def plane_route(x, y):
-    return (f'<path d="M{x-7} {y}H{x+36}" stroke="#bdb7a9" stroke-width="1.5"/>'
+    return (f'<path d="M{x-7} {y}H{x+36}" stroke="#aabcb0" stroke-width="1.5"/>'
             f'<g transform="translate({x} {y})"><g class="plane">'
-            '<g class="contrail" stroke="#e5372b" stroke-width="1.2" stroke-linecap="round">'
+            '<g class="contrail" stroke="#b85f3f" stroke-width="1.2" stroke-linecap="round">'
             '<path d="M-25-3H-16M-29 0H-17M-25 3H-16"/></g>'
             '<g transform="rotate(90)"><path transform="translate(-12 -12)" '
             'd="M21 16V14L13 9V3.5A1.5 1.5 0 0 0 10 3.5V9L2 14V16L10 13.5V19L8 20.5V22L11.5 21L15 22V20.5L13 19V13.5Z" '
-            'fill="#e5372b" stroke="#e5372b" stroke-width=".5" stroke-linejoin="round"/></g>'
+            'fill="#b85f3f" stroke="#b85f3f" stroke-width=".5" stroke-linejoin="round"/></g>'
             '</g></g>')
 
 
 def home_radar(x, y):
     return (f'<g transform="translate({x} {y})" aria-hidden="true">'
-            '<circle r="14" fill="none" stroke="#bdb7a9" stroke-width=".8"/>'
-            '<circle r="7" fill="none" stroke="#bdb7a9" stroke-width=".6"/>'
-            '<g class="radar-sweep"><path d="M0 0V-13" stroke="#e5372b" stroke-width="1.2"/>'
-            '<path d="M0 0L-5-12A13 13 0 0 1 0-13Z" fill="#e5372b" opacity=".13"/></g>'
-            '<circle class="radar-ping" r="3.5" fill="none" stroke="#e5372b" stroke-width=".65"/>'
-            '<circle r="2" fill="#e5372b"/></g>')
+            '<circle r="14" fill="none" stroke="#aabcb0" stroke-width=".8"/>'
+            '<circle r="7" fill="none" stroke="#aabcb0" stroke-width=".6"/>'
+            '<g class="radar-sweep"><path d="M0 0V-13" stroke="#b85f3f" stroke-width="1.2"/>'
+            '<path d="M0 0L-5-12A13 13 0 0 1 0-13Z" fill="#b85f3f" opacity=".13"/></g>'
+            '<circle class="radar-ping" r="3.5" fill="none" stroke="#b85f3f" stroke-width=".65"/>'
+            '<circle r="2" fill="#b85f3f"/></g>')
 
 
 def animated_heading(x, y, value, size):
@@ -69,8 +69,8 @@ def animated_heading(x, y, value, size):
 
 
 def system_status(x, y, size=10):
-    return (f'<circle class="status-ring" cx="{x}" cy="{y-3}" r="4" fill="#f6d77a"/>'
-            f'<circle cx="{x}" cy="{y-3}" r="2.5" fill="#f6d77a"/>'
+    return (f'<circle class="status-ring" cx="{x}" cy="{y-3}" r="4" fill="#d98a5b"/>'
+            f'<circle cx="{x}" cy="{y-3}" r="2.5" fill="#d98a5b"/>'
             + label(x+12,y,'SYSTEMS ONLINE',size,GOLD,'bold'))
 
 
@@ -148,24 +148,24 @@ def barcode(x, y, height, width):
 # Cream ticket, dark terminal surround, red airline stripe and tear-off stub.
 body = box(28, 24, 824, 292, CREAM, 18)
 body += '<defs><clipPath id="ticket"><rect x="28" y="24" width="824" height="292" rx="18"/></clipPath></defs>'
-body += '<g clip-path="url(#ticket)">' + box(28,24,824,12,RED) + '</g>'
-body += '<path d="M664 36V304" stroke="#bdb7a9" stroke-width="2" stroke-dasharray="6 5"/>'
-body += '<circle cx="664" cy="24" r="13" fill="#0f0e0d"/><circle cx="664" cy="316" r="13" fill="#0f0e0d"/>'
-body += label(56, 70, 'BOARDING PASS / BUILDER PROFILE', 12, '#5f5a52', 'bold', spacing=2)
+body += '<g clip-path="url(#ticket)">' + box(28,24,824,12,GOLD) + '</g>'
+body += '<path d="M664 36V304" stroke="#aabcb0" stroke-width="2" stroke-dasharray="6 5"/>'
+body += '<circle cx="664" cy="24" r="13" fill="#102a2b"/><circle cx="664" cy="316" r="13" fill="#102a2b"/>'
+body += label(56, 70, 'BOARDING PASS / BUILDER PROFILE', 12, '#516661', 'bold', spacing=2)
 body += label(54, 145, 'TANISHK BHARDWAJ', 76, INK, 'display', max_width=578)
-body += label(56, 180, 'FROM', 11, '#5f5a52', 'bold', spacing=2)
-body += label(242, 180, 'TO', 11, '#5f5a52', 'bold', spacing=2)
+body += label(56, 180, 'FROM', 11, '#516661', 'bold', spacing=2)
+body += label(242, 180, 'TO', 11, '#516661', 'bold', spacing=2)
 body += label(56, 225, 'IDEA', 48, INK, 'display')
 body += plane_route(174,208)
 body += label(242, 225, 'SHIPPED', 48, INK, 'display')
 body += label(56, 264, 'APPLIED AI ENGINEER', 30, INK, 'display')
-body += label(56, 291, 'INTELLIGENT SYSTEMS BUILDER', 18, '#5f5a52', 'display', spacing=1)
-body += label(691, 73, 'BUILDER ID', 11, '#5f5a52', 'bold', spacing=1)
+body += label(56, 291, 'INTELLIGENT SYSTEMS BUILDER', 18, '#516661', 'display', spacing=1)
+body += label(691, 73, 'BUILDER ID', 11, '#516661', 'bold', spacing=1)
 body += label(689, 124, '10ISHK', 52, INK, 'display')
 body += barcode(691,148,42,130)
 body += label(691, 212, f'{len(PROJECTS):02} PROJECTS ABOARD', 9, INK, 'bold')
-body += '<path d="M691 227H824" stroke="#bdb7a9"/>'
-body += label(691, 246, 'HOME BASE', 10, '#5f5a52', 'bold', spacing=1)
+body += '<path d="M691 227H824" stroke="#aabcb0"/>'
+body += label(691, 246, 'HOME BASE', 10, '#516661', 'bold', spacing=1)
 body += label(690, 282, 'DXB', 38, RED, 'display')
 body += home_radar(792,270)
 body += label(691, 302, 'DUBAI, UAE', 11, INK, 'bold')
@@ -173,25 +173,25 @@ save('hero.svg',880,340,'Tanishk Bhardwaj — Applied AI Engineer / Intelligent 
 
 body = box(12,16,376,494,CREAM,16)
 body += '<defs><clipPath id="ticket"><rect x="12" y="16" width="376" height="494" rx="16"/></clipPath></defs>'
-body += '<g clip-path="url(#ticket)">' + box(12,16,376,10,RED) + '</g>'
-body += label(32,60,'BOARDING PASS / PROFILE',11,'#5f5a52','bold',spacing=1)
+body += '<g clip-path="url(#ticket)">' + box(12,16,376,10,GOLD) + '</g>'
+body += label(32,60,'BOARDING PASS / PROFILE',11,'#516661','bold',spacing=1)
 body += label(29,126,'TANISHK',68,INK,'display')
 body += label(29,193,'BHARDWAJ',68,INK,'display')
-body += label(32,228,'FROM',10,'#5f5a52','bold',spacing=2)
-body += label(186,228,'TO',10,'#5f5a52','bold',spacing=2)
+body += label(32,228,'FROM',10,'#516661','bold',spacing=2)
+body += label(186,228,'TO',10,'#516661','bold',spacing=2)
 body += label(32,268,'IDEA',42,INK,'display')
 body += plane_route(124,253)
 body += label(186,268,'SHIPPED',42,INK,'display')
 body += label(32,299,'APPLIED AI ENGINEER',26,INK,'display')
-body += label(32,321,'INTELLIGENT SYSTEMS BUILDER',19,'#5f5a52','display',spacing=.3)
-body += '<path d="M24 335H376" stroke="#bdb7a9" stroke-width="2" stroke-dasharray="6 5"/>'
-body += '<circle cx="12" cy="335" r="11" fill="#0f0e0d"/><circle cx="388" cy="335" r="11" fill="#0f0e0d"/>'
-body += label(32,365,'BUILDER ID',10,'#5f5a52','bold',spacing=1)
+body += label(32,321,'INTELLIGENT SYSTEMS BUILDER',19,'#516661','display',spacing=.3)
+body += '<path d="M24 335H376" stroke="#aabcb0" stroke-width="2" stroke-dasharray="6 5"/>'
+body += '<circle cx="12" cy="335" r="11" fill="#102a2b"/><circle cx="388" cy="335" r="11" fill="#102a2b"/>'
+body += label(32,365,'BUILDER ID',10,'#516661','bold',spacing=1)
 body += label(32,409,'10ISHK',42,INK,'display')
 body += barcode(206,355,49,145)
 body += label(206,430,'16 PROJECTS ABOARD',10,INK,'bold')
-body += '<path d="M32 443H368" stroke="#bdb7a9"/>'
-body += label(32,463,'HOME BASE',10,'#5f5a52','bold',spacing=1)
+body += '<path d="M32 443H368" stroke="#aabcb0"/>'
+body += label(32,463,'HOME BASE',10,'#516661','bold',spacing=1)
 body += label(31,495,'DXB',34,RED,'display')
 body += home_radar(338,480)
 body += label(113,490,'DUBAI, UAE',15,INK,'bold')
@@ -206,16 +206,16 @@ for name,title in [('website','tanishk.net'),('linkedin','LinkedIn'),('github','
     save(f'{name}-mobile.svg',128,48,title,body)
 
 # A terminal-style mission panel carries the introduction without a plain-text break.
-body=box(28,12,824,140,INK,8,'#6b6255')
-body+=box(28,12,4,140,RED)
+body=box(28,12,824,140,INK,8,'#3f605b')
+body+=box(28,12,4,140,GOLD)
 body+=label(50,40,'MISSION BRIEF',12,GOLD,'bold',spacing=2)
 body+=system_status(672,40,10)
 body+=label(50,73,'I build intelligent systems that turn models, data',16,CREAM,max_width=776)
 body+=label(50,100,'and software into practical tools.',16,CREAM)
 body+=label(50,133,'VOICE / VISION / DESKTOP APPS / DECISION WORKFLOWS',11,GOLD,'bold',spacing=.5)
 save('mission.svg',880,168,'I build intelligent systems that turn models, data and software into practical tools — voice, vision, desktop apps and decision workflows.',body)
-body=box(14,12,372,176,INK,8,'#6b6255')
-body+=box(14,12,4,176,RED)
+body=box(14,12,372,176,INK,8,'#3f605b')
+body+=box(14,12,4,176,GOLD)
 body+=label(32,39,'MISSION BRIEF',11,GOLD,'bold',spacing=1)
 body+=system_status(236,39,8)
 for i,line in enumerate(['I build intelligent systems that','turn models, data and software','into practical tools.']):
@@ -236,7 +236,7 @@ for mobile in [False,True]:
     for i,(title,items) in enumerate(groups):
         x,y=(14+(i%2)*190,58+(i//2)*208) if mobile else (28+i*209,62)
         cw=182 if mobile else 197
-        body+=box(x,y,cw,194,INK,9,'#6b6255','5 4')
+        body+=box(x,y,cw,194,INK,9,'#3f605b','5 4')
         body+=label(x+14,y+28,title,11,GOLD,'bold',max_width=cw-28,spacing=.7)
         for j,item in enumerate(items):
             body+=label(x+14,y+58+j*27,item,23,CREAM,'display',max_width=cw-28)
@@ -247,15 +247,15 @@ def flap(x,y,value,size=16,cell=16,height=26,color=GOLD,period=None,delay=0,char
     body=''
     for index,character in enumerate(value):
         if period:
-            body+=box(x,y,cell-2,height,'#14120f',2)
+            body+=box(x,y,cell-2,height,'#0b2021',2)
             body+=(f'<g class="project-tile" style="--period:{period}s;'
                    f'animation-delay:{delay+(char_offset+index)*.05:.3f}s">')
-        body+=box(x,y,cell-2,height,'#24211d',2)
-        body+=box(x,y+height/2,cell-2,height/2,'#1b1916')
+        body+=box(x,y,cell-2,height,'#193936',2)
+        body+=box(x,y+height/2,cell-2,height/2,'#142f2e')
         body+=label(x+2,y+height-6,character,size,color,'bold')
         if period:
             body+='</g>'
-        body+=f'<path d="M{x} {y+height/2}H{x+cell-2}" stroke="#0f0e0d" stroke-width=".7"/>'
+        body+=f'<path d="M{x} {y+height/2}H{x+cell-2}" stroke="#102a2b" stroke-width=".7"/>'
         x+=cell
     return body
 
@@ -264,26 +264,26 @@ for mobile in [False,True]:
     w=400 if mobile else 880
     body=animated_heading(16 if mobile else 28,52,'DEPARTURES',44)
     body+=label(16 if mobile else 520,77 if mobile else 46,'16 PROJECTS / SELECTED FIRST',10,MUTED,'bold',spacing=.5)
-    body+=f'<path d="M{16 if mobile else 28} {92 if mobile else 69}H{w-(16 if mobile else 28)}" stroke="#f6d77a" stroke-width="2"/>'
+    body+=f'<path d="M{16 if mobile else 28} {92 if mobile else 69}H{w-(16 if mobile else 28)}" stroke="#d98a5b" stroke-width="2"/>'
     save('departures-mobile.svg' if mobile else 'departures.svg',w,106 if mobile else 82,'Departures — 16 projects, selected work first.',body)
 
 for i,(name,description,stack,category) in enumerate(PROJECTS,1):
     period = 20+(i*7)%16
     delay = 2.5+(i*4.3)%17
     body=flap(28,19,f'{i:02}',16)
-    body+='<circle cx="75" cy="32" r="2.5" fill="#f6d77a"/>'
+    body+='<circle cx="75" cy="32" r="2.5" fill="#d98a5b"/>'
     body+=flap(88,19,name.upper(),16,cell=17,period=period,delay=delay)
     body+=label(88,76,description,14,CREAM,max_width=712)
     body+=label(88,103,stack,11,MUTED,'bold')
     body+=label(807,42,'↗',22,GOLD,'bold')
-    body+='<path d="M28 124H852" stroke="#39342c"/>'
+    body+='<path d="M28 124H852" stroke="#294b47"/>'
     save(f'{name}.svg',880,132,f'{i:02}. {name}: {description} Stack: {stack}.',body)
     lines=textwrap.wrap(name.upper(),width=23,break_long_words=False,break_on_hyphens=True)
     descriptions=textwrap.wrap(description,width=39)
     start=26+len(lines)*27
     h=start+len(descriptions)*20+52
     body=label(16,20,f'{i:02} / {category}',10,MUTED,'bold')
-    body+='<circle cx="376" cy="16" r="2.5" fill="#f6d77a"/>'
+    body+='<circle cx="376" cy="16" r="2.5" fill="#d98a5b"/>'
     letter_offset = 0
     for j,line in enumerate(lines):
         body+=flap(16,33+j*27,line,14,cell=15,height=24,period=period,delay=delay,char_offset=letter_offset)
@@ -291,7 +291,7 @@ for i,(name,description,stack,category) in enumerate(PROJECTS,1):
     for j,line in enumerate(descriptions):
         body+=label(16,start+29+j*20,line,14,CREAM,max_width=366)
     body+=label(16,h-15,stack,10,GOLD,'bold',max_width=366)
-    body+=f'<path d="M16 {h-2}H384" stroke="#39342c"/>'
+    body+=f'<path d="M16 {h-2}H384" stroke="#294b47"/>'
     save(f'{name}-mobile.svg',400,h+5,f'{i:02}. {name}: {description} Stack: {stack}.',body)
 
 for name,title,subtitle in [
@@ -300,11 +300,11 @@ for name,title,subtitle in [
 ]:
     body=label(28,52,title,44,GOLD,'display')
     body+=label(28,81,subtitle,11,MUTED,'bold',spacing=.5)
-    body+='<path d="M28 99H852" stroke="#6b6255" stroke-dasharray="6 5"/>'
+    body+='<path d="M28 99H852" stroke="#3f605b" stroke-dasharray="6 5"/>'
     save(f'{name}.svg',880,112,title+' — '+subtitle,body)
     body=label(16,48,title,38,GOLD,'display')
     body+=label(16,75,subtitle,9,MUTED,'bold',max_width=368)
-    body+='<path d="M16 91H384" stroke="#6b6255" stroke-dasharray="6 5"/>'
+    body+='<path d="M16 91H384" stroke="#3f605b" stroke-dasharray="6 5"/>'
     save(f'{name}-mobile.svg',400,104,title+' — '+subtitle,body)
 
 EARLIER = [
@@ -317,20 +317,17 @@ for name,description in EARLIER:
     body+=flap(88,17,name.upper(),16,cell=17,color=MUTED)
     body+=label(430,37,description,12,CREAM,max_width=360)
     body+=label(807,39,'↗',22,GOLD,'bold')
-    body+='<path d="M28 61H852" stroke="#39342c"/>'
+    body+='<path d="M28 61H852" stroke="#294b47"/>'
     save(f'{name}.svg',880,68,f'Earlier work: {name} — {description}',body)
     body=flap(16,12,name.upper(),14,cell=15,height=24,color=MUTED)
     body+=label(16,61,description,13,CREAM,max_width=345)
-    body+='<path d="M16 77H384" stroke="#39342c"/>'
+    body+='<path d="M16 77H384" stroke="#294b47"/>'
     save(f'{name}-mobile.svg',400,84,f'Earlier work: {name} — {description}',body)
 
 
 def picture(stem,alt):
     # A new image URL avoids GitHub serving a cached static version of an animated asset.
-    if stem in {name for name,*_ in PROJECTS}:
-        version = '?v=reflip1'
-    else:
-        version = '?v=flight2' if stem == 'hero' else ('?v=motion1' if stem in {'mission','departures'} else '')
+    version = '?v=petrol1'
     return (f'<picture>\n  <source media="(max-width: 600px)" srcset="assets/boarding/{stem}-mobile.svg{version}">\n'
             f'  <img src="assets/boarding/{stem}.svg{version}" width="100%" alt="{escape(alt,quote=True)}">\n</picture>')
 
@@ -353,10 +350,10 @@ for name,description in EARLIER:
 readme+='\n'
 readme+=picture('log','Flight log — a year of building, flown across the contribution calendar.')+'\n\n'
 readme+='''<picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-v2-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-v2-light-still.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-v2-dark.svg">
-  <img width="100%" alt="GitHub contribution flight log — a plane flies over real activity tiles with a fading trail; contributions stay visible" src="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-v2-light.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-petrol-copper/flight-log-v2-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-petrol-copper/flight-log-v2-light-still.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-petrol-copper/flight-log-v2-dark.svg">
+  <img width="100%" alt="GitHub contribution flight log — a plane flies over real activity tiles with a fading trail; contributions stay visible" src="https://raw.githubusercontent.com/10ishk/10ishk/output-petrol-copper/flight-log-v2-light.svg">
 </picture>
 
 '''

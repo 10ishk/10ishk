@@ -1,4 +1,4 @@
-name: Generate boarding-pass flight log
+name: Generate Petrol and Copper flight log
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - main
-      - design/boarding-pass-readme
+      - design/boarding-pass-petrol-copper
     paths:
       - .github/workflows/snake.yml
       - scripts/build_flight_log.py
@@ -28,7 +28,7 @@ jobs:
       - name: Push output to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          target_branch: output-boarding
+          target_branch: output-petrol-copper
           build_dir: dist
           keep_files: true
         env:
