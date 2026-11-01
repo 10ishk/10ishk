@@ -1,34 +1,65 @@
 <p align="center">
-  <img src="assets/hero-ide.svg" alt="Tanishk Bhardwaj — IDE view" width="100%">
+  <img src="assets/loud/hero.svg" width="100%" alt="Tanishk Bhardwaj — AI × Logistics × Vision. A yellow headline with shipping-container, vision and sound-wave stickers.">
 </p>
 
 <p align="center">
-  <a href="https://tanishk.net">tanishk.net</a> ·
-  <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> ·
-  <a href="https://github.com/10ishk">GitHub</a>
+  <a href="https://tanishk.net"><img src="assets/loud/website.svg" width="27%" alt="Visit tanishk.net"></a>
+  <a href="https://www.linkedin.com/in/tanishk004"><img src="assets/loud/linkedin.svg" width="24%" alt="Connect on LinkedIn"></a>
+  <a href="https://github.com/10ishk"><img src="assets/loud/github.svg" width="22%" alt="Explore my GitHub"></a>
 </p>
 
-<img src="assets/wave.svg" width="100%" height="40" alt="">
+I build AI tools for logistics, computer vision and voice workflows — and desktop tools that connect software to hardware.
 
-<br>
+## What I build with
 
-## stack.orbit
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/loud/stack-mobile.svg">
+  <img src="assets/loud/stack.svg" width="100%" alt="Python, TypeScript, Rust, React, FastAPI, Express, Tauri, PyTorch, OpenCV, YOLOv8, SQLite, OR-Tools and Streamlit">
+</picture>
 
-<p align="center">
-  <img src="assets/orbit-skills.svg" width="100%" alt="Stack orbit: Python, TypeScript, Rust, React, FastAPI, Express, SQLite, PyTorch, OpenCV, YOLOv8, and Tauri">
+## Things I shipped
+
+<p>
+<a href="https://github.com/10ishk/movi-agent">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/loud/movi-agent-mobile.svg">
+  <img src="assets/loud/movi-agent.svg" width="100%" alt="movi-agent — Natural-language trips. Guarded actions. Human confirmation. Built with REACT / TYPESCRIPT / FASTAPI.">
+</picture>
+</a>
 </p>
 
-<img src="assets/divider.svg" width="100%" height="2" alt="">
-
-<br>
-
-## projects/
-
-<p align="center">
-  <img src="assets/projects-terminal.svg" width="100%" alt="Terminal listing all projects">
+<p>
+<a href="https://github.com/10ishk/yardvision-sop-monitoring">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/loud/yardvision-sop-monitoring-mobile.svg">
+  <img src="assets/loud/yardvision-sop-monitoring.svg" width="100%" alt="yardvision-sop-monitoring — Camera feeds into SOP events, alerts and evidence snapshots. Built with PYTHON / OPENCV / YOLOv8.">
+</picture>
+</a>
 </p>
 
-<details open>
+<p>
+<a href="https://github.com/10ishk/voice-lead-agent">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/loud/voice-lead-agent-mobile.svg">
+  <img src="assets/loud/voice-lead-agent.svg" width="100%" alt="voice-lead-agent — Grounded conversations, explainable outcomes, typed summaries. Built with PYTHON / VAPI / DEEPGRAM.">
+</picture>
+</a>
+</p>
+
+<p>
+<a href="https://github.com/10ishk/ak680-studio">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/loud/ak680-studio-mobile.svg">
+  <img src="assets/loud/ak680-studio.svg" width="100%" alt="ak680-studio — HID detection, local profiles and Rapid Trigger controls. Built with TAURI / RUST / REACT / HID.">
+</picture>
+</a>
+</p>
+
+## All projects
+
+Open a project for its description, stack and repository link.
+
+<details>
 <summary><strong>movi-agent</strong> · <code>react</code> <code>typescript</code> <code>fastapi</code></summary>
 
 Full-stack transport operations copilot: natural-language trip and route workflows with fuzzy matching, guarded vehicle actions, and human confirmation before consequential changes.
@@ -147,18 +178,15 @@ Vehicle detection under rain, fog, and snow using an adverse-weather BDD100K sub
 
 </details>
 
-<img src="assets/divider.svg" width="100%" height="2" alt="">
-
 <br>
+<img src="assets/loud/divider.svg" width="100%" alt="">
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output/snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output/snake.svg">
-    <img alt="contribution snake animation" src="https://raw.githubusercontent.com/10ishk/10ishk/output/snake.svg">
+    <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/10ishk/10ishk/output/snake.svg">
   </picture>
 </p>
-
-<br>
 
 <p align="center"><sub><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></sub></p>
