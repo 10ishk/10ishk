@@ -1,6 +1,6 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/hero-mobile.svg">
-  <img src="assets/boarding/hero.svg" width="100%" alt="Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Home base: DXB — Dubai, UAE. Boarding pass from idea to shipped. Builder 10ishk.">
+  <source media="(max-width: 600px)" srcset="assets/boarding/hero-mobile.svg?v=motion1">
+  <img src="assets/boarding/hero.svg?v=motion1" width="100%" alt="Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Home base: DXB — Dubai, UAE. Boarding pass from idea to shipped. Builder 10ishk.">
 </picture>
 
 <p align="center">
@@ -10,8 +10,8 @@
 </p>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/mission-mobile.svg">
-  <img src="assets/boarding/mission.svg" width="100%" alt="Mission brief: I build intelligent systems that turn models, data and software into practical tools — voice, vision, desktop apps and decision workflows.">
+  <source media="(max-width: 600px)" srcset="assets/boarding/mission-mobile.svg?v=motion1">
+  <img src="assets/boarding/mission.svg?v=motion1" width="100%" alt="Mission brief: I build intelligent systems that turn models, data and software into practical tools — voice, vision, desktop apps and decision workflows.">
 </picture>
 
 <picture>
@@ -20,26 +20,26 @@
 </picture>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/departures-mobile.svg">
-  <img src="assets/boarding/departures.svg" width="100%" alt="Departures — 16 projects, selected work first.">
+  <source media="(max-width: 600px)" srcset="assets/boarding/departures-mobile.svg?v=motion1">
+  <img src="assets/boarding/departures.svg?v=motion1" width="100%" alt="Departures — 16 projects, selected work first.">
 </picture>
 
 <a href="https://github.com/10ishk/movi-agent">
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/movi-agent-mobile.svg">
-  <img src="assets/boarding/movi-agent.svg" width="100%" alt="01. movi-agent — Natural-language transport workflows with guarded action execution. Stack: REACT / TYPESCRIPT / FASTAPI.">
+  <source media="(max-width: 600px)" srcset="assets/boarding/movi-agent-mobile.svg?v=motion1">
+  <img src="assets/boarding/movi-agent.svg?v=motion1" width="100%" alt="01. movi-agent — Natural-language transport workflows with guarded action execution. Stack: REACT / TYPESCRIPT / FASTAPI.">
 </picture>
 </a>
 <a href="https://github.com/10ishk/two-stage-ppe">
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/two-stage-ppe-mobile.svg">
-  <img src="assets/boarding/two-stage-ppe.svg" width="100%" alt="02. two-stage-ppe — Two-stage inference, crop batching, tracking and training tools. Stack: PYTHON / ULTRALYTICS / OPENCV.">
+  <source media="(max-width: 600px)" srcset="assets/boarding/two-stage-ppe-mobile.svg?v=motion1">
+  <img src="assets/boarding/two-stage-ppe.svg?v=motion1" width="100%" alt="02. two-stage-ppe — Two-stage inference, crop batching, tracking and training tools. Stack: PYTHON / ULTRALYTICS / OPENCV.">
 </picture>
 </a>
 <a href="https://github.com/10ishk/FlickVox">
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/FlickVox-mobile.svg">
-  <img src="assets/boarding/FlickVox.svg" width="100%" alt="03. FlickVox — Local speech synthesis with hotkeys, saved phrases and playback. Stack: C# / WPF / PIPER.">
+  <source media="(max-width: 600px)" srcset="assets/boarding/FlickVox-mobile.svg?v=motion1">
+  <img src="assets/boarding/FlickVox.svg?v=motion1" width="100%" alt="03. FlickVox — Local speech synthesis with hotkeys, saved phrases and playback. Stack: C# / WPF / PIPER.">
 </picture>
 </a>
 <a href="https://github.com/10ishk/voice-lead-agent">

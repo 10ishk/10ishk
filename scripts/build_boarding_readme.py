@@ -296,8 +296,10 @@ for name,description in EARLIER:
 
 
 def picture(stem,alt):
-    return (f'<picture>\n  <source media="(max-width: 600px)" srcset="assets/boarding/{stem}-mobile.svg">\n'
-            f'  <img src="assets/boarding/{stem}.svg" width="100%" alt="{escape(alt,quote=True)}">\n</picture>')
+    # A new image URL avoids GitHub serving a cached static version of an animated asset.
+    version = '?v=motion1' if stem in {'hero','mission','departures',*[name for name,*_ in PROJECTS[:3]]} else ''
+    return (f'<picture>\n  <source media="(max-width: 600px)" srcset="assets/boarding/{stem}-mobile.svg{version}">\n'
+            f'  <img src="assets/boarding/{stem}.svg{version}" width="100%" alt="{escape(alt,quote=True)}">\n</picture>')
 
 
 readme=picture('hero','Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Home base: DXB — Dubai, UAE. Boarding pass from idea to shipped. Builder 10ishk.')+'\n\n'
