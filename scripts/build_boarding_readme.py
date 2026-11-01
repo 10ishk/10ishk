@@ -28,7 +28,7 @@ def label(x, y, value, size=16, color=CREAM, font="mono", max_width=None, spacin
     scale = size / face['head'].unitsPerEm
     advance = sum(glyphs[cmap.get(ord(c), '.notdef')].width * scale + spacing for c in value)
     sx = scale * min(1, max_width / advance) if max_width and advance else scale
-    pen = SVGPathPen(glyphs)
+    pen = SVGPathPen(glyphs, ntos=lambda value: f'{value:.2f}'.rstrip('0').rstrip('.') if value else '0')
     bounds = BoundsPen(glyphs)
     cursor = x
     for char in value:
@@ -138,6 +138,9 @@ for name,title in [('website','tanishk.net'),('linkedin','LinkedIn'),('github','
     body=box(3,3,274,48,INK,7,GOLD)
     body+=label(24,34,title+' →',18,GOLD,'bold',max_width=236)
     save(f'{name}.svg',280,56,title,body)
+    body=box(3,3,122,40,INK,5,GOLD)
+    body+=label(10,29,title+' →',14,GOLD,'bold',max_width=108)
+    save(f'{name}-mobile.svg',128,48,title,body)
 
 groups = [
     ('LANGUAGES',['Python','TypeScript','Rust','C#','PowerShell']),
@@ -224,7 +227,9 @@ def picture(stem,alt):
 readme=picture('hero','Tanishk Bhardwaj — boarding pass from idea to shipped. AI × Logistics × Vision. Builder 10ishk.')+'\n\n'
 readme+='<p align="center">\n'
 for slug,url,title in [('website','https://tanishk.net','Visit tanishk.net'),('linkedin','https://www.linkedin.com/in/tanishk004','Connect on LinkedIn'),('github','https://github.com/10ishk','Explore my GitHub')]:
-    readme+=f'  <a href="{url}"><img src="assets/boarding/{slug}.svg" width="32%" alt="{title}"></a>\n'
+    readme+=(f'  <a href="{url}"><picture>'
+             f'<source media="(max-width: 600px)" srcset="assets/boarding/{slug}-mobile.svg">'
+             f'<img src="assets/boarding/{slug}.svg" width="32%" alt="{title}"></picture></a>\n')
 readme+='</p>\n\n'
 readme+='I turn ideas into useful tools: computer vision for logistics and safety, local desktop apps, and practical operations systems.\n\n'
 readme+=picture('stack','Carry-on stack — languages, apps and APIs, vision and ML, data and operations.')+'\n\n'

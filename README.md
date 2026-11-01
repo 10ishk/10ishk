@@ -4,9 +4,9 @@
 </picture>
 
 <p align="center">
-  <a href="https://tanishk.net"><img src="assets/boarding/website.svg" width="32%" alt="Visit tanishk.net"></a>
-  <a href="https://www.linkedin.com/in/tanishk004"><img src="assets/boarding/linkedin.svg" width="32%" alt="Connect on LinkedIn"></a>
-  <a href="https://github.com/10ishk"><img src="assets/boarding/github.svg" width="32%" alt="Explore my GitHub"></a>
+  <a href="https://tanishk.net"><picture><source media="(max-width: 600px)" srcset="assets/boarding/website-mobile.svg"><img src="assets/boarding/website.svg" width="32%" alt="Visit tanishk.net"></picture></a>
+  <a href="https://www.linkedin.com/in/tanishk004"><picture><source media="(max-width: 600px)" srcset="assets/boarding/linkedin-mobile.svg"><img src="assets/boarding/linkedin.svg" width="32%" alt="Connect on LinkedIn"></picture></a>
+  <a href="https://github.com/10ishk"><picture><source media="(max-width: 600px)" srcset="assets/boarding/github-mobile.svg"><img src="assets/boarding/github.svg" width="32%" alt="Explore my GitHub"></picture></a>
 </p>
 
 I turn ideas into useful tools: computer vision for logistics and safety, local desktop apps, and practical operations systems.
