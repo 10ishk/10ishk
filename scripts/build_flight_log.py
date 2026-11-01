@@ -54,10 +54,10 @@ def render(calendar, dark, animated):
     if len({d['date'] for d in days}) != len(days) or any(d['contributionCount']<0 for d in days):
         raise ValueError('Calendar dates must be unique and daily counts nonnegative')
     bg, fg, muted, accent, border, colors = (
-        ('#0f0e0d', '#f7f4ec', '#b6ad9e', '#f6d77a', '#726957',
-         ['#302c26', '#5b513b', '#8d794b', '#bca061', '#e1c780']) if dark else
-        ('#f7f4ec', '#171410', '#665d4e', '#e5372b', '#b4a990',
-         ['#e8e2d6', '#d8c89f', '#b69c62', '#8a713b', '#5a4723']))
+        ('#101b2d', '#f4f0e6', '#b6c0cf', '#f2b544', '#526680',
+         ['#203049', '#3d5272', '#697f9f', '#9eafc7', '#c9d3e0']) if dark else
+        ('#f4f0e6', '#101b2d', '#526174', '#e5372b', '#a2afc0',
+         ['#e0e5eb', '#c5cfdb', '#9aaec7', '#667f9f', '#344f72']))
     step, tile = min(15, 790/max(1,len(weeks)-1)), 10
     x0 = (880 - ((len(weeks)-1)*step + tile))/2
     left, right = x0+tile/2, x0+(len(weeks)-1)*step+tile/2
@@ -124,7 +124,7 @@ def render(calendar, dark, animated):
                             f'<rect x="{x-1:.2f}" y="{y-1}" width="{tile+2}" height="{tile+2}" rx="3" fill="{accent}" opacity=".5" filter="url(#tile-glow)"/>'
                             f'<rect x="{x:.2f}" y="{y}" width="{tile}" height="{tile}" rx="2" fill="{accent}" stroke="{fg}" stroke-width=".5"/></g>')
     if animated:
-        vapour_color = '#eee3cd' if dark else '#9b8b70'
+        vapour_color = '#e0e7f0' if dark else '#798aa3'
         for index in range(1,8):
             strength = .8*(1-index/9)**1.2
             body.append(f'<g class="contrail" style="animation-delay:{index*.16:.2f}s;--strength:{strength:.3f}">'
