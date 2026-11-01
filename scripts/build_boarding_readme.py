@@ -18,6 +18,40 @@ FONTS = {name: TTFont(FONT_DIR / file) for name, file in {
     "display": "BarlowCondensed-Bold.ttf", "mono": "SpaceMono-Regular.ttf",
     "bold": "SpaceMono-Bold.ttf"}.items()}
 BOUNDS = []
+MOTION_CSS = '''<style>
+.plane{transform:translateX(13px);animation:flight 8s ease-in-out infinite}
+@keyframes flight{0%{transform:translateX(0);opacity:0}8%{opacity:1}48%,80%{transform:translateX(26px);opacity:1}94%{transform:translateX(26px);opacity:0}100%{transform:translateX(0);opacity:0}}
+.status-ring{transform-box:fill-box;transform-origin:center;animation:signal 3.6s ease-out infinite}
+@keyframes signal{0%,100%{transform:scale(1);opacity:.2}60%{transform:scale(2.1);opacity:0}85%{opacity:0}}
+.board-letter{transform-box:fill-box;transform-origin:center;animation:boardFlip 14s ease-in-out infinite}
+@keyframes boardFlip{0%{transform:scaleY(.18);opacity:.65}2.5%{transform:scaleY(1);opacity:1}4%{transform:scaleY(.9)}6%,100%{transform:scaleY(1);opacity:1}}
+.project-reveal{animation:reveal .85s ease-out both}
+@keyframes reveal{from{transform:translateY(4px);opacity:.72}to{transform:translateY(0);opacity:1}}
+@media(prefers-reduced-motion:reduce){.plane,.status-ring,.board-letter,.project-reveal{animation:none!important;transform:none!important;opacity:1!important}.plane{transform:translateX(13px)!important}.status-ring{opacity:.2!important}}
+</style>'''
+
+
+def plane_route(x, y):
+    return (f'<path d="M{x-7} {y}H{x+36}" stroke="#bdb7a9" stroke-width="1.5"/>'
+            f'<g transform="translate({x} {y})"><g class="plane">'
+            '<path d="M-8-3L-2-2L1-9H4L3-1L10 1V3H3L4 10H1L-2 4L-8 3L-6 0Z" fill="#e5372b"/>'
+            '</g></g>')
+
+
+def animated_heading(x, y, value, size):
+    face = FONTS['display']
+    glyphs, cmap = face.getGlyphSet(), face.getBestCmap()
+    result = ''
+    for i, char in enumerate(value):
+        result += f'<g class="board-letter" style="animation-delay:{i*.065:.3f}s">'+label(x,y,char,size,GOLD,'display')+'</g>'
+        x += glyphs[cmap[ord(char)]].width * size / face['head'].unitsPerEm
+    return result
+
+
+def system_status(x, y, size=10):
+    return (f'<circle class="status-ring" cx="{x}" cy="{y-3}" r="4" fill="#f6d77a"/>'
+            f'<circle cx="{x}" cy="{y-3}" r="2.5" fill="#f6d77a"/>'
+            + label(x+12,y,'SYSTEMS ONLINE',size,GOLD,'bold'))
 
 
 def label(x, y, value, size=16, color=CREAM, font="mono", max_width=None, spacing=0):
@@ -56,7 +90,8 @@ def save(name, w, h, title, body, background=INK):
     (OUT / name).write_text(
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
         f'viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title, quote=True)}">'
-        f'<title>{escape(title)}</title>{box(0,0,w,h,background)}{body}</svg>\n', encoding="utf-8")
+        f'<title>{escape(title)}</title>{MOTION_CSS if "class=" in body else ""}'
+        f'{box(0,0,w,h,background)}{body}</svg>\n', encoding="utf-8")
 
 
 PROJECTS = [
@@ -101,7 +136,7 @@ body += label(54, 145, 'TANISHK BHARDWAJ', 76, INK, 'display', max_width=578)
 body += label(56, 180, 'FROM', 11, '#5f5a52', 'bold', spacing=2)
 body += label(242, 180, 'TO', 11, '#5f5a52', 'bold', spacing=2)
 body += label(56, 225, 'IDEA', 48, INK, 'display')
-body += '<path d="M167 208H209M198 197L209 208L198 219" fill="none" stroke="#e5372b" stroke-width="3"/>'
+body += plane_route(174,208)
 body += label(242, 225, 'SHIPPED', 48, INK, 'display')
 body += label(56, 264, 'APPLIED AI ENGINEER', 30, INK, 'display')
 body += label(56, 291, 'INTELLIGENT SYSTEMS BUILDER', 18, '#5f5a52', 'display', spacing=1)
@@ -124,7 +159,7 @@ body += label(29,193,'BHARDWAJ',68,INK,'display')
 body += label(32,228,'FROM',10,'#5f5a52','bold',spacing=2)
 body += label(186,228,'TO',10,'#5f5a52','bold',spacing=2)
 body += label(32,268,'IDEA',42,INK,'display')
-body += '<path d="M118 253H157M147 244L157 253L147 262" fill="none" stroke="#e5372b" stroke-width="3"/>'
+body += plane_route(124,253)
 body += label(186,268,'SHIPPED',42,INK,'display')
 body += label(32,299,'APPLIED AI ENGINEER',26,INK,'display')
 body += label(32,321,'INTELLIGENT SYSTEMS BUILDER',19,'#5f5a52','display',spacing=.3)
@@ -152,6 +187,7 @@ for name,title in [('website','tanishk.net'),('linkedin','LinkedIn'),('github','
 body=box(28,12,824,140,INK,8,'#6b6255')
 body+=box(28,12,4,140,RED)
 body+=label(50,40,'MISSION BRIEF',12,GOLD,'bold',spacing=2)
+body+=system_status(672,40,10)
 body+=label(50,73,'I build intelligent systems that turn models, data',16,CREAM,max_width=776)
 body+=label(50,100,'and software into practical tools.',16,CREAM)
 body+=label(50,133,'VOICE / VISION / DESKTOP APPS / DECISION WORKFLOWS',11,GOLD,'bold',spacing=.5)
@@ -159,6 +195,7 @@ save('mission.svg',880,168,'I build intelligent systems that turn models, data a
 body=box(14,12,372,176,INK,8,'#6b6255')
 body+=box(14,12,4,176,RED)
 body+=label(32,39,'MISSION BRIEF',11,GOLD,'bold',spacing=1)
+body+=system_status(236,39,8)
 for i,line in enumerate(['I build intelligent systems that','turn models, data and software','into practical tools.']):
     body+=label(32,73+i*24,line,15,CREAM,max_width=336)
 body+=label(32,154,'VOICE / VISION / DESKTOP APPS',10,GOLD,'bold')
@@ -197,7 +234,7 @@ def flap(x,y,value,size=16,cell=16,height=26,color=GOLD):
 
 for mobile in [False,True]:
     w=400 if mobile else 880
-    body=label(16 if mobile else 28,52,'DEPARTURES',44,GOLD,'display')
+    body=animated_heading(16 if mobile else 28,52,'DEPARTURES',44)
     body+=label(16 if mobile else 520,77 if mobile else 46,'16 PROJECTS / SELECTED FIRST',10,MUTED,'bold',spacing=.5)
     body+=f'<path d="M{16 if mobile else 28} {92 if mobile else 69}H{w-(16 if mobile else 28)}" stroke="#f6d77a" stroke-width="2"/>'
     save('departures-mobile.svg' if mobile else 'departures.svg',w,106 if mobile else 82,'Departures — 16 projects, selected work first.',body)
@@ -209,6 +246,8 @@ for i,(name,description,stack,category) in enumerate(PROJECTS,1):
     body+=label(88,103,stack,11,MUTED,'bold')
     body+=label(807,42,'↗',22,GOLD,'bold')
     body+='<path d="M28 124H852" stroke="#39342c"/>'
+    if i <= 3:
+        body=f'<g class="project-reveal" style="animation-delay:{(i-1)*.18:.2f}s">{body}</g>'
     save(f'{name}.svg',880,132,f'{i:02}. {name}: {description} Stack: {stack}.',body)
     lines=textwrap.wrap(name.upper(),width=23,break_long_words=False,break_on_hyphens=True)
     descriptions=textwrap.wrap(description,width=39)
@@ -221,6 +260,8 @@ for i,(name,description,stack,category) in enumerate(PROJECTS,1):
         body+=label(16,start+29+j*20,line,14,CREAM,max_width=366)
     body+=label(16,h-15,stack,10,GOLD,'bold',max_width=366)
     body+=f'<path d="M16 {h-2}H384" stroke="#39342c"/>'
+    if i <= 3:
+        body=f'<g class="project-reveal" style="animation-delay:{(i-1)*.18:.2f}s">{body}</g>'
     save(f'{name}-mobile.svg',400,h+5,f'{i:02}. {name}: {description} Stack: {stack}.',body)
 
 for name,title,subtitle in [

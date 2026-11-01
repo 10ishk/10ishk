@@ -12,6 +12,7 @@ def style(source, background, border, title):
     source, count = re.subn(r"--cb:[^;}]+", f"--cb:{border}", source, count=1)
     if count != 1:
         raise ValueError("Expected the generator's cell-outline variable")
+    source = source.replace('</style>', '@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>', 1)
     panel = (f'<title>{title}</title><rect x="{x}" y="{y}" width="{width}" '
              f'height="{height}" rx="8" fill="{background}"/>')
     return re.sub(r"(<svg\b[^>]*>)", lambda m: m[1] + panel, source, count=1)

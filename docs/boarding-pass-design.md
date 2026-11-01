@@ -21,6 +21,19 @@ voice, vision, desktop apps and decision workflows. Carry-on groups are AI &
 Models, Applications & APIs, Data & Decisions, and Systems & Hardware. Contact
 links appear once near the top; the page ends with the flight-log animation.
 
+## Motion
+
+A red plane makes a short trip along IDEA → SHIPPED every eight seconds, with
+a pause between trips. The DEPARTURES lettering briefly flips into place every
+fourteen seconds; the project names do not continuously flip. The first three
+project rows have a single subtle staggered reveal. A decorative SYSTEMS ONLINE
+light pulses slowly in the Mission Brief; it is a design detail, not a live
+uptime monitor.
+
+Animations use CSS inside self-contained SVG images. All text is visible without
+animation support. `prefers-reduced-motion: reduce` disables the plane, heading,
+reveals and pulse, and the generated contribution snake also stops animating.
+
 All graphics have outlined lettering using the bundled Barlow Condensed and
 Space Mono OFL fonts. They need no external fonts, JavaScript, or remote image
 rendering services. Font licenses are included under `assets/boarding/fonts/`.
