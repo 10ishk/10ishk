@@ -33,6 +33,8 @@ uptime monitor.
 Animations use CSS inside self-contained SVG images. All text is visible without
 animation support. `prefers-reduced-motion: reduce` disables the plane, heading,
 reveals and pulse, and the generated contribution snake also stops animating.
+The README also selects a bundled static contribution snapshot for reduced-motion
+viewers, so this fallback works even while a remote animation is cached.
 
 All graphics have outlined lettering using the bundled Barlow Condensed and
 Space Mono OFL fonts. They need no external fonts, JavaScript, or remote image
