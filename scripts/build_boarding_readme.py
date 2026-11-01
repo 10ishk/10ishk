@@ -127,7 +127,7 @@ PROJECTS = [
     ("ak680-overlay-studio", "Electron overlay controller for the AJAZZ keyboard web driver.", "ELECTRON / REACT / TYPESCRIPT", "HARDWARE"),
     ("cargo-visibility-control-tower", "Shipment visibility, SLA breaches and revenue-at-risk analysis.", "PYTHON / SQLITE / POWER BI", "LOGISTICS"),
     ("port-yard-dispatch-optimizer", "Dispatch planning with capacity, time windows and OR-Tools.", "PYTHON / OR-TOOLS / FASTAPI", "OPTIMIZATION"),
-    ("tanishk-portfolio", "Motion-led portfolio with project pages, notes and canvas work.", "NEXT.JS / REACT / MOTION", "WEB"),
+    ("tanishk-portfolio", "Motion-led portfolio, project pages and notes. Private source.", "NEXT.JS / REACT / MOTION", "WEB / PRIVATE SOURCE"),
     ("lstm-text-generator", "Reproducible word-level text generation and temperature sampling.", "PYTHON / PYTORCH / LSTM", "ML"),
     ("CallSense-App", "Call transcription, summaries, emotion and action extraction.", "PYTHON / WHISPER / NLP", "VOICE + NLP"),
     ("AdverseWeatherAVDetection", "Vehicle detection in rain, fog and snow on a BDD100K subset.", "PYTHON / YOLOv5 / PYTORCH", "VISION"),
@@ -145,7 +145,7 @@ def barcode(x, y, height, width):
     return result
 
 
-# Cream ticket, dark terminal surround, red airline stripe and tear-off stub.
+# Parchment ticket, petrol terminal surround, copper stripe and tear-off stub.
 body = box(28, 24, 824, 292, CREAM, 18)
 body += '<defs><clipPath id="ticket"><rect x="28" y="24" width="824" height="292" rx="18"/></clipPath></defs>'
 body += '<g clip-path="url(#ticket)">' + box(28,24,824,12,GOLD) + '</g>'
@@ -309,14 +309,19 @@ for name,title,subtitle in [
 
 EARLIER = [
     ('ai_models', 'Classic machine-learning notebooks.'),
-    ('Face_recog', 'Early face-recognition experiments.'),
-    ('Housing_analysis', 'Housing data exploration and regression.'),
+    ('Face_recog', 'Private archive / face-recognition experiments.'),
+    ('Housing_analysis', 'Private archive / housing data and regression.'),
 ]
 for name,description in EARLIER:
     body=flap(28,17,'--',16,color=MUTED)
     body+=flap(88,17,name.upper(),16,cell=17,color=MUTED)
     body+=label(430,37,description,12,CREAM,max_width=360)
-    body+=label(807,39,'↗',22,GOLD,'bold')
+    if name == 'ai_models':
+        body+=label(807,39,'↗',22,GOLD,'bold')
+    else:
+        # A closed padlock makes the non-clickable archive state clear.
+        body+=box(810,26,12,11,INK,2,MUTED)
+        body+='<path d="M813 26V23A3 3 0 0 1 819 23V26" fill="none" stroke="#b5c4bc" stroke-width="1.5"/>'
     body+='<path d="M28 61H852" stroke="#294b47"/>'
     save(f'{name}.svg',880,68,f'Earlier work: {name} — {description}',body)
     body=flap(16,12,name.upper(),14,cell=15,height=24,color=MUTED)
@@ -327,7 +332,7 @@ for name,description in EARLIER:
 
 def picture(stem,alt):
     # A new image URL avoids GitHub serving a cached static version of an animated asset.
-    version = '?v=petrol1'
+    version = '?v=petrol-final1'
     return (f'<picture>\n  <source media="(max-width: 600px)" srcset="assets/boarding/{stem}-mobile.svg{version}">\n'
             f'  <img src="assets/boarding/{stem}.svg{version}" width="100%" alt="{escape(alt,quote=True)}">\n</picture>')
 
@@ -343,10 +348,12 @@ readme+=picture('mission','Mission brief: I build intelligent systems that turn 
 readme+=picture('stack','Carry-on stack — AI and models, applications and APIs, data and decisions, systems and hardware.')+'\n\n'
 readme+=picture('departures','Departures — 16 projects, selected work first.')+'\n\n'
 for i,(name,description,stack,_) in enumerate(PROJECTS,1):
-    readme+=f'<a href="https://github.com/10ishk/{name}">\n'+picture(name,f'{i:02}. {name} — {description} Stack: {stack}.')+'\n</a>\n'
+    url = 'https://tanishk.net' if name == 'tanishk-portfolio' else f'https://github.com/10ishk/{name}'
+    readme+=f'<a href="{url}">\n'+picture(name,f'{i:02}. {name} — {description} Stack: {stack}.')+'\n</a>\n'
 readme+='\n'+picture('earlier','Arrived earlier — early experiments, same curiosity.')+'\n\n'
 for name,description in EARLIER:
-    readme+=f'<a href="https://github.com/10ishk/{name}">\n'+picture(name,f'Earlier work: {name} — {description}')+'\n</a>\n'
+    image=picture(name,f'Earlier work: {name} — {description}')
+    readme+=(f'<a href="https://github.com/10ishk/{name}">\n{image}\n</a>\n' if name == 'ai_models' else image+'\n')
 readme+='\n'
 readme+=picture('log','Flight log — a year of building, flown across the contribution calendar.')+'\n\n'
 readme+='''<picture>

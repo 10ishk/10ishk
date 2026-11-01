@@ -1,4 +1,4 @@
-# Petrol & Copper palette experiment
+# Petrol & Copper final candidate
 
 Branch: `design/boarding-pass-petrol-copper`.
 Starting checkpoint: `checkpoint-boarding-pass-approved-reflip`, commit
@@ -7,6 +7,18 @@ Starting checkpoint: `checkpoint-boarding-pass-approved-reflip`, commit
 This alternative preserves the approved content, layouts, independent project
 name re-flips, reduced-motion fallbacks and relaxed 84-second Flight Log.
 Neither the approved charcoal design, Midnight Terminal branch nor `main` changes.
+
+Final polish routes the portfolio card to the public `tanishk.net` website because
+its source repository is private. The Face_recog and Housing_analysis rows are
+labelled as private archives and are not linked to inaccessible repositories.
+Their desktop rows use a small closed-padlock icon. No repository visibility was
+changed. Public project source links were checked through GitHub's API.
+
+Primary body text, copper signage, muted panel text and secondary ticket text
+have contrast ratios of approximately 12.8:1, 5.6:1, 8.4:1 and 5.2:1 respectively.
+The larger burnt-copper DXB label has approximately 3.7:1 contrast on parchment.
+Desktop and mobile layouts, all 32 project-name animation variants, static
+reduced-motion states and the Flight Log's completion/pause behaviour are verified.
 
 Palette:
 
