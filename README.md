@@ -119,182 +119,28 @@ I turn ideas into useful tools: computer vision for logistics and safety, local 
 </a>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/notes-mobile.svg">
-  <img src="assets/boarding/notes.svg" width="100%" alt="Flight notes — full project descriptions, stacks and repository links.">
+  <source media="(max-width: 600px)" srcset="assets/boarding/earlier-mobile.svg">
+  <img src="assets/boarding/earlier.svg" width="100%" alt="Arrived earlier — early experiments, same curiosity.">
 </picture>
 
-## Project details
-
-Open a project for the full description, stack and repository.
-
-<details>
-<summary><strong>two-stage-ppe</strong> · <code>python · ultralytics · opencv</code></summary>
-
-Two-stage person-to-PPE detection with crop batching, global coordinate remapping, video inference, optional ByteTrack tracking, and dataset preparation and training tools. Bring compatible model checkpoints; none are bundled.
-
-**Stack:** Python, Ultralytics YOLO, OpenCV, ByteTrack<br>
-**Repo:** [10ishk/two-stage-ppe](https://github.com/10ishk/two-stage-ppe)
-
-</details>
-
-<details>
-<summary><strong>FlickVox</strong> · <code>c# · wpf · piper</code></summary>
-
-Windows text-to-speech companion with a global quick-pill hotkey, saved phrases, playback controls and voice downloads. Speech runs locally after setup; a Windows x64 preview is available in GitHub Releases.
-
-**Stack:** C#, .NET 10, WPF, Piper, NAudio<br>
-**Repo:** [10ishk/FlickVox](https://github.com/10ishk/FlickVox)
-
-</details>
-
-<details>
-<summary><strong>movi-agent</strong> · <code>react</code> <code>typescript</code> <code>fastapi</code></summary>
-
-Full-stack transport operations copilot: natural-language trip and route workflows with fuzzy matching, guarded vehicle actions, and human confirmation before consequential changes.
-
-**Stack:** React, TypeScript, FastAPI, Express, SQLite<br>
-**Repo:** [10ishk/movi-agent](https://github.com/10ishk/movi-agent)
-
-</details>
-
-<details>
-<summary><strong>quick-commerce-launch-control-tower</strong> · <code>excel · power-query · python</code></summary>
-
-Excel-first multi-site launch planning with readiness gates, inventory reconciliation, risk and issue tracking, and executive reporting. Uses synthetic UAE operations data. Includes Power BI model and report build specifications; no PBIX is included.
-
-**Stack:** Excel, Power Query / M, Python, Power BI build specifications<br>
-**Repo:** [10ishk/quick-commerce-launch-control-tower](https://github.com/10ishk/quick-commerce-launch-control-tower)
-
-</details>
-
-<details>
-<summary><strong>b2b-customer-expansion-radar</strong> · <code>excel · python · crm</code></summary>
-
-Customer intelligence workbook with documented business signals, transparent opportunity scoring, stakeholder gaps, account briefs and staged HubSpot handoffs. All account and business data is synthetic; the handoff package is prepared offline.
-
-**Stack:** Excel, Python, structured CSV / JSON, HubSpot handoff assets<br>
-**Repo:** [10ishk/b2b-customer-expansion-radar](https://github.com/10ishk/b2b-customer-expansion-radar)
-
-</details>
-
-<details>
-<summary><strong>yardvision-sop-monitoring</strong> · <code>python</code> <code>opencv</code> <code>yolov8</code></summary>
-
-Object-level logistics vision that turns camera feeds into SOP events, ROI-zone alerts, evidence snapshots, compliance review, and operational dashboards.
-
-**Stack:** Python, OpenCV, YOLOv8, Streamlit, SQLite<br>
-**Repo:** [10ishk/yardvision-sop-monitoring](https://github.com/10ishk/yardvision-sop-monitoring)
-
-</details>
-
-<details>
-<summary><strong>it-support-operations-lab</strong> · <code>powershell · windows · diagnostics</code></summary>
-
-Windows support toolkit for system health, networking, event logs, service investigation and SHA-256 backup/restore verification. Includes controlled execution evidence, guided incidents and local HTML reports.
-
-**Stack:** PowerShell, Windows CIM / networking cmdlets, SHA-256, HTML / JSON / CSV<br>
-**Repo:** [10ishk/it-support-operations-lab](https://github.com/10ishk/it-support-operations-lab)
-
-</details>
-
-<details>
-<summary><strong>voice-lead-agent</strong> · <code>python</code> <code>vapi</code> <code>deepgram</code></summary>
-
-Permission-first multilingual voice qualification with grounded project facts, state-aware conversations, explainable outcomes, and typed post-call summaries.
-
-**Stack:** Python, YAML, Pydantic, Vapi, Deepgram<br>
-**Repo:** [10ishk/voice-lead-agent](https://github.com/10ishk/voice-lead-agent)
-
-</details>
-
-<details>
-<summary><strong>ak680-studio</strong> · <code>tauri</code> <code>rust</code> <code>hid</code></summary>
-
-Native AK680 V2 profile inspector and configurator with local profile workflows, HID device detection, lighting controls, and mapped Rapid Trigger writes.
-
-**Stack:** Tauri, React, TypeScript, Rust, HID<br>
-**Repo:** [10ishk/ak680-studio](https://github.com/10ishk/ak680-studio)
-
-</details>
-
-<details>
-<summary><strong>ak680-overlay-studio</strong> · <code>electron</code> <code>react</code> <code>typescript</code></summary>
-
-Electron overlay controller for the official AJAZZ web driver, with route and DOM adapters for lighting, performance, keymap, SOCD, macros, and settings workflows.
-
-**Stack:** Electron, React, TypeScript, Vite<br>
-**Repo:** [10ishk/ak680-overlay-studio](https://github.com/10ishk/ak680-overlay-studio)
-
-</details>
-
-<details>
-<summary><strong>cargo-visibility-control-tower</strong> · <code>python</code> <code>sqlite</code> <code>power-bi</code></summary>
-
-Shipment control tower for visibility, SLA breaches, exceptions, hub performance, and revenue-at-risk analysis, backed by a documented local BI workflow.
-
-**Stack:** Python, SQLite, SQL, Power BI, Streamlit, Plotly<br>
-**Repo:** [10ishk/cargo-visibility-control-tower](https://github.com/10ishk/cargo-visibility-control-tower)
-
-</details>
-
-<details>
-<summary><strong>port-yard-dispatch-optimizer</strong> · <code>python</code> <code>ortools</code> <code>fastapi</code></summary>
-
-Dispatch planning prototype with capacity checks, delivery windows, route cost, priority handling, SLA-risk scoring, and an OR-Tools solver with a deterministic fallback.
-
-**Stack:** Python, OR-Tools, FastAPI, Streamlit, SQLite, Plotly<br>
-**Repo:** [10ishk/port-yard-dispatch-optimizer](https://github.com/10ishk/port-yard-dispatch-optimizer)
-
-</details>
-
-<details>
-<summary><strong>tanishk-portfolio</strong> · <code>next.js</code> <code>react</code> <code>motion</code></summary>
-
-Motion-led editorial portfolio with project pages, notes, experience views, interactive canvas surfaces, and multiple home-page prototypes.
-
-**Stack:** Next.js, React, TypeScript, Motion, GSAP, Playwright<br>
-**Repo:** [10ishk/tanishk-portfolio](https://github.com/10ishk/tanishk-portfolio)
-
-</details>
-
-<details>
-<summary><strong>lstm-text-generator</strong> · <code>pytorch</code> <code>lstm</code> <code>nlp</code></summary>
-
-Reproducible word-level text generation pipeline covering data preparation, vocabulary handling, LSTM training, validation, and temperature-based sampling.
-
-**Stack:** Python, PyTorch, LSTM, Jupyter, pytest<br>
-**Repo:** [10ishk/lstm-text-generator](https://github.com/10ishk/lstm-text-generator)
-
-</details>
-
-<details>
-<summary><strong>CallSense-App</strong> · <code>python</code> <code>whisper</code> <code>nlp</code></summary>
-
-Call intelligence pipeline that transcribes audio, summarizes conversations, classifies emotion, estimates urgency, extracts actions, and exports structured reports.
-
-**Stack:** Python, Whisper, Transformers, Streamlit, CSV, JSON<br>
-**Repo:** [10ishk/CallSense-App](https://github.com/10ishk/CallSense-App)
-
-</details>
-
-<details>
-<summary><strong>AdverseWeatherAVDetection</strong> · <code>python</code> <code>yolov5</code> <code>computer-vision</code></summary>
-
-Vehicle detection under rain, fog, and snow using an adverse-weather BDD100K subset, YOLO annotation conversion, transfer learning, and recorded evaluation metrics.
-
-**Stack:** Python, YOLOv5, PyTorch, BDD100K, Jupyter<br>
-**Repo:** [10ishk/AdverseWeatherAVDetection](https://github.com/10ishk/AdverseWeatherAVDetection)
-
-</details>
-
-<details>
-<summary><strong>archive</strong> · <em>older work</em></summary>
-
-- [ai_models](https://github.com/10ishk/ai_models) — classic ML notebooks covering regression, clustering, KNN, SVM, and decision trees
-- [Face_recog](https://github.com/10ishk/Face_recog) — early computer-vision experimentation
-- [Housing_analysis](https://github.com/10ishk/Housing_analysis) — exploratory data analysis and regression work
-
-</details>
+<a href="https://github.com/10ishk/ai_models">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/boarding/ai_models-mobile.svg">
+  <img src="assets/boarding/ai_models.svg" width="100%" alt="Earlier work: ai_models — Classic machine-learning notebooks.">
+</picture>
+</a>
+<a href="https://github.com/10ishk/Face_recog">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/boarding/Face_recog-mobile.svg">
+  <img src="assets/boarding/Face_recog.svg" width="100%" alt="Earlier work: Face_recog — Early face-recognition experiments.">
+</picture>
+</a>
+<a href="https://github.com/10ishk/Housing_analysis">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/boarding/Housing_analysis-mobile.svg">
+  <img src="assets/boarding/Housing_analysis.svg" width="100%" alt="Earlier work: Housing_analysis — Housing data exploration and regression.">
+</picture>
+</a>
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/boarding/log-mobile.svg">

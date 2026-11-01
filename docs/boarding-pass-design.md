@@ -8,8 +8,8 @@ merged into `main`.
 The supplied airport reference is adapted into a cream boarding pass with a red
 stripe, a perforated builder-ID stub, four carry-on stack groups, and a split-flap
 departures board. The ticket keeps the name and focus separate from the barcode
-stub. Sixteen individual project rows remain clickable; seventeen native detail
-sections include the archive. The five newer projects are included. The board
+stub. Sixteen individual project rows remain clickable, followed by three compact
+"Arrived earlier" rows for older work. The five newer projects are included. The board
 leads with two-stage-ppe and FlickVox, followed by the transport copilot and recent
 operations tools. Business workbook descriptions identify synthetic data.
 
@@ -26,8 +26,9 @@ python -m pip install -r scripts/requirements-boarding.txt
 python scripts/build_boarding_readme.py
 ```
 
-The baseline commit must be available locally because the generator preserves
-the reviewed native project details from its README. Use a full Git clone.
+The generator contains the project summaries, stacks and repository names.
+Project links open their own READMEs for full details; no duplicate expandable
+project list interrupts the departures-board theme.
 `scripts/build_readme.py` remains the neo-brutalist generator and will replace
 the README with that earlier design if run; use the boarding generator here.
 

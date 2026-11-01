@@ -4,8 +4,6 @@ Lettering is outlined from the bundled OFL fonts, so GitHub needs no web fonts.
 """
 from pathlib import Path
 from html import escape
-import re
-import subprocess
 import textwrap
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
@@ -201,7 +199,7 @@ for i,(name,description,stack,category) in enumerate(PROJECTS,1):
     save(f'{name}-mobile.svg',400,h+5,f'{i:02}. {name}: {description} Stack: {stack}.',body)
 
 for name,title,subtitle in [
-    ('notes','FLIGHT NOTES','PROJECT DESCRIPTIONS / STACK / REPOSITORIES'),
+    ('earlier','ARRIVED EARLIER','EARLY EXPERIMENTS / SAME CURIOSITY'),
     ('log','FLIGHT LOG','A YEAR OF BUILDING / CONTRIBUTION SNAKE'),
 ]:
     body=label(28,52,title,44,GOLD,'display')
@@ -213,10 +211,22 @@ for name,title,subtitle in [
     body+='<path d="M16 91H384" stroke="#6b6255" stroke-dasharray="6 5"/>'
     save(f'{name}-mobile.svg',400,104,title+' — '+subtitle,body)
 
-baseline=subprocess.check_output(['git','show','02199ff57587eea1d5c0c2fb37d2969c279a18b6:README.md'],cwd=ROOT,encoding='utf-8')
-blocks=re.findall(r'<details>.*?</details>',baseline,re.S)
-by_name={re.search(r'<strong>(.*?)</strong>',block)[1]:block for block in blocks}
-assert len(PROJECTS)==16 and len(blocks)==17
+EARLIER = [
+    ('ai_models', 'Classic machine-learning notebooks.'),
+    ('Face_recog', 'Early face-recognition experiments.'),
+    ('Housing_analysis', 'Housing data exploration and regression.'),
+]
+for name,description in EARLIER:
+    body=flap(28,17,'--',16,color=MUTED)
+    body+=flap(88,17,name.upper(),16,cell=17,color=MUTED)
+    body+=label(430,37,description,12,CREAM,max_width=360)
+    body+=label(807,39,'↗',22,GOLD,'bold')
+    body+='<path d="M28 61H852" stroke="#39342c"/>'
+    save(f'{name}.svg',880,68,f'Earlier work: {name} — {description}',body)
+    body=flap(16,12,name.upper(),14,cell=15,height=24,color=MUTED)
+    body+=label(16,61,description,13,CREAM,max_width=345)
+    body+='<path d="M16 77H384" stroke="#39342c"/>'
+    save(f'{name}-mobile.svg',400,84,f'Earlier work: {name} — {description}',body)
 
 
 def picture(stem,alt):
@@ -236,9 +246,10 @@ readme+=picture('stack','Carry-on stack — languages, apps and APIs, vision and
 readme+=picture('departures','Departures — 16 projects, selected work first.')+'\n\n'
 for i,(name,description,stack,_) in enumerate(PROJECTS,1):
     readme+=f'<a href="https://github.com/10ishk/{name}">\n'+picture(name,f'{i:02}. {name} — {description} Stack: {stack}.')+'\n</a>\n'
-readme+='\n'+picture('notes','Flight notes — full project descriptions, stacks and repository links.')+'\n\n'
-readme+='## Project details\n\nOpen a project for the full description, stack and repository.\n\n'
-readme+='\n\n'.join(by_name[name] for name,*_ in PROJECTS)+'\n\n'+by_name['archive']+'\n\n'
+readme+='\n'+picture('earlier','Arrived earlier — early experiments, same curiosity.')+'\n\n'
+for name,description in EARLIER:
+    readme+=f'<a href="https://github.com/10ishk/{name}">\n'+picture(name,f'Earlier work: {name} — {description}')+'\n</a>\n'
+readme+='\n'
 readme+=picture('log','Flight log — a year of building, shown as a contribution snake.')+'\n\n'
 readme+='''<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/snake-dark.svg">
@@ -249,4 +260,4 @@ readme+='''<picture>
 <p align="center"><sub><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></sub></p>
 '''
 (ROOT/'README.md').write_text(readme,encoding='utf-8')
-print(f'Built boarding-pass README: {len(PROJECTS)} project rows, {len(blocks)} detail sections, {len(list(OUT.glob("*.svg")))} SVGs.')
+print(f'Built boarding-pass README: {len(PROJECTS)} project rows, {len(EARLIER)} earlier-work rows, {len(list(OUT.glob("*.svg")))} SVGs.')
