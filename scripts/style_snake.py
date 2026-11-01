@@ -22,8 +22,8 @@ if __name__ == "__main__":
     output = Path(sys.argv[2]) if len(sys.argv) > 2 else folder
     output.mkdir(parents=True, exist_ok=True)
     for filename, background, border, title in [
-        ("snake.svg", "#f6f8fc", "#a9b7cd", "Contribution snake — ink snake and blue tiles"),
-        ("snake-dark.svg", "#111827", "#61718e", "Contribution snake — yellow snake and blue tiles"),
+        ("snake.svg", "#f7f4ec", "#a89d88", "Flight log — red snake and warm contribution tiles"),
+        ("snake-dark.svg", "#0f0e0d", "#8c8270", "Flight log — gold snake and warm contribution tiles"),
     ]:
         file = folder / filename
         (output / filename).write_text(style(file.read_text(encoding="utf-8"), background, border, title), encoding="utf-8")

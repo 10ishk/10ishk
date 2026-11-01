@@ -1,4 +1,4 @@
-name: Generate contribution snake
+name: Generate boarding-pass contribution snake
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   push:
     branches:
       - main
-      - design/neo-brutalist-readme
+      - design/boarding-pass-readme
     paths:
       - .github/workflows/snake.yml
       - scripts/style_snake.py
@@ -25,8 +25,8 @@ jobs:
         with:
           github_user_name: 10ishk
           outputs: |
-            dist/snake.svg?color_snake=%23111111&color_dots=%23e2e8f0,%23bfd1ff,%2388aaff,%234d7cff,%232647bd
-            dist/snake-dark.svg?color_snake=%23ffd23f&color_dots=%23303b52,%23445e96,%235e83cc,%238db1f5,%23c1d6ff
+            dist/snake.svg?color_snake=%23e5372b&color_dots=%23e4dfd3,%23d1c29e,%23b6a069,%23877440,%23594a27
+            dist/snake-dark.svg?color_snake=%23f6d77a&color_dots=%233b3731,%235b564b,%237c7566,%23a59c88,%23d2c8b4
 
       - name: Add themed panels and visible cell outlines
         run: python scripts/style_snake.py dist styled
@@ -34,7 +34,7 @@ jobs:
       - name: Push output to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          target_branch: output-loud
+          target_branch: output-boarding
           build_dir: styled
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
