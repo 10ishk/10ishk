@@ -65,9 +65,11 @@ It can also consume a saved calendar with `--calendar JSON --output DIR` offline
 The displayed total is the sum of the displayed daily counts, which can differ
 from GitHub's collection-wide summary. No contribution values are invented.
 
-One plane flies seven horizontal legs with rounded turns, leaving a short fading
-trail. Activity tiles gently light up as it passes and never disappear. The
-32-second cycle includes a ROUTE COMPLETE pause. The flight path is decorative;
+One plane flies seven horizontal legs with rounded turns at a relaxed pace,
+leaving two rows of separated soft vapour puffs that fade with distance. Activity
+tiles bloom as the plane arrives and fade over roughly four seconds; they never
+disappear. Glow timing includes the turn lengths so it stays aligned with the
+plane. The 84-second cycle includes a ROUTE COMPLETE pause. The flight path is decorative;
 the tile colours represent actual activity levels. Four outputs cover light,
 dark and static reduced-motion variants.
 

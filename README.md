@@ -151,8 +151,8 @@
 </picture>
 
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-light-still.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-dark.svg">
-  <img width="100%" alt="GitHub contribution flight log — a plane flies over real activity tiles with a fading trail; contributions stay visible" src="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-light.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-v2-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-v2-light-still.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-v2-dark.svg">
+  <img width="100%" alt="GitHub contribution flight log — a plane flies over real activity tiles with a fading trail; contributions stay visible" src="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/flight-log-v2-light.svg">
 </picture>
