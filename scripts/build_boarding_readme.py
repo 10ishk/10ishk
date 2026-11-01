@@ -60,15 +60,15 @@ def save(name, w, h, title, body, background=INK):
 
 
 PROJECTS = [
-    ("two-stage-ppe", "Person-first PPE detection, video tracking and training tools.", "PYTHON / ULTRALYTICS / OPENCV", "VISION"),
-    ("FlickVox", "Local Windows speech: hotkey, saved phrases and Piper playback.", "C# / WPF / PIPER", "DESKTOP"),
-    ("movi-agent", "Transport operations copilot with guarded, human-approved actions.", "REACT / TYPESCRIPT / FASTAPI", "AI + OPS"),
+    ("movi-agent", "Natural-language transport workflows with guarded action execution.", "REACT / TYPESCRIPT / FASTAPI", "AI SYSTEMS"),
+    ("two-stage-ppe", "Two-stage inference, crop batching, tracking and training tools.", "PYTHON / ULTRALYTICS / OPENCV", "VISION SYSTEMS"),
+    ("FlickVox", "Local speech synthesis with hotkeys, saved phrases and playback.", "C# / WPF / PIPER", "LOCAL DESKTOP"),
+    ("voice-lead-agent", "State-aware voice workflows with grounded facts and typed summaries.", "PYTHON / VAPI / DEEPGRAM", "VOICE AI"),
+    ("ak680-studio", "Native keyboard profile tools with HID detection and device controls.", "TAURI / RUST / REACT / HID", "HARDWARE"),
     ("quick-commerce-launch-control-tower", "Launch readiness, inventory and risk controls. Synthetic data.", "EXCEL / POWER QUERY / PYTHON", "OPERATIONS"),
     ("b2b-customer-expansion-radar", "Account intelligence, scoring and CRM handoffs. Synthetic data.", "EXCEL / PYTHON / CRM HANDOFF", "CUSTOMER OPS"),
     ("yardvision-sop-monitoring", "Camera feeds into SOP events, zone alerts and evidence snapshots.", "PYTHON / OPENCV / YOLOv8", "VISION"),
     ("it-support-operations-lab", "Windows diagnostics, incident evidence and backup verification.", "POWERSHELL / WINDOWS / SHA-256", "IT SUPPORT"),
-    ("voice-lead-agent", "Permission-first multilingual voice qualification and summaries.", "PYTHON / VAPI / DEEPGRAM", "VOICE AI"),
-    ("ak680-studio", "Native keyboard profile tools, HID detection and lighting controls.", "TAURI / RUST / REACT / HID", "HARDWARE"),
     ("ak680-overlay-studio", "Electron overlay controller for the AJAZZ keyboard web driver.", "ELECTRON / REACT / TYPESCRIPT", "HARDWARE"),
     ("cargo-visibility-control-tower", "Shipment visibility, SLA breaches and revenue-at-risk analysis.", "PYTHON / SQLITE / POWER BI", "LOGISTICS"),
     ("port-yard-dispatch-optimizer", "Dispatch planning with capacity, time windows and OR-Tools.", "PYTHON / OR-TOOLS / FASTAPI", "OPTIMIZATION"),
@@ -103,14 +103,14 @@ body += label(242, 180, 'TO', 11, '#5f5a52', 'bold', spacing=2)
 body += label(56, 225, 'IDEA', 48, INK, 'display')
 body += '<path d="M167 208H209M198 197L209 208L198 219" fill="none" stroke="#e5372b" stroke-width="3"/>'
 body += label(242, 225, 'SHIPPED', 48, INK, 'display')
-body += label(56, 264, 'AI × LOGISTICS × VISION', 18, INK, 'bold')
-body += label(56, 291, 'LOCAL APPS / PRACTICAL SYSTEMS / 10ISHK', 10, '#5f5a52', 'mono', spacing=.5)
+body += label(56, 264, 'APPLIED AI ENGINEER', 30, INK, 'display')
+body += label(56, 291, 'INTELLIGENT SYSTEMS BUILDER', 18, '#5f5a52', 'display', spacing=1)
 body += label(691, 73, 'BUILDER ID', 11, '#5f5a52', 'bold', spacing=1)
 body += label(689, 124, '10ISHK', 52, INK, 'display')
 body += barcode(691,153,64,130)
 body += label(691, 250, f'{len(PROJECTS):02} PROJECTS', 12, INK, 'bold')
 body += label(691, 274, 'ABOARD', 11, '#5f5a52', 'bold', spacing=2)
-save('hero.svg',880,340,'Tanishk Bhardwaj — boarding pass from idea to shipped. AI, logistics and vision. 16 projects aboard.',body)
+save('hero.svg',880,340,'Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Idea to shipped. 16 projects aboard.',body)
 
 body = box(12,16,376,438,CREAM,16)
 body += '<defs><clipPath id="ticket"><rect x="12" y="16" width="376" height="438" rx="16"/></clipPath></defs>'
@@ -123,14 +123,15 @@ body += label(186,228,'TO',10,'#5f5a52','bold',spacing=2)
 body += label(32,268,'IDEA',42,INK,'display')
 body += '<path d="M118 253H157M147 244L157 253L147 262" fill="none" stroke="#e5372b" stroke-width="3"/>'
 body += label(186,268,'SHIPPED',42,INK,'display')
-body += label(32,307,'AI × LOGISTICS × VISION',14,INK,'bold')
+body += label(32,299,'APPLIED AI ENGINEER',26,INK,'display')
+body += label(32,321,'INTELLIGENT SYSTEMS BUILDER',19,'#5f5a52','display',spacing=.3)
 body += '<path d="M24 335H376" stroke="#bdb7a9" stroke-width="2" stroke-dasharray="6 5"/>'
 body += '<circle cx="12" cy="335" r="11" fill="#0f0e0d"/><circle cx="388" cy="335" r="11" fill="#0f0e0d"/>'
 body += label(32,365,'BUILDER ID',10,'#5f5a52','bold',spacing=1)
 body += label(32,409,'10ISHK',42,INK,'display')
 body += barcode(206,355,49,145)
 body += label(206,430,'16 PROJECTS ABOARD',10,INK,'bold')
-save('hero-mobile.svg',400,470,'Tanishk Bhardwaj — idea to shipped. AI, logistics and vision. Builder 10ishk.',body)
+save('hero-mobile.svg',400,470,'Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Idea to shipped. Builder 10ishk.',body)
 
 for name,title in [('website','tanishk.net'),('linkedin','LinkedIn'),('github','GitHub')]:
     body=box(3,3,274,48,INK,7,GOLD)
@@ -140,11 +141,28 @@ for name,title in [('website','tanishk.net'),('linkedin','LinkedIn'),('github','
     body+=label(10,29,title+' →',14,GOLD,'bold',max_width=108)
     save(f'{name}-mobile.svg',128,48,title,body)
 
+# A terminal-style mission panel carries the introduction without a plain-text break.
+body=box(28,12,824,140,INK,8,'#6b6255')
+body+=box(28,12,4,140,RED)
+body+=label(50,40,'MISSION BRIEF',12,GOLD,'bold',spacing=2)
+body+=label(50,73,'I build intelligent systems that turn models, data',16,CREAM,max_width=776)
+body+=label(50,100,'and software into practical tools.',16,CREAM)
+body+=label(50,133,'VOICE / VISION / DESKTOP APPS / DECISION WORKFLOWS',11,GOLD,'bold',spacing=.5)
+save('mission.svg',880,168,'I build intelligent systems that turn models, data and software into practical tools — voice, vision, desktop apps and decision workflows.',body)
+body=box(14,12,372,176,INK,8,'#6b6255')
+body+=box(14,12,4,176,RED)
+body+=label(32,39,'MISSION BRIEF',11,GOLD,'bold',spacing=1)
+for i,line in enumerate(['I build intelligent systems that','turn models, data and software','into practical tools.']):
+    body+=label(32,73+i*24,line,15,CREAM,max_width=336)
+body+=label(32,154,'VOICE / VISION / DESKTOP APPS',10,GOLD,'bold')
+body+=label(32,173,'DECISION WORKFLOWS',10,GOLD,'bold')
+save('mission-mobile.svg',400,200,'I build intelligent systems that turn models, data and software into practical tools — voice, vision, desktop apps and decision workflows.',body)
+
 groups = [
-    ('LANGUAGES',['Python','TypeScript','Rust','C#','PowerShell']),
-    ('APPS + APIS',['React / Next.js','FastAPI / Express','Tauri','WPF / .NET']),
-    ('VISION + ML',['PyTorch','OpenCV','Ultralytics YOLO','Whisper / Piper']),
-    ('DATA + OPS',['SQL / SQLite','Excel / Power Query','OR-Tools','Streamlit']),
+    ('AI & MODELS',['Python / PyTorch','Ultralytics YOLO','OpenCV','Whisper / Piper']),
+    ('APPLICATIONS & APIs',['TypeScript / React','Next.js / FastAPI','Express','C# / WPF / .NET']),
+    ('DATA & DECISIONS',['SQL / SQLite','Excel / Power Query','OR-Tools','Streamlit']),
+    ('SYSTEMS & HARDWARE',['Rust / Tauri','Electron','HID integration','PowerShell']),
 ]
 for mobile in [False,True]:
     w,h=(400,488) if mobile else (880,296)
@@ -234,15 +252,15 @@ def picture(stem,alt):
             f'  <img src="assets/boarding/{stem}.svg" width="100%" alt="{escape(alt,quote=True)}">\n</picture>')
 
 
-readme=picture('hero','Tanishk Bhardwaj — boarding pass from idea to shipped. AI × Logistics × Vision. Builder 10ishk.')+'\n\n'
+readme=picture('hero','Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Boarding pass from idea to shipped. Builder 10ishk.')+'\n\n'
 readme+='<p align="center">\n'
 for slug,url,title in [('website','https://tanishk.net','Visit tanishk.net'),('linkedin','https://www.linkedin.com/in/tanishk004','Connect on LinkedIn'),('github','https://github.com/10ishk','Explore my GitHub')]:
     readme+=(f'  <a href="{url}"><picture>'
              f'<source media="(max-width: 600px)" srcset="assets/boarding/{slug}-mobile.svg">'
              f'<img src="assets/boarding/{slug}.svg" width="32%" alt="{title}"></picture></a>\n')
 readme+='</p>\n\n'
-readme+='I turn ideas into useful tools: computer vision for logistics and safety, local desktop apps, and practical operations systems.\n\n'
-readme+=picture('stack','Carry-on stack — languages, apps and APIs, vision and ML, data and operations.')+'\n\n'
+readme+=picture('mission','Mission brief: I build intelligent systems that turn models, data and software into practical tools — voice, vision, desktop apps and decision workflows.')+'\n\n'
+readme+=picture('stack','Carry-on stack — AI and models, applications and APIs, data and decisions, systems and hardware.')+'\n\n'
 readme+=picture('departures','Departures — 16 projects, selected work first.')+'\n\n'
 for i,(name,description,stack,_) in enumerate(PROJECTS,1):
     readme+=f'<a href="https://github.com/10ishk/{name}">\n'+picture(name,f'{i:02}. {name} — {description} Stack: {stack}.')+'\n</a>\n'
@@ -257,7 +275,6 @@ readme+='''<picture>
   <img width="100%" alt="GitHub contribution snake animation — warm terminal tiles with a red snake in light mode and gold in dark mode" src="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/snake.svg">
 </picture>
 
-<p align="center"><sub><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></sub></p>
 '''
-(ROOT/'README.md').write_text(readme,encoding='utf-8')
+(ROOT/'README.md').write_text(readme.rstrip()+'\n',encoding='utf-8')
 print(f'Built boarding-pass README: {len(PROJECTS)} project rows, {len(EARLIER)} earlier-work rows, {len(list(OUT.glob("*.svg")))} SVGs.')

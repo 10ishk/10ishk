@@ -10,8 +10,14 @@ stripe, a perforated builder-ID stub, four carry-on stack groups, and a split-fl
 departures board. The ticket keeps the name and focus separate from the barcode
 stub. Sixteen individual project rows remain clickable, followed by three compact
 "Arrived earlier" rows for older work. The five newer projects are included. The board
-leads with two-stage-ppe and FlickVox, followed by the transport copilot and recent
-operations tools. Business workbook descriptions identify synthetic data.
+leads with movi-agent, two-stage-ppe and FlickVox, followed by voice and hardware
+work before operations tools. Business workbook descriptions identify synthetic data.
+
+The ticket positions Tanishk as an Applied AI Engineer / Intelligent Systems
+Builder. A themed Mission Brief replaces the plain-text introduction and spans
+voice, vision, desktop apps and decision workflows. Carry-on groups are AI &
+Models, Applications & APIs, Data & Decisions, and Systems & Hardware. Contact
+links appear once near the top; the page ends with the flight-log animation.
 
 All graphics have outlined lettering using the bundled Barlow Condensed and
 Space Mono OFL fonts. They need no external fonts, JavaScript, or remote image

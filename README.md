@@ -1,6 +1,6 @@
 <picture>
   <source media="(max-width: 600px)" srcset="assets/boarding/hero-mobile.svg">
-  <img src="assets/boarding/hero.svg" width="100%" alt="Tanishk Bhardwaj — boarding pass from idea to shipped. AI × Logistics × Vision. Builder 10ishk.">
+  <img src="assets/boarding/hero.svg" width="100%" alt="Tanishk Bhardwaj — Applied AI Engineer / Intelligent Systems Builder. Boarding pass from idea to shipped. Builder 10ishk.">
 </picture>
 
 <p align="center">
@@ -9,11 +9,14 @@
   <a href="https://github.com/10ishk"><picture><source media="(max-width: 600px)" srcset="assets/boarding/github-mobile.svg"><img src="assets/boarding/github.svg" width="32%" alt="Explore my GitHub"></picture></a>
 </p>
 
-I turn ideas into useful tools: computer vision for logistics and safety, local desktop apps, and practical operations systems.
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/boarding/mission-mobile.svg">
+  <img src="assets/boarding/mission.svg" width="100%" alt="Mission brief: I build intelligent systems that turn models, data and software into practical tools — voice, vision, desktop apps and decision workflows.">
+</picture>
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/boarding/stack-mobile.svg">
-  <img src="assets/boarding/stack.svg" width="100%" alt="Carry-on stack — languages, apps and APIs, vision and ML, data and operations.">
+  <img src="assets/boarding/stack.svg" width="100%" alt="Carry-on stack — AI and models, applications and APIs, data and decisions, systems and hardware.">
 </picture>
 
 <picture>
@@ -21,58 +24,58 @@ I turn ideas into useful tools: computer vision for logistics and safety, local 
   <img src="assets/boarding/departures.svg" width="100%" alt="Departures — 16 projects, selected work first.">
 </picture>
 
+<a href="https://github.com/10ishk/movi-agent">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/boarding/movi-agent-mobile.svg">
+  <img src="assets/boarding/movi-agent.svg" width="100%" alt="01. movi-agent — Natural-language transport workflows with guarded action execution. Stack: REACT / TYPESCRIPT / FASTAPI.">
+</picture>
+</a>
 <a href="https://github.com/10ishk/two-stage-ppe">
 <picture>
   <source media="(max-width: 600px)" srcset="assets/boarding/two-stage-ppe-mobile.svg">
-  <img src="assets/boarding/two-stage-ppe.svg" width="100%" alt="01. two-stage-ppe — Person-first PPE detection, video tracking and training tools. Stack: PYTHON / ULTRALYTICS / OPENCV.">
+  <img src="assets/boarding/two-stage-ppe.svg" width="100%" alt="02. two-stage-ppe — Two-stage inference, crop batching, tracking and training tools. Stack: PYTHON / ULTRALYTICS / OPENCV.">
 </picture>
 </a>
 <a href="https://github.com/10ishk/FlickVox">
 <picture>
   <source media="(max-width: 600px)" srcset="assets/boarding/FlickVox-mobile.svg">
-  <img src="assets/boarding/FlickVox.svg" width="100%" alt="02. FlickVox — Local Windows speech: hotkey, saved phrases and Piper playback. Stack: C# / WPF / PIPER.">
-</picture>
-</a>
-<a href="https://github.com/10ishk/movi-agent">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/movi-agent-mobile.svg">
-  <img src="assets/boarding/movi-agent.svg" width="100%" alt="03. movi-agent — Transport operations copilot with guarded, human-approved actions. Stack: REACT / TYPESCRIPT / FASTAPI.">
-</picture>
-</a>
-<a href="https://github.com/10ishk/quick-commerce-launch-control-tower">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/quick-commerce-launch-control-tower-mobile.svg">
-  <img src="assets/boarding/quick-commerce-launch-control-tower.svg" width="100%" alt="04. quick-commerce-launch-control-tower — Launch readiness, inventory and risk controls. Synthetic data. Stack: EXCEL / POWER QUERY / PYTHON.">
-</picture>
-</a>
-<a href="https://github.com/10ishk/b2b-customer-expansion-radar">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/b2b-customer-expansion-radar-mobile.svg">
-  <img src="assets/boarding/b2b-customer-expansion-radar.svg" width="100%" alt="05. b2b-customer-expansion-radar — Account intelligence, scoring and CRM handoffs. Synthetic data. Stack: EXCEL / PYTHON / CRM HANDOFF.">
-</picture>
-</a>
-<a href="https://github.com/10ishk/yardvision-sop-monitoring">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/yardvision-sop-monitoring-mobile.svg">
-  <img src="assets/boarding/yardvision-sop-monitoring.svg" width="100%" alt="06. yardvision-sop-monitoring — Camera feeds into SOP events, zone alerts and evidence snapshots. Stack: PYTHON / OPENCV / YOLOv8.">
-</picture>
-</a>
-<a href="https://github.com/10ishk/it-support-operations-lab">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/boarding/it-support-operations-lab-mobile.svg">
-  <img src="assets/boarding/it-support-operations-lab.svg" width="100%" alt="07. it-support-operations-lab — Windows diagnostics, incident evidence and backup verification. Stack: POWERSHELL / WINDOWS / SHA-256.">
+  <img src="assets/boarding/FlickVox.svg" width="100%" alt="03. FlickVox — Local speech synthesis with hotkeys, saved phrases and playback. Stack: C# / WPF / PIPER.">
 </picture>
 </a>
 <a href="https://github.com/10ishk/voice-lead-agent">
 <picture>
   <source media="(max-width: 600px)" srcset="assets/boarding/voice-lead-agent-mobile.svg">
-  <img src="assets/boarding/voice-lead-agent.svg" width="100%" alt="08. voice-lead-agent — Permission-first multilingual voice qualification and summaries. Stack: PYTHON / VAPI / DEEPGRAM.">
+  <img src="assets/boarding/voice-lead-agent.svg" width="100%" alt="04. voice-lead-agent — State-aware voice workflows with grounded facts and typed summaries. Stack: PYTHON / VAPI / DEEPGRAM.">
 </picture>
 </a>
 <a href="https://github.com/10ishk/ak680-studio">
 <picture>
   <source media="(max-width: 600px)" srcset="assets/boarding/ak680-studio-mobile.svg">
-  <img src="assets/boarding/ak680-studio.svg" width="100%" alt="09. ak680-studio — Native keyboard profile tools, HID detection and lighting controls. Stack: TAURI / RUST / REACT / HID.">
+  <img src="assets/boarding/ak680-studio.svg" width="100%" alt="05. ak680-studio — Native keyboard profile tools with HID detection and device controls. Stack: TAURI / RUST / REACT / HID.">
+</picture>
+</a>
+<a href="https://github.com/10ishk/quick-commerce-launch-control-tower">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/boarding/quick-commerce-launch-control-tower-mobile.svg">
+  <img src="assets/boarding/quick-commerce-launch-control-tower.svg" width="100%" alt="06. quick-commerce-launch-control-tower — Launch readiness, inventory and risk controls. Synthetic data. Stack: EXCEL / POWER QUERY / PYTHON.">
+</picture>
+</a>
+<a href="https://github.com/10ishk/b2b-customer-expansion-radar">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/boarding/b2b-customer-expansion-radar-mobile.svg">
+  <img src="assets/boarding/b2b-customer-expansion-radar.svg" width="100%" alt="07. b2b-customer-expansion-radar — Account intelligence, scoring and CRM handoffs. Synthetic data. Stack: EXCEL / PYTHON / CRM HANDOFF.">
+</picture>
+</a>
+<a href="https://github.com/10ishk/yardvision-sop-monitoring">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/boarding/yardvision-sop-monitoring-mobile.svg">
+  <img src="assets/boarding/yardvision-sop-monitoring.svg" width="100%" alt="08. yardvision-sop-monitoring — Camera feeds into SOP events, zone alerts and evidence snapshots. Stack: PYTHON / OPENCV / YOLOv8.">
+</picture>
+</a>
+<a href="https://github.com/10ishk/it-support-operations-lab">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/boarding/it-support-operations-lab-mobile.svg">
+  <img src="assets/boarding/it-support-operations-lab.svg" width="100%" alt="09. it-support-operations-lab — Windows diagnostics, incident evidence and backup verification. Stack: POWERSHELL / WINDOWS / SHA-256.">
 </picture>
 </a>
 <a href="https://github.com/10ishk/ak680-overlay-studio">
@@ -152,5 +155,3 @@ I turn ideas into useful tools: computer vision for logistics and safety, local 
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/snake.svg">
   <img width="100%" alt="GitHub contribution snake animation — warm terminal tiles with a red snake in light mode and gold in dark mode" src="https://raw.githubusercontent.com/10ishk/10ishk/output-boarding/snake.svg">
 </picture>
-
-<p align="center"><sub><a href="https://tanishk.net">tanishk.net</a> · <a href="https://www.linkedin.com/in/tanishk004">LinkedIn</a> · <a href="https://github.com/10ishk">GitHub</a></sub></p>
